@@ -11,6 +11,7 @@ bool one_it = 0, possible = 0;
 int N, M;
 pair<int, int> start_pos;
 queue<pair<int, int>> q;
+pair<int, int> ex;
 
 string ans(int x, int y) {
     string ret = "";
@@ -34,8 +35,6 @@ void check(pair<int, int> origin, pair<int, int> dest) {
         if(one_it) from[dest.first][dest.second] = origin;
     }
 }
-
-pair<int, int> ex;
 
 void bfs() {
     while(!q.empty()) {
