@@ -23,16 +23,18 @@ int32_t main() {
         dist[i] = 0;
         while(!q.empty()) {
             int node = q.front(); q.pop();
+            cout << node << " ";
             for(auto &u : adj[node]) {
                 if(dist[u] == -1) {
                     dist[u] = dist[node] + 1;
                     q.push(u);
-                }
-                else if(dist[u] >= dist[node]) {
+                }else if(dist[u] >= dist[node]) {
                     ans = min(ans, 1 + dist[u] + dist[node]);
                 }
             }
         }
+        cout << "\n";
+        cout << ans << "\n";
     }
     if(ans == INT_MAX) {
         cout << -1 << "\n";
