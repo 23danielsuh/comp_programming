@@ -1,0 +1,59 @@
+Snap! for Jane: BCBA
+Snap! for Jane: DADCBCBA
+Snap! for John: CBAC
+Snap! for John: ADADCBAC
+Jane wins.
+
+Snap! for Jane: BCBA
+Snap! for Jane: DADCBCBA
+Snap! for Jane: CCBA
+Jane wins.
+
+Snap! for John: BABC
+Snap! for Jane: DABABCDC
+Snap! for John: CC
+Snap! for Jane: CCCD
+Jane wins.
+
+Snap! for John: BABC
+Snap! for Jane: DABABCDC
+Snap! for John: CC
+Snap! for John: CDCC
+Jane wins.
+
+Snap! for John: BABC
+Snap! for John: DCDABABC
+Snap! for John: AABC
+John wins.
+
+Snap! for Jane: BCBA
+Snap! for Jane: DADCBCBA
+Snap! for John: CBAC
+Snap! for John: ADADCBAC
+Jane wins.
+
+Snap! for John: BABC
+Snap! for John: DCDABABC
+Snap! for Jane: ABCA
+Snap! for John: CACDCDAB
+John wins.
+
+Snap! for John: BABC
+Snap! for John: DCDABABC
+Snap! for Jane: ABCA
+Snap! for John: CACDCDAB
+John wins.
+
+Snap! for John: BABC
+Snap! for Jane: DABABCDC
+Snap! for John: CC
+Snap! for Jane: CCCD
+Jane wins.
+
+Snap! for John: BABC
+Snap! for John: DCDABABC
+Snap! for Jane: ABCA
+Snap! for John: CACDCDAB
+John wins.
+
+Keeps going and going ...
