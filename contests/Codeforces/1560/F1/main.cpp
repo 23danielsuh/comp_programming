@@ -46,18 +46,12 @@ int32_t main() {
                 gen(i, 0, arr);
                 for(int x = 0; x < (int) pos.size(); x++) {
                     string temp = "";
-                    bool flag = 0, flag1 = 0;
                     for(int j = 0; j < (int) pos[x].size(); j++) {
                         if(pos[x][j]) {
                             temp += val1;
-                            flag = 1;
                         }else {
                             temp += val2;
-                            flag1 = 1;
                         }
-                    }
-                    if(!flag || !flag1) {
-                        continue;
                     }
                     if(to_string(stoll(temp)) != temp) {
                         continue;

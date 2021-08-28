@@ -1,0 +1,1 @@
+I have no clue what this problem was but it was the worst thing I've ever done, there's some corner case that I never found so I just copied the editorial. Stupid impl problem that had way too many corner cases
