@@ -1,87 +1,45 @@
-set laststatus=2
-set nocompatible
-set noshowmode
-set shortmess+=c
-filetype off
-
 :autocmd VimResized * wincmd =
 
 let mapleader=" "
-nmap <C-t> :Todoist CP<CR>
-nmap O O<space><BS>
-nmap o o<space><BS>
-
-autocmd CompleteDone * if !pumvisible() | pclose | endif
+inoremap <Esc> <space><BS><Esc>
 
 call plug#begin()
-"UI Plugins
 Plug 'sainnhe/gruvbox-material'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'lervag/vimtex'
+Plug 'hrsh7th/vim-vsnip'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'overcache/NeoSolarized'
 Plug 'neovim/nvim-lspconfig'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'kabouzeid/nvim-lspinstall'
-Plug 'Murtaza-Udaipurwala/gruvqueen'
-Plug 'hoob3rt/lualine.nvim'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'onsails/lspkind-nvim'
 Plug 'romgrk/todoist.nvim', { 'do': ':TodoistInstall' }
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
 
-"Editor plugins
 Plug 'scrooloose/nerdcommenter'
 Plug 'reedes/vim-pencil'
 Plug 'hrsh7th/nvim-compe'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/nvim-bufferline.lua'
 Plug 'numToStr/FTerm.nvim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'windwp/nvim-autopairs'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
-nnoremap <C-f> <cmd>Telescope find_files<cr>
-nnoremap <C-p> <cmd>Telescope buffers<cr>
-
-let todoist = {
-    \ 'icons': {
-\   'unchecked': '  ',
-\   'checked':   '  ',
-\   'loading':   '  ',
-\   'error':     '  ',
-\ },
-\  'defaultProject': 'Inbox',
-\  'useMarkdownSyntax': v:true,
-\}
-
+let g:airline_powerline_fonts=1
+let g:vimtex_view_general_viewer = 'evince'
+    
 nnoremap <silent>rn :Lspsaga rename<CR>
 
 set completeopt=menuone,noselect
 
-nnoremap <silent> [e :Lspsaga diagnostic_jump_next<CR>
-nnoremap <silent> ]e :Lspsaga diagnostic_jump_prev<CR>
-
-let g:compe = {}
-let g:compe.enabled = v:true
-let g:compe.autocomplete = v:true
-let g:compe.debug = v:false
-let g:compe.min_length = 1
-let g:compe.preselect = 'enable'
-let g:compe.throttle_time = 80
-let g:compe.source_timeout = 200
-let g:compe.resolve_timeout = 800
-let g:compe.incomplete_delay = 400
-let g:compe.max_abbr_width = 100
-let g:compe.max_kind_width = 100
-let g:compe.max_menu_width = 100
-let g:compe.documentation = v:true
-
-let g:compe.source = {}
-let g:compe.source.path = v:true
-let g:compe.source.buffer = v:true
-let g:compe.source.calc = v:true
-let g:compe.source.nvim_lsp = v:true
-let g:compe.source.nvim_lua = v:true
-let g:compe.source.vsnip = v:true
-let g:compe.source.ultisnips = v:true
-let g:compe.source.luasnip = v:true
+nnoremap <silent> ]e :Lspsaga diagnostic_jump_next<CR>
+nnoremap <silent> [e :Lspsaga diagnostic_jump_prev<CR>
 
 syntax on
 filetype plugin indent on
@@ -92,10 +50,9 @@ autocmd BufEnter * :SoftPencil
 "set clipboard=unnamedplus
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
-set backspace=indent,eol,start termguicolors softtabstop=4 shiftwidth=4 tabstop=4 expandtab number relativenumber ruler showcmd scrolloff=35 splitright splitbelow title nojoinspaces mouse=a background=dark signcolumn=yes encoding=UTF-8
+set backspace=indent,eol,start termguicolors softtabstop=4 shiftwidth=4 tabstop=4 expandtab number relativenumber ruler showcmd scrolloff=35 splitright splitbelow title nojoinspaces mouse=a background=light signcolumn=yes encoding=UTF-8
+colo NeoSolarized
 set shortmess+=c
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
 imap jk <Esc>
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
@@ -181,23 +138,11 @@ lua << EOF
           TypeParameter = ""
         },
     })
-    vim.g.gruvqueen_transparent_background = false
-
-    vim.g.gruvqueen_disable_bold = true
-    vim.g.gruvqueen_italic_comments = false
-    vim.g.gruvqueen_italic_keywords = false
-    vim.g.gruvqueen_italic_functions = false
-    vim.g.gruvqueen_italic_variables = false
-    vim.g.gruvqueen_invert_selection = false
-    vim.g.gruvqueen_style = 'mix' -- possible values: 'original', 'mix', 'material'
-
-    vim.cmd('colorscheme gruvqueen')
     require'nvim-treesitter.configs'.setup {
       ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
       ignore_install = { "javascript" }, -- List of parsers to ignore installing
       highlight = {
         enable = true,              -- false will disable the whole extension
-        disable = { "c", "rust" },  -- list of language that will be disabled
         -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
         -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
         -- Using this option may slow down your editor, and you may see some duplicate highlights.
@@ -205,8 +150,8 @@ lua << EOF
         additional_vim_regex_highlighting = false,
       },
       indent = {
-        enable = false
-      }
+          enable = false
+      },
     }
     require'lspinstall'.setup() -- important
 
@@ -214,8 +159,18 @@ lua << EOF
     for _, server in pairs(servers) do
       require'lspconfig'[server].setup{}
     end
+    local capabilities = vim.lsp.protocol.make_client_capabilities()
+    capabilities.textDocument.completion.completionItem.snippetSupport = true
+    capabilities.textDocument.completion.completionItem.resolveSupport = {
+      properties = {
+        'documentation',
+        'detail',
+        'additionalTextEdits',
+      }
+    }
     require'lspconfig'.clangd.setup {
-        cmd = { "/home/danielsuh/Downloads/clangd/clangd_12.0.0/bin/./clangd", "--background-index", "--header-insertion=never"}
+        cmd = { "clangd", "--background-index", "--header-insertion=never"},
+        capabilities = capabilities,
     }
     vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
       vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -223,9 +178,6 @@ lua << EOF
       }
     )
     require'colorizer'.setup()
-    require'lualine'.setup{
-        options = {theme = 'auto'}
-    }
     local saga = require 'lspsaga'
     saga.init_lsp_saga{
         code_action_prompt = {
@@ -244,24 +196,70 @@ lua << EOF
           }
         }
     }
-    require('FTerm').setup()
 
     local map = vim.api.nvim_set_keymap
     local opts = { noremap = true, silent = true }
 
     map('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>', opts)
     map('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>', opts)
+
+    require('compe').setup {
+      enabled = true,
+      autocomplete = true,
+      documentation = true,
+
+      source = {
+        path = true,
+        vsnip = true,
+        buffer = true,
+        nvim_lsp = true,
+      }
+    }
+
+    require('nvim-autopairs').setup({
+      disable_filetype = { "TelescopePrompt" , "vim" },
+      enable_check_bracket_line = true,
+    })
+
+    require("nvim-autopairs.completion.compe").setup({
+      map_cr = true, --  map <CR> on insert mode
+      map_complete = true -- it will auto insert `(` after select function or method item
+    })
+
+    --- Auto-space rules
+    local npairs = require'nvim-autopairs'
+    local Rule   = require'nvim-autopairs.rule'
+
+    npairs.add_rules {
+      Rule(' ', ' ')
+        :with_pair(function (opts)
+          local pair = opts.line:sub(opts.col, opts.col + 1)
+          return vim.tbl_contains({ '()', '[]', '{}' }, pair)
+        end),
+    }
 EOF
 
 nmap <C-t> <CMD>lua require("FTerm").toggle()<CR>
 tmap <C-t> <C-\><C-n> <CMD>lua require("FTerm").toggle()<CR>
-nnoremap <C-n> :NvimTreeToggle<CR>
-nnoremap <leader>r :NvimTreeRefresh<CR>
-nnoremap <leader>n :NvimTreeFindFile<CR>
 
 autocmd BufEnter * set cindent
 
-inoremap { {}<Left>
-inoremap {<CR> {<CR>}<Esc>O<space><BS>
-inoremap {{ {
-inoremap {} {}
+imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+
+imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'
+
+imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'
+imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'
+
+nmap        s   <Plug>(vsnip-select-text)
+xmap        s   <Plug>(vsnip-select-text)
+nmap        S   <Plug>(vsnip-cut-text)
+xmap        S   <Plug>(vsnip-cut-text)
+
+let g:vsnip_filetypes = {}
+let g:vsnip_filetypes.javascriptreact = ['javascript']
+let g:vsnip_filetypes.typescriptreact = ['typescript']
