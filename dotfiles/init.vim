@@ -4,7 +4,10 @@ let mapleader=" "
 inoremap <Esc> <space><BS><Esc>
 
 call plug#begin()
+Plug 'tomasiser/vim-code-dark'
 Plug 'sainnhe/gruvbox-material'
+Plug 'tanvirtin/monokai.nvim'
+Plug 'Shatur/neovim-ayu'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'lervag/vimtex'
 Plug 'hrsh7th/vim-vsnip'
@@ -14,6 +17,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'kabouzeid/nvim-lspinstall'
 Plug 'glepnir/lspsaga.nvim'
+Plug 'windwp/nvim-autopairs'
 Plug 'onsails/lspkind-nvim'
 Plug 'romgrk/todoist.nvim', { 'do': ':TodoistInstall' }
 Plug 'nvim-lua/plenary.nvim'
@@ -26,7 +30,6 @@ Plug 'akinsho/nvim-bufferline.lua'
 Plug 'numToStr/FTerm.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'windwp/nvim-autopairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 call plug#end()
@@ -50,8 +53,10 @@ autocmd BufEnter * :SoftPencil
 "set clipboard=unnamedplus
 nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>
 nnoremap  <silent> <s-tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>
-set backspace=indent,eol,start termguicolors softtabstop=4 shiftwidth=4 tabstop=4 expandtab number relativenumber ruler showcmd scrolloff=35 splitright splitbelow title nojoinspaces mouse=a background=light signcolumn=yes encoding=UTF-8
-colo NeoSolarized
+set backspace=indent,eol,start termguicolors softtabstop=4 shiftwidth=4 tabstop=4 expandtab number relativenumber ruler showcmd scrolloff=35 splitright splitbelow title nojoinspaces mouse=a signcolumn=yes encoding=UTF-8 background=dark
+syntax on
+colorscheme codedark
+let g:airline_theme = 'codedark'
 set shortmess+=c
 imap jk <Esc>
 nmap <C-h> <C-w>h
@@ -216,28 +221,19 @@ lua << EOF
       }
     }
 
-    require('nvim-autopairs').setup({
-      disable_filetype = { "TelescopePrompt" , "vim" },
-      enable_check_bracket_line = true,
-    })
-
     require("nvim-autopairs.completion.compe").setup({
       map_cr = true, --  map <CR> on insert mode
-      map_complete = true -- it will auto insert `(` after select function or method item
+      map_complete = true, -- it will auto insert `(` (map_char) after select function or method item
+      auto_select = false,  -- auto select first item
+      map_char = { -- modifies the function or method delimiter by filetypes
+        all = '(',
+        tex = '{'
+      }
     })
-
-    --- Auto-space rules
-    local npairs = require'nvim-autopairs'
-    local Rule   = require'nvim-autopairs.rule'
-
-    npairs.add_rules {
-      Rule(' ', ' ')
-        :with_pair(function (opts)
-          local pair = opts.line:sub(opts.col, opts.col + 1)
-          return vim.tbl_contains({ '()', '[]', '{}' }, pair)
-        end),
-    }
+    require('nvim-autopairs').setup{}
 EOF
+
+
 
 nmap <C-t> <CMD>lua require("FTerm").toggle()<CR>
 tmap <C-t> <C-\><C-n> <CMD>lua require("FTerm").toggle()<CR>
