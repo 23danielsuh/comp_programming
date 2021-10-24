@@ -1,0 +1,5 @@
+alias l="exa -l"
+alias n="~/Downloads/./nvim.appimage"
+alias d="~/./download_prob.py"
+alias melt="python3 ~/git/melt/start.py"
+alias c="bash ~/compile.sh"
