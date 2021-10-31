@@ -1,0 +1,141 @@
+\documentclass[11pt]{article}
+
+\newcommand{\numpy}{{\tt numpy}}    % tt font for numpy
+
+\topmargin -.5in
+\textheight 9in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\textwidth 6.35in
+
+\begin{document}
+
+% ========== Edit your name here
+\author{Daniel Suh}
+\title{November Mock Olympiad}
+\maketitle
+
+\medskip
+1000000000 5 100000000 100000000 100000000 100000000 
+% ========== Begin answering questions here
+\begin{enumerate}
+
+\item
+\textbf{Problem 1:}
+
+% ========== Just examples, please delete before submitting
+Farmer John has $N$ cows, and knows the milk production of all of their cows! Of course, because Farmer John is interested in producing the most milk possible, he wants to sell off the cow that has the least milk production. Because $N$ may be very large, Farmer John is not able to do this. Help Farmer John find the index of the cow with the minimum milk production!
+\\
+\\
+\textbf{Input format:}\\
+The first line contains a single integer $T$ ($1 \leq T \leq 100$) - number of testcases\\\\
+The first line of each testcase contains $N$ ($1 \leq N \leq 10^5$) - number of cows\\\\
+The second line of each testcase contains $N$ integers $a_1, a_2, a_3, ..., a_n$ ($0 \leq a_i \leq 10^3$) - the milk production of each cow
+\\\\
+\textbf{Output format:}\\
+For each test case, print one integer, the index of the cow with the minimum milk production. \\Separate each test case by a space.\\
+
+\textbf{Sample input:}
+\\
+2\\
+5\\
+10 9 6 8 100\\
+9\\
+9 8 100 1000 5 9 7 1 2948
+\\
+\\
+\textbf{Sample output:}
+\\
+3\\
+8\\
+\\
+\textbf{Explanation:}
+\\
+For the first testcase, the least milk production was 6. This cow is the 3rd cow from the left, and thus the answer is 3. Likewise, for the second testcase, the least milk production was 1. This cow is the 8th cow from the left, and the answer is 8.
+\\
+\pagebreak
+
+
+%---------------------------------------------
+
+\item
+\textbf{Problem 2:}
+
+Farmer John has $N$ buckets of milk. The $i$-th bucket contains $A_i$ gallons of milk.\\\\
+Because Farmer John needs to sell his milk, he needs to get all of the milk into one bucket. Farmer John chooses to put all of the milk inside of bucket $1$. Every bucket has an infinity capacity, so he does not need to worry about the buckets overflowing. Every single day, Farmer John can choose to take any bucket with milk in it, and pour $1$ gallon of that bucket into any adjacent bucket. As an example, Farmer John can choose bucket 2 as long as there is milk in it, and pour $1$ gallon of milk into either bucket $1$ or bucket $3$. More formally, or in more complicated terms, Farmer John can choose two indices $i$ and $j$ ($1 < i, j \leq N$), where $|i - j| = 1$ and $A_i > 0$, and apply the operation: $a_i = a_i - 1$ and $a_j = a_j + 1$. \\\\
+Unfortunately, the truck to come pick up bucket $1$ is coming in $D$ days! Remember, Farmer John can only apply this pouring operation at most once every day. Help Farmer John find the maximum number of gallons that can be in bucket 1 in $D$ days!
+\\
+\\
+\textbf{Input format:}\\
+The first line contains a single integer $T$ ($1 \leq T \leq 100$) - number of testcases\\\\
+The first line of each testcase contains $N$ and $D$ ($1 \leq N, D \leq 100$) - the number of buckets and days, respectively\\\\
+The second line of each testcase contains $N$ integers $a_1, a_2, a_3, ..., a_n$ ($0 \leq a_i \leq 10^3$) - the \\number of gallons in each bucket
+\\\\
+\textbf{Output format:}\\
+For each test case, print one integer, the index of the cow with the minimum milk production. \\Separate each test case by a space.\\
+
+\textbf{Sample input:}
+\\
+2\\
+4 5\\
+1 0 3 2\\
+1 8\\
+0
+\\
+\\
+\textbf{Sample output:}
+\\
+3\\
+0\\
+\\
+\textbf{Explanation:}
+\\
+For the first testcase, the following is one possible way to get 3 gallons of milk in bucket 1:
+\begin{itemize}
+    \item On day one, take one gallon from bucket 3 and place it in bucket 2.
+    \item On day two, take one gallon from bucket 3 and place it in bucket 2.
+    \item On day three, take one gallon from bucket 2 and place it in bucket 1.
+    \item On day four, take one gallon from bucket 2 and place it in bucket 1.
+    \item On day five, Farmer John can choose to rest and do nothing. 
+\end{itemize}
+\\
+\pagebreak
+
+\item
+\textbf{Problem 3 (VERY HARD):}
+
+Farmer John has been given $N$ cows, each with a certain color integer $A_i$. Farmer John has a special tool that allows him to clear out any subarray of cows with the same color every second. For example, if he was given $\{1, 5, 5, 5, 3, 9\}$, then he can clear out the range from $[2, 4]$, with his wand. The array now becomes $\{1, 3, 9\}$\\\\
+Remember, a subarray is any contiguous part of an array. 
+
+\\
+\\
+\textbf{Input format:}\\
+The first line contains a single integer $T$ ($1 \leq T \leq 100$) - number of testcases\\\\
+The first line of each testcase contains $N$ and $D$ ($1 \leq N, D \leq 100$) - the number of buckets and days, respectively\\\\
+The second line of each testcase contains $N$ integers $a_1, a_2, a_3, ..., a_n$ ($0 \leq a_i \leq 10^3$) - the \\number of gallons in each bucket
+\\\\
+\textbf{Output format:}\\
+For each test case, print one integer, the index of the cow with the minimum milk production. \\Separate each test case by a space.\\
+
+\textbf{Sample input:}
+\\
+2\\
+4 5\\
+1 0 3 2\\
+1 8\\
+0
+\\
+\\
+\textbf{Sample output:}
+\\
+3\\
+0\\
+\\
+
+% ========== Continue adding items as needed
+
+\end{enumerate}
+
+\end{document}
+\grid
+\grid
