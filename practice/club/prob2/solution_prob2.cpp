@@ -1,22 +1,25 @@
 #include <bits/stdc++.h>
-using namespace std;
 
-int N,D,a[105];
+using namespace std;
 
 int main(){
     int T; cin>>T;
     while (T--){
-        cin>>N>>D;
-        for (int i=1;i<=N;i++)
-            cin>>a[i];
-        while (D--){ //loop over D days
-            for (int i=2;i<=N;i++)
-	if (a[i]>0){ //move closest haybale over
-	    a[i]--;
-	    a[i-1]++;
-	    break;
-	}
+        int N, D; 
+        cin >> N >> D;
+        vector<int> A(N);
+        for(int i = 0; i < N; i++) {
+            cin >> A[i];
         }
-        cout<<a[1]<<endl;
+        for(int day = 0; day < D; day++) {
+            for(int i = 1; i < N; i++) {
+                if(A[i] > 0) { 
+                    A[i]--;
+                    A[i - 1]++;
+                    break;
+                }
+            }
+        }
+        cout << A[0] << " ";
     }
 }
