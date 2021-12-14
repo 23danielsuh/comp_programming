@@ -15,6 +15,8 @@ vim.cmd [[
 local use = require('packer').use
 require('packer').startup(function()
   use 'windwp/nvim-autopairs'
+  use 'lifepillar/vim-solarized8'
+  use 'altercation/vim-colors-solarized'
   use 'wbthomason/packer.nvim' -- Package manager
   use 'tpope/vim-fugitive' -- Git commands in nvim
   use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
@@ -24,8 +26,6 @@ require('packer').startup(function()
   use { 'scrooloose/nerdcommenter' }
   use 'joshdick/onedark.vim' -- Theme inspired by Atom
   use 'onsails/lspkind-nvim'
-  -- Add indentation guides even on blank lines
-  use 'lukas-reineke/indent-blankline.nvim'
   -- Add git related info in the signs columns and popups
   use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   -- Highlight, edit, and navigate code using a fast incremental parsing library
@@ -40,6 +40,59 @@ require('packer').startup(function()
   use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
 use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 end)
+
+
+local function prequire(...)
+local status, lib = pcall(require, ...)
+if (status) then return lib end
+    return nil
+end
+
+local luasnip = prequire('luasnip')
+local cmp = prequire("cmp")
+
+local t = function(str)
+    return vim.api.nvim_replace_termcodes(str, true, true, true)
+end
+
+local check_back_space = function()
+    local col = vim.fn.col('.') - 1
+    if col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') then
+        return true
+    else
+        return false
+    end
+end
+
+_G.tab_complete = function()
+    if cmp and cmp.visible() then
+        cmp.select_next_item()
+    elseif luasnip and luasnip.expand_or_jumpable() then
+        return t("<Plug>luasnip-expand-or-jump")
+    elseif check_back_space() then
+        return t "<Tab>"
+    else
+        cmp.complete()
+    end
+    return ""
+end
+_G.s_tab_complete = function()
+    if cmp and cmp.visible() then
+        cmp.select_prev_item()
+    elseif luasnip and luasnip.jumpable(-1) then
+        return t("<Plug>luasnip-jump-prev")
+    else
+        return t "<S-Tab>"
+    end
+    return ""
+end
+
+vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
+vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
+vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
+vim.api.nvim_set_keymap("i", "<C-E>", "<Plug>luasnip-next-choice", {})
+vim.api.nvim_set_keymap("s", "<C-E>", "<Plug>luasnip-next-choice", {})
 
 --Set highlight on search
 vim.o.hlsearch = true
@@ -67,9 +120,10 @@ vim.wo.signcolumn = 'yes'
 --Set colorscheme (order is important here)
 vim.o.termguicolors = true
 vim.g.onedark_terminal_italics = 2
-vim.cmd [[let g:gruvbox_bold=0]]
-vim.cmd [[let g:gruvbox_invert_selection=0]]
-vim.cmd [[colorscheme gruvbox]]
+--vim.cmd [[let g:gruvbox_bold=0]]
+--vim.cmd [[let g:gruvbox_invert_selection=0]]
+vim.cmd [[set background=light]]
+vim.cmd [[colorscheme solarized8]]
 
 
 --Remap space as leader key
@@ -132,7 +186,7 @@ endfunction
 
 set relativenumber scrolloff=25
 command! -nargs=0 CompileAndRunWithFlags call TermWrapper(printf('g++ -H -std=c++17 -O2 -Wall -Wextra -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -Wno-unused-result -Wno-sign-conversion -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -fsanitize=address -fsanitize=undefined -fno-sanitize-recover=all -fstack-protector -D_FORTIFY_SOURCE=2 %s -o ~/./a.out && ~/./a.out', expand('%:p')))
-command! -nargs=0 CompileAndRunwithoutFlags call TermWrapper(printf('g++ -std=c++17 %s -o ~/./a.out && ~/./a.out', expand('%:p')))
+command! -nargs=0 CompileAndRunWithoutFlags call TermWrapper(printf('g++ -std=c++17 %s -o ~/./a.out && ~/./a.out', expand('%:p')))
 command! -nargs=0 Run call TermWrapper(printf('~/./a.out'))
 
 autocmd FileType cpp nnoremap gc :w <bar> :CompileAndRunWithFlags<CR>
@@ -140,22 +194,17 @@ autocmd FileType cpp nnoremap gl :w <bar> :CompileAndRunWithoutFlags<CR>
 autocmd FileType cpp nnoremap gr :w <bar> :Run<CR>
 ]]
 
---Map blankline
-vim.g.indent_blankline_char = '┊'
-vim.g.indent_blankline_filetype_exclude = { 'help', 'packer' }
-vim.g.indent_blankline_buftype_exclude = { 'terminal', 'nofile' }
-vim.g.indent_blankline_show_trailing_blankline_indent = false
 
 -- Gitsigns
-require('gitsigns').setup {
-  signs = {
-    add = { hl = 'GitGutterAdd', text = '+' },
-    change = { hl = 'GitGutterChange', text = '~' },
-    delete = { hl = 'GitGutterDelete', text = '_' },
-    topdelete = { hl = 'GitGutterDelete', text = '‾' },
-    changedelete = { hl = 'GitGutterChange', text = '~' },
-  },
-}
+--require('gitsigns').setup {
+  --signs = {
+    --add = { hl = 'GitGutterAdd', text = '+' },
+    --change = { hl = 'GitGutterChange', text = '~' },
+    --delete = { hl = 'GitGutterDelete', text = '_' },
+    --topdelete = { hl = 'GitGutterDelete', text = '‾' },
+    --changedelete = { hl = 'GitGutterChange', text = '~' },
+  --},
+--}
 
 -- Telescope
 require('telescope').setup {
@@ -195,7 +244,7 @@ require('nvim-treesitter.configs').setup {
     },
   },
   indent = {
-    enable = true,
+    enable = false,
   },
   textobjects = {
     select = {
@@ -271,6 +320,13 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+	-- delay update diagnostics
+	update_in_insert = true,
+  }
+)
 
 nvim_lsp['clangd'].setup {
 cmd = {"clangd", "--background-index", "--header-insertion=never"},
