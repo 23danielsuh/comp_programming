@@ -196,6 +196,14 @@ W	dotfiles/macinit.vim	/^function! W()$/;"	f
 X	practice/cf/random/1700/4.cpp	/^int N, K, X = 0;$/;"	v	typeref:typename:int
 X	practice/usacoguide/gold/bfs/milkpails.cpp	/^int X, Y, K, M; $/;"	v	typeref:typename:int
 Y	practice/usacoguide/gold/bfs/milkpails.cpp	/^int X, Y, K, M; $/;"	v	typeref:typename:int
+["<S-Tab>"]	init.lua	/^    ["<S-Tab>"] = cmp.mapping(function(fallback)$/;"	f
+["<Tab>"]	init.lua	/^	["<Tab>"] = cmp.mapping(function(fallback)$/;"	f
+['[M']	init.lua	/^        ['[M'] = '@function.outer',$/;"	f
+['[m']	init.lua	/^        ['[m'] = '@function.outer',$/;"	f
+[']M']	init.lua	/^        [']M'] = '@function.outer',$/;"	f
+[']m']	init.lua	/^        [']m'] = '@function.outer',$/;"	f
+['af']	init.lua	/^        ['af'] = '@function.outer',$/;"	f
+['if']	init.lua	/^        ['if'] = '@function.inner',$/;"	f
 [e	.config/nvim/init.vim	/^nnoremap <silent> [e :Lspsaga diagnostic_jump_prev<CR>$/;"	m
 [e	dotfiles/init.vim	/^nnoremap <silent> [e :Lspsaga diagnostic_jump_prev<CR>$/;"	m
 [e	dotfiles/macinit.vim	/^nnoremap <silent> [e :Lspsaga diagnostic_jump_next<CR>$/;"	m
@@ -255,6 +263,7 @@ batch	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Problem 2. T
 batch	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	o
 batch	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	o
 batch	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	o
+before	init.lua	/^      before = function (entry, vim_item)$/;"	f
 beginNode	contests/USACO/dec_silver_2021/B/B.cpp	/^set<int> endNode, beginNode;$/;"	v	typeref:typename:set<int>
 bfs	contests/AtCoder/ABC211/D.cpp	/^void bfs() {$/;"	f	typeref:typename:void
 bfs	practice/usacoguide/gold/bfs/graphgirth2.cpp	/^void bfs(int x, int t){$/;"	f	typeref:typename:void
@@ -417,6 +426,7 @@ endl	contests/Codeforces/737/C.cpp	/^#define endl /;"	d	file:
 endl	practice/usacoguide/gold/bfs/graphgirth2.cpp	/^#define endl /;"	d	file:
 erase_edge	practice/cf/random/1700/4.cpp	/^void erase_edge() {$/;"	f	typeref:typename:void
 ex	practice/usacoguide/gold/bfs/monsters.cpp	/^pair<int, int> ex;$/;"	v	typeref:typename:pair<int,int>
+expand	init.lua	/^    expand = function(args)$/;"	f
 f	contests/Codeforces/1560/F1/main1.cpp	/^int f()$/;"	f	typeref:typename:int
 fact	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline mint fact(int n) { return facts[n]; }$/;"	f	struct:combi	typeref:typename:mint	file:
 fact	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline mint fact(int n) { return facts[n]; }$/;"	f	struct:combi	typeref:typename:mint	file:
@@ -558,6 +568,7 @@ group	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Problem 2. T
 group	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	s
 group	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	s
 group	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	s
+has_words_before	init.lua	/^local has_words_before = function()$/;"	f
 hexa	practice/cpbook/ch1/1.4/medium/11956.cpp	/^string hexa(int x) {$/;"	f	typeref:typename:string
 hi	contests/Codeforces/1552/1552A.cpp	/^int hi[5] = {1, 2, 3, 4, 5};$/;"	v	typeref:typename:int[5]
 id	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:batch
@@ -1390,6 +1401,7 @@ name	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Lia
 name	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	s
 ncr	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline mint ncr(int n, int k) { return n < k or k < 0 ? 0 : facts[n] * finvs[k] * finvs[n-k]; /;"	f	struct:combi	typeref:typename:mint	file:
 ncr	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline mint ncr(int n, int k) { return n < k or k < 0 ? 0 : facts[n] * finvs[k] * finvs[n-k]; /;"	f	struct:combi	typeref:typename:mint	file:
+on_attach	init.lua	/^local on_attach = function(_, bufnr)$/;"	f
 one_it	practice/usacoguide/gold/bfs/monsters.cpp	/^bool one_it = 0, possible = 0;$/;"	v	typeref:typename:bool
 ook	practice/usacoguide/gold/introDP/711C.cpp	/^#define ook /;"	d	file:
 operator !=	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline bool operator != (modint<MOD> other) const { return value != other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:

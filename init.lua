@@ -15,6 +15,7 @@ vim.cmd [[
 local use = require('packer').use
 require('packer').startup(function()
   use 'windwp/nvim-autopairs'
+  use 'preservim/vim-pencil'
   use 'lifepillar/vim-solarized8'
   use 'altercation/vim-colors-solarized'
   use 'wbthomason/packer.nvim' -- Package manager
@@ -35,64 +36,13 @@ require('packer').startup(function()
   use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp'
-  use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
   use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
 use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 end)
 
 
-local function prequire(...)
-local status, lib = pcall(require, ...)
-if (status) then return lib end
-    return nil
-end
 
-local luasnip = prequire('luasnip')
-local cmp = prequire("cmp")
-
-local t = function(str)
-    return vim.api.nvim_replace_termcodes(str, true, true, true)
-end
-
-local check_back_space = function()
-    local col = vim.fn.col('.') - 1
-    if col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') then
-        return true
-    else
-        return false
-    end
-end
-
-_G.tab_complete = function()
-    if cmp and cmp.visible() then
-        cmp.select_next_item()
-    elseif luasnip and luasnip.expand_or_jumpable() then
-        return t("<Plug>luasnip-expand-or-jump")
-    elseif check_back_space() then
-        return t "<Tab>"
-    else
-        cmp.complete()
-    end
-    return ""
-end
-_G.s_tab_complete = function()
-    if cmp and cmp.visible() then
-        cmp.select_prev_item()
-    elseif luasnip and luasnip.jumpable(-1) then
-        return t("<Plug>luasnip-jump-prev")
-    else
-        return t "<S-Tab>"
-    end
-    return ""
-end
-
-vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
-vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})
-vim.api.nvim_set_keymap("i", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
-vim.api.nvim_set_keymap("s", "<S-Tab>", "v:lua.s_tab_complete()", {expr = true})
-vim.api.nvim_set_keymap("i", "<C-E>", "<Plug>luasnip-next-choice", {})
-vim.api.nvim_set_keymap("s", "<C-E>", "<Plug>luasnip-next-choice", {})
 
 --Set highlight on search
 vim.o.hlsearch = true
@@ -104,7 +54,7 @@ vim.wo.number = true
 vim.o.mouse = 'a'
 
 --Enable break indent
-vim.o.breakindent = true
+--vim.o.breakindent = true
 
 --Save undo history
 vim.opt.undofile = true
@@ -120,10 +70,11 @@ vim.wo.signcolumn = 'yes'
 --Set colorscheme (order is important here)
 vim.o.termguicolors = true
 vim.g.onedark_terminal_italics = 2
---vim.cmd [[let g:gruvbox_bold=0]]
---vim.cmd [[let g:gruvbox_invert_selection=0]]
-vim.cmd [[set background=light]]
-vim.cmd [[colorscheme solarized8]]
+vim.cmd [[let g:gruvbox_bold=0]]
+--vim.cmd [[set tw=79]]
+vim.cmd [[let g:gruvbox_invert_selection=0]]
+vim.cmd [[set background=dark]]
+vim.cmd [[colorscheme gruvbox]]
 
 
 --Remap space as leader key
@@ -150,6 +101,7 @@ inoremap <Esc> <space><BS><Esc>
 imap jk <Esc>
 set sw=4 ts=4
 autocmd BufNewFile *.cpp 0r ~/comp_programming/code/template.cpp
+autocmd BufEnter * :SoftPencil
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
@@ -188,10 +140,14 @@ set relativenumber scrolloff=25
 command! -nargs=0 CompileAndRunWithFlags call TermWrapper(printf('g++ -H -std=c++17 -O2 -Wall -Wextra -pedantic -Wshadow -Wformat=2 -Wfloat-equal -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -Wno-unused-result -Wno-sign-conversion -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -fsanitize=address -fsanitize=undefined -fno-sanitize-recover=all -fstack-protector -D_FORTIFY_SOURCE=2 %s -o ~/./a.out && ~/./a.out', expand('%:p')))
 command! -nargs=0 CompileAndRunWithoutFlags call TermWrapper(printf('g++ -std=c++17 %s -o ~/./a.out && ~/./a.out', expand('%:p')))
 command! -nargs=0 Run call TermWrapper(printf('~/./a.out'))
+command! -nargs=0 CompilePython call TermWrapper(printf('python %s', expand('%:p')))
+command! -nargs=0 CompileWithIdk call TermWrapper(printf('python %s', expand('%:p')))
 
 autocmd FileType cpp nnoremap gc :w <bar> :CompileAndRunWithFlags<CR>
 autocmd FileType cpp nnoremap gl :w <bar> :CompileAndRunWithoutFlags<CR>
+autocmd FileType cpp nnoremap gt :w <bar> :CompileWithIdk<CR>
 autocmd FileType cpp nnoremap gr :w <bar> :Run<CR>
+autocmd FileType python nnoremap gc :w <bar> :CompilePython<CR>
 ]]
 
 
@@ -374,6 +330,11 @@ vim.o.completeopt = 'menuone,noselect'
 -- luasnip setup
 local luasnip = require 'luasnip'
 
+local has_words_before = function()
+  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+end
+
 -- nvim-cmp setup
 local lspkind = require('lspkind')
 local cmp = require 'cmp'
@@ -394,6 +355,27 @@ cmp.setup {
       behavior = cmp.ConfirmBehavior.Replace,
       select = false,
     },
+	["<Tab>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        luasnip.expand_or_jump()
+      elseif luasnip.expand_or_jumpable() then
+        luasnip.expand_or_jump()
+      elseif has_words_before() then
+        luasnip.expand_or_jump()
+      else
+        fallback()
+      end
+    end, { "i", "s" }),
+
+    ["<S-Tab>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        luasnip.jump(-1)
+      elseif luasnip.jumpable(-1) then
+        luasnip.jump(-1)
+      else
+        luasnip.jump(-1)
+      end
+    end, { "i", "s" }),
   },
   sources = {
     { name = 'nvim_lsp' },
@@ -424,3 +406,5 @@ cmp.event:on( 'confirm_done', cmp_autopairs.on_confirm_done({  map_char = { tex 
 cmp_autopairs.lisp[#cmp_autopairs.lisp+1] = "racket"
 
 require("bufferline").setup{}
+
+vim.cmd [[autocmd BufEnter * :set cindent]]
