@@ -9,13 +9,18 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+('n',	.config/nvim/init.vim	/^    map('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>', opts)$/;"	m
 ('n',	dotfiles/init.vim	/^    map('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>', opts)$/;"	m
 ('n',	dotfiles/macinit.vim	/^    map('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>', opts)$/;"	m
+('t',	.config/nvim/init.vim	/^    map('t', '<A-i>', '<C-\\\\><C-n><CMD>lua require("FTerm").toggle()<CR>', opts)$/;"	m
 ('t',	dotfiles/init.vim	/^    map('t', '<A-i>', '<C-\\\\><C-n><CMD>lua require("FTerm").toggle()<CR>', opts)$/;"	m
 ('t',	dotfiles/macinit.vim	/^    map('t', '<A-i>', '<C-\\\\><C-n><CMD>lua require("FTerm").toggle()<CR>', opts)$/;"	m
+0	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o	array:tests
+0	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	o	array:tests
 0	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	o	array:tests
 0	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	o	array:tests
 0	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	o	array:tests
+0	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o	array:tests
 0	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	o	array:tests
 0	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	o	array:tests
 0	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	o	array:tests
@@ -27,17 +32,15 @@
 0	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	o	array:tests
 1	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	o	array:tests
 1	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	o	array:tests
-<C-Space>	.config/nvim/init.vim	/^inoremap <silent><expr> <C-Space> compe#complete()$/;"	m
-<C-d>	.config/nvim/init.vim	/^inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })$/;"	m
-<C-e>	.config/nvim/init.vim	/^inoremap <silent><expr> <C-e>     compe#close('<C-e>')$/;"	m
-<C-f>	.config/nvim/init.vim	/^inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })$/;"	m
 <C-f>	dotfiles/macinit.vim	/^nnoremap <C-f> <cmd>Telescope find_files<cr>$/;"	m
 <C-h>	.compilingScripts/init.vim	/^nmap <C-h> <C-w>h$/;"	m
 <C-h>	.config/nvim/init.vim	/^nmap <C-h> <C-w>h$/;"	m
 <C-h>	dotfiles/init.vim	/^nmap <C-h> <C-w>h$/;"	m
 <C-h>	dotfiles/macinit.vim	/^nmap <C-h> <C-w>h$/;"	m
 <C-j>	.compilingScripts/init.vim	/^nmap <C-j> <C-w>j$/;"	m
+<C-j>	.config/nvim/init.vim	/^imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'$/;"	m
 <C-j>	.config/nvim/init.vim	/^nmap <C-j> <C-w>j$/;"	m
+<C-j>	.config/nvim/init.vim	/^smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'$/;"	m
 <C-j>	dotfiles/init.vim	/^imap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'$/;"	m
 <C-j>	dotfiles/init.vim	/^nmap <C-j> <C-w>j$/;"	m
 <C-j>	dotfiles/init.vim	/^smap <expr> <C-j>   vsnip#expandable()  ? '<Plug>(vsnip-expand)'         : '<C-j>'$/;"	m
@@ -47,21 +50,28 @@
 <C-k>	dotfiles/init.vim	/^nmap <C-k> <C-w>k$/;"	m
 <C-k>	dotfiles/macinit.vim	/^nmap <C-k> <C-w>k$/;"	m
 <C-l>	.compilingScripts/init.vim	/^nmap <C-l> <C-w>l$/;"	m
+<C-l>	.config/nvim/init.vim	/^imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'$/;"	m
 <C-l>	.config/nvim/init.vim	/^nmap <C-l> <C-w>l$/;"	m
+<C-l>	.config/nvim/init.vim	/^smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'$/;"	m
 <C-l>	dotfiles/init.vim	/^imap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'$/;"	m
 <C-l>	dotfiles/init.vim	/^nmap <C-l> <C-w>l$/;"	m
 <C-l>	dotfiles/init.vim	/^smap <expr> <C-l>   vsnip#available(1)  ? '<Plug>(vsnip-expand-or-jump)' : '<C-l>'$/;"	m
 <C-l>	dotfiles/macinit.vim	/^nmap <C-l> <C-w>l$/;"	m
 <C-n>	dotfiles/macinit.vim	/^nnoremap <C-n> :NvimTreeToggle<CR>$/;"	m
 <C-p>	dotfiles/macinit.vim	/^nnoremap <C-p> <cmd>Telescope buffers<cr>$/;"	m
+<C-t>	.config/nvim/init.vim	/^nmap <C-t> <CMD>lua require("FTerm").toggle()<CR>$/;"	m
 <C-t>	dotfiles/init.vim	/^nmap <C-t> <CMD>lua require("FTerm").toggle()<CR>$/;"	m
 <C-t>	dotfiles/macinit.vim	/^nmap <C-t> :Todoist CP<CR>$/;"	m
 <C-t>	dotfiles/macinit.vim	/^nmap <C-t> <CMD>lua require("FTerm").toggle()<CR>$/;"	m
-<CR>	.config/nvim/init.vim	/^inoremap <silent><expr> <CR>      compe#confirm('<CR>')$/;"	m
+<Esc>	.config/nvim/init.vim	/^inoremap <Esc> <space><BS><Esc>$/;"	m
 <Esc>	dotfiles/init.vim	/^inoremap <Esc> <space><BS><Esc>$/;"	m
 <Esc>	dotfiles/macinit.vim	/^inoremap <Esc> <space><BS><Esc>$/;"	m
+<S-Tab>	.config/nvim/init.vim	/^imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'$/;"	m
+<S-Tab>	.config/nvim/init.vim	/^smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'$/;"	m
 <S-Tab>	dotfiles/init.vim	/^imap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'$/;"	m
 <S-Tab>	dotfiles/init.vim	/^smap <expr> <S-Tab> vsnip#jumpable(-1)  ? '<Plug>(vsnip-jump-prev)'      : '<S-Tab>'$/;"	m
+<Tab>	.config/nvim/init.vim	/^imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'$/;"	m
+<Tab>	.config/nvim/init.vim	/^smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'$/;"	m
 <Tab>	dotfiles/init.vim	/^imap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'$/;"	m
 <Tab>	dotfiles/init.vim	/^smap <expr> <Tab>   vsnip#jumpable(1)   ? '<Plug>(vsnip-jump-next)'      : '<Tab>'$/;"	m
 <leader>n	dotfiles/macinit.vim	/^nnoremap <leader>n :NvimTreeFindFile<CR>$/;"	m
@@ -74,6 +84,7 @@
 <tab>	.config/nvim/init.vim	/^nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR/;"	m
 <tab>	dotfiles/init.vim	/^nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR/;"	m
 <tab>	dotfiles/macinit.vim	/^nnoremap  <silent>   <tab>  :if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR/;"	m
+A	practice/cf/random/1700/4.cpp	/^vector<int> A, subtree_xor, dist;$/;"	v	typeref:typename:vector<int>
 A	practice/cf/random/pink/main.cpp	/^vector<int> A, cnt;$/;"	v	typeref:typename:vector<int>
 A	practice/usacoguide/gold/dsu/moocast/main.cpp	/^vector<pair<int, int>> A;$/;"	v	typeref:typename:vector<pair<int,int>>
 A	practice/usacoguide/silver/binsearch/sabotage.cpp	/^vector<int> A;$/;"	v	typeref:typename:vector<int>
@@ -86,6 +97,8 @@ CompileAndRunWithFlags	dotfiles/init.vim	/^command! -nargs=0 CompileAndRunWithFl
 CompileAndRunWithFlags	dotfiles/macinit.vim	/^command! -nargs=0 CompileAndRunWithFlags call TermWrapper(printf('g++ -std=c++17 -O2 -Wall -Wext/;"	c
 DSU	code/dsu.hpp	/^	DSU(int W) { e = vector<int>(W, -1); }$/;"	f	struct:DSU
 DSU	code/dsu.hpp	/^struct DSU {$/;"	s
+DSU	contests/USACO/dec_silver_2021/B/brute.cpp	/^	DSU(int N) { e = vector<int>(N, -1); }$/;"	f	struct:DSU	file:
+DSU	contests/USACO/dec_silver_2021/B/brute.cpp	/^struct DSU {$/;"	s	file:
 DSU	practice/usacoguide/gold/dsu/closing/main.cpp	/^	DSU(int N) { e = vector<int>(N, -1); }$/;"	f	struct:DSU	file:
 DSU	practice/usacoguide/gold/dsu/closing/main.cpp	/^struct DSU {$/;"	s	file:
 DSU	practice/usacoguide/gold/dsu/moocast/main.cpp	/^	DSU(int N) { e = vector<int>(N, -1); }$/;"	f	struct:DSU	file:
@@ -102,7 +115,7 @@ DSU	practice/usacoguide/silver/idk/lirs/main.cpp	/^	DSU(int N) { e = vector<int>
 DSU	practice/usacoguide/silver/idk/lirs/main.cpp	/^struct DSU {$/;"	s	file:
 F	contests/Codeforces/737/C.cpp	/^#define F /;"	d	file:
 INF	practice/usacoguide/gold/introDP/711C.cpp	/^const ll INF = ll(1e18);$/;"	v	typeref:typename:const ll
-K	practice/cf/random/main.cpp	/^int N, K;$/;"	v	typeref:typename:int
+K	practice/cf/random/1700/4.cpp	/^int N, K, X = 0;$/;"	v	typeref:typename:int
 K	practice/usacoguide/gold/bfs/milkpails.cpp	/^int X, Y, K, M; $/;"	v	typeref:typename:int
 K	practice/usacoguide/gold/divisibility/powerproducts.cpp	/^int N, K;$/;"	v	typeref:typename:int
 M	contests/Codeforces/737/C.cpp	/^const int M = (int)1000000007;$/;"	v	typeref:typename:const int
@@ -115,16 +128,20 @@ MOD	contests/AtCoder/ABC211/C.cpp	/^const int MOD = 1e9 + 7;$/;"	v	typeref:typen
 MOD	contests/AtCoder/ABC211/D.cpp	/^const int mxN = 2e5 + 5, MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
 MOD	contests/LIT2021/D.cpp	/^const int MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
 MOD	practice/cf/DP/1091D.cpp	/^const int MOD = 998244353;$/;"	v	typeref:typename:const int
+MOD	practice/cf/random/1700/6.cpp	/^int MOD = 5;$/;"	v	typeref:typename:int
+MOD	practice/cf/random/i_hate_math_problems/1422C.cpp	/^const int MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
+MOD	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^const int MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
 MOD	practice/usacoguide/gold/introDP/711C.cpp	/^const int MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
 MOD	practice/usacoguide/gold/introDP/arraydescription.cpp	/^const int MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
 MOD	practice/usacoguide/gold/introDP/gridpaths.cpp	/^const int mxN = 1005, MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
 MOD	practice/usacoguide/gold/modular/exponentiation.cpp	/^#define MOD /;"	d	file:
 MOD	practice/usacoguide/gold/modular/santasbot.cpp	/^#define MOD /;"	d	file:
 MOD	practice/usacoguide/gold/modular/test.cpp	/^#define MOD /;"	d	file:
+N	contests/Codeforces/1609/B.cpp	/^int N, Q;$/;"	v	typeref:typename:int
 N	contests/Codeforces/737/C.cpp	/^const int N = (int)998244353 ;$/;"	v	typeref:typename:const int
 N	contests/LIT2021/C.cpp	/^int N, M;$/;"	v	typeref:typename:int
 N	practice/cf/DP/knap2.cpp	/^const int N = 505;$/;"	v	typeref:typename:const int
-N	practice/cf/random/main.cpp	/^int N, K;$/;"	v	typeref:typename:int
+N	practice/cf/random/1700/4.cpp	/^int N, K, X = 0;$/;"	v	typeref:typename:int
 N	practice/cf/random/pink/main.cpp	/^int N;$/;"	v	typeref:typename:int
 N	practice/club/prob3/solution_prob3.cpp	/^int N;$/;"	v	typeref:typename:int
 N	practice/cpbook/ch1/1.6/game/easier/10189/main.cpp	/^int N, M;$/;"	v	typeref:typename:int
@@ -145,15 +162,20 @@ N	practice/usacoguide/silver/idk/maze/main.cpp	/^int N;$/;"	v	typeref:typename:i
 NAME_PATTERN	.compilingScripts/download_prob.py	/^NAME_PATTERN = re.compile(r'^[A-Z][0-9]*\\b')$/;"	v
 P	contests/LIT2021/C.cpp	/^struct P {$/;"	s	file:
 Point	practice/usacoguide/gold/bfs/cownav.cpp	/^struct Point {$/;"	s	file:
-Run	.config/nvim/init.vim	/^command! -nargs=0 Run call TermWrapper(printf('.\/a.out'))$/;"	c
+Q	contests/Codeforces/1609/B.cpp	/^int N, Q;$/;"	v	typeref:typename:int
+Run	.config/nvim/init.vim	/^command! -nargs=0 Run call TermWrapper(printf('~\/.\/a.out'))$/;"	c
 Run	dotfiles/init.vim	/^command! -nargs=0 Run call TermWrapper(printf('~\/.\/a.out'))$/;"	c
 Run	dotfiles/macinit.vim	/^command! -nargs=0 Run call TermWrapper(printf('~\/.\/a.out'))$/;"	c
+S	.config/nvim/init.vim	/^nmap        S   <Plug>(vsnip-cut-text)$/;"	m
+S	.config/nvim/init.vim	/^xmap        S   <Plug>(vsnip-cut-text)$/;"	m
+S	contests/Codeforces/1609/B.cpp	/^string S;$/;"	v	typeref:typename:string
 S	contests/Codeforces/737/C.cpp	/^#define S /;"	d	file:
 S	dotfiles/init.vim	/^nmap        S   <Plug>(vsnip-cut-text)$/;"	m
 S	dotfiles/init.vim	/^xmap        S   <Plug>(vsnip-cut-text)$/;"	m
 S	practice/cpbook/ch1/1.6/chess/10284/main.cpp	/^string S;$/;"	v	typeref:typename:string
 S	practice/usacoguide/gold/bfs/mecho/main.cpp	/^int N, S; $/;"	v	typeref:typename:int
 S	practice/usacoguide/gold/bfs/mechonew/main.cpp	/^int N, S; $/;"	v	typeref:typename:int
+SIZE	practice/cf/random/1700/testing.cpp	/^template <typename T, size_t N> int SIZE(const T (&t)[N]){ return N; } template<typename T> int /;"	f	typeref:typename:int
 T	practice/usacoguide/gold/SP/flightdiscount.cpp	/^	using T = pair<ll, pair<int, int>>; priority_queue<T, vector<T>, greater<T>> pq;$/;"	t	function:dijkstra	typeref:typename:pair<ll,pair<int,int>>	file:
 T	practice/usacoguide/gold/SP/pump.cpp	/^	using T = pair<ll,int>; priority_queue<T,vector<T>,greater<T>> pq;$/;"	t	function:dijkstra	typeref:typename:pair<ll,int>	file:
 T	practice/usacoguide/gold/SP/visitfj.cpp	/^    using T = pair<ll, pair<int, int>>; priority_queue<T, vector<T>, greater<T>> pq;$/;"	t	function:dijkstra	typeref:typename:pair<ll,pair<int,int>>	file:
@@ -171,17 +193,24 @@ W	dotfiles/init.vim	/^command! W call W()$/;"	c
 W	dotfiles/init.vim	/^function! W()$/;"	f
 W	dotfiles/macinit.vim	/^command! W call W()$/;"	c
 W	dotfiles/macinit.vim	/^function! W()$/;"	f
+X	practice/cf/random/1700/4.cpp	/^int N, K, X = 0;$/;"	v	typeref:typename:int
 X	practice/usacoguide/gold/bfs/milkpails.cpp	/^int X, Y, K, M; $/;"	v	typeref:typename:int
 Y	practice/usacoguide/gold/bfs/milkpails.cpp	/^int X, Y, K, M; $/;"	v	typeref:typename:int
+[e	.config/nvim/init.vim	/^nnoremap <silent> [e :Lspsaga diagnostic_jump_prev<CR>$/;"	m
 [e	dotfiles/init.vim	/^nnoremap <silent> [e :Lspsaga diagnostic_jump_prev<CR>$/;"	m
 [e	dotfiles/macinit.vim	/^nnoremap <silent> [e :Lspsaga diagnostic_jump_next<CR>$/;"	m
 \\numpy	practice/club/november_olympiad_probs.tex	/^\\newcommand{\\numpy}{{\\tt numpy}}    % tt font for numpy$/;"	C
+]e	.config/nvim/init.vim	/^nnoremap <silent> ]e :Lspsaga diagnostic_jump_next<CR>$/;"	m
 ]e	dotfiles/init.vim	/^nnoremap <silent> ]e :Lspsaga diagnostic_jump_next<CR>$/;"	m
 ]e	dotfiles/macinit.vim	/^nnoremap <silent> ]e :Lspsaga diagnostic_jump_prev<CR>$/;"	m
+__anon9783b4e80102	contests/USACO/dec_silver_2021/A/AAA.cpp	/^	sort(ranges.begin(), ranges.end(), [](const pair<pair<int, int>, int> &a, const pair<pair<int, /;"	f	function:solve	file:
 __anonaf660fc70102	practice/usacoguide/gold/dsu/mootube/main.cpp	/^    sort(edges.begin(), edges.end(), [](const pair<pair<int, int>, int> &a, const pair<pair<int,/;"	f	function:solve	file:
 __anonaf660fc70202	practice/usacoguide/gold/dsu/mootube/main.cpp	/^    sort(queries.begin(), queries.end(), [](const pair<pair<int, int>, int> &a, const pair<pair</;"	f	function:solve	file:
 a	practice/cpbook/ch1/1.6/reallife/medium/01091/ac.cpp	/^int n, a[maxn], b[maxn];$/;"	v	typeref:typename:int[]
+adj	contests/AtCoder/231/D.cpp	/^vector<int> adj[mxN];$/;"	v	typeref:typename:vector<int>[]
 adj	contests/AtCoder/ABC211/D.cpp	/^vector<int> adj[mxN];$/;"	v	typeref:typename:vector<int>[]
+adj	practice/cf/random/1700/4.cpp	/^vector<vector<int>> adj;$/;"	v	typeref:typename:vector<vector<int>>
+adj	practice/cf/random/1700/test1.cpp	/^vector<int> adj[mxN];$/;"	v	typeref:typename:vector<int>[]
 adj	practice/usacoguide/gold/SP/flightdiscount.cpp	/^vector<pair<int, int>> adj[mxN];$/;"	v	typeref:typename:vector<pair<int,int>>[]
 adj	practice/usacoguide/gold/bfs/graphgirth.cpp	/^vector<int> adj[mxN];$/;"	v	typeref:typename:vector<int>[]
 adj	practice/usacoguide/gold/bfs/graphgirth2.cpp	/^vector<int> adj[2505];$/;"	v	typeref:typename:vector<int>[2505]
@@ -196,8 +225,10 @@ alicia_start	contests/LIT2021/C.cpp	/^P alicia_start, kevin_start, alicia_end, k
 all	contests/Codeforces/737/C.cpp	/^#define all(/;"	d	file:
 allowed_move	practice/cpbook/ch1/1.6/chess/00225/main.cpp	/^bool allowed_move() {$/;"	f	typeref:typename:bool
 analyze	practice/cpbook/ch1/1.6/reallife/medium/tenis/main.cpp	/^pair<bool, int> analyze(int score1, int score2, int set_num, string player1, string player2) {$/;"	f	typeref:typename:pair<bool,int>
+ans	contests/AtCoder/231/D.cpp	/^vector<int> ans;$/;"	v	typeref:typename:vector<int>
 ans	contests/LIT2021/C.cpp	/^int ans = INT_MAX;$/;"	v	typeref:typename:int
-ans	practice/cf/random/new2.cpp	/^string ans;$/;"	v	typeref:typename:string
+ans	contests/USACO/dec_silver_2021/B/B.cpp	/^int ans = 0;$/;"	v	typeref:typename:int
+ans	practice/cf/random/i_hate_math_problems/1336B.cpp	/^int ans = LLONG_MAX;$/;"	v	typeref:typename:int
 ans	practice/cpbook/ch1/1.4/medium/11956.cpp	/^int ans[mxN];$/;"	v	typeref:typename:int[]
 ans	practice/cpbook/ch1/1.6/chess/chess/main.cpp	/^vector<int> ans;$/;"	v	typeref:typename:vector<int>
 ans	practice/usacoguide/gold/SP/visitfj.cpp	/^ll ans = LLONG_MAX;$/;"	v	typeref:typename:ll
@@ -207,9 +238,12 @@ ans	practice/usacoguide/silver/idk/maze/main.cpp	/^int ans = 0;$/;"	v	typeref:ty
 answers	practice/usacoguide/silver/idk/maze/main.cpp	/^set<int> answers;$/;"	v	typeref:typename:set<int>
 attack	practice/cpbook/ch1/1.6/chess/10284/main.cpp	/^bool attack[8][8];$/;"	v	typeref:typename:bool[8][8]
 b	practice/cpbook/ch1/1.6/reallife/medium/01091/ac.cpp	/^int n, a[maxn], b[maxn];$/;"	v	typeref:typename:int[]
+batch	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o
+batch	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	o
 batch	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	o
 batch	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	o
 batch	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	o
+batch	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o
 batch	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	o
 batch	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	o
 batch	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	o
@@ -221,6 +255,7 @@ batch	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Problem 2. T
 batch	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	o
 batch	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	o
 batch	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	o
+beginNode	contests/USACO/dec_silver_2021/B/B.cpp	/^set<int> endNode, beginNode;$/;"	v	typeref:typename:set<int>
 bfs	contests/AtCoder/ABC211/D.cpp	/^void bfs() {$/;"	f	typeref:typename:void
 bfs	practice/usacoguide/gold/bfs/graphgirth2.cpp	/^void bfs(int x, int t){$/;"	f	typeref:typename:void
 bfs	practice/usacoguide/gold/bfs/milkpails.cpp	/^int bfs() {$/;"	f	typeref:typename:int
@@ -239,10 +274,12 @@ binpow	practice/usacoguide/gold/modular/test.cpp	/^ll binpow(ll x, ll n, ll m) {
 bishop	practice/cpbook/ch1/1.6/chess/10284/main.cpp	/^void bishop(int row, int col, bool black) {$/;"	f	typeref:typename:void
 board	practice/usacoguide/gold/introDP/king2.cpp	/^ll dp[mxN][mxN], board[mxN][mxN];$/;"	v	typeref:typename:ll[][]
 board	practice/usacoguide/silver/idk/maze/main.cpp	/^int board[3][3];$/;"	v	typeref:typename:int[3][3]
+bufferline	.config/nvim/init.vim	/^let bufferline = get(g:, 'bufferline', {})$/;"	v
 bufferline	dotfiles/init.vim	/^let bufferline = get(g:, 'bufferline', {})$/;"	v
 bufferline	dotfiles/macinit.vim	/^let bufferline = get(g:, 'bufferline', {})$/;"	v
 c	practice/usacoguide/gold/introDP/711C.cpp	/^int c[N];$/;"	v	typeref:typename:int[]
 calc	practice/cf/DP/knap2.cpp	/^int calc(int l, int r){	$/;"	f	typeref:typename:int
+calc	practice/cf/random/i_hate_math_problems/1336B.cpp	/^void calc(vector<int> &A, vector<int> &B, vector<int> &C) {$/;"	f	typeref:typename:void
 can	practice/cpbook/ch1/1.6/chess/chess/main.cpp	/^void can(pair<int, int> go, pair<int, int> original) {$/;"	f	typeref:typename:void
 carSpot	practice/cpbook/ch1/1.4/medium/garage.cpp	/^int carSpot[mxN];$/;"	v	typeref:typename:int[]
 cdiv	code/floordiv.hpp	/^int cdiv(int a, int b) { return a \/ b + ((a ^ b) > 0 && a % b); }$/;"	f	typeref:typename:int
@@ -255,6 +292,7 @@ cdiv	practice/cpbook/ch1/1.6/chess/00225/main.cpp	/^int cdiv(int a, int b) { ret
 cdiv	practice/cpbook/ch1/1.6/chess/00696/main.cpp	/^int cdiv(int a, int b) { return a \/ b + ((a ^ b) > 0 && a % b); }$/;"	f	typeref:typename:int
 cdiv	practice/cpbook/ch1/1.6/reallife/medium/00161/main.cpp	/^int cdiv(int a, int b) { return a \/ b + ((a ^ b) > 0 && a % b); }$/;"	f	typeref:typename:int
 cdiv	practice/cpbook/ch2/2.2/1D/13181/main.cpp	/^int cdiv(int a, int b) { return a \/ b + ((a ^ b) > 0 && a % b); }$/;"	f	typeref:typename:int
+check	contests/Codeforces/1609/B.cpp	/^bool check(int pos, char c) {$/;"	f	typeref:typename:bool
 check	contests/LIT2021/C.cpp	/^void check(P a_next, P a, P k_next, P k) {$/;"	f	typeref:typename:void
 check	practice/cf/random/pink/main.cpp	/^bool check(int x) {$/;"	f	typeref:typename:bool
 check	practice/cpbook/ch1/1.6/chess/10284/main.cpp	/^bool check(int row, int col) {$/;"	f	typeref:typename:bool
@@ -277,25 +315,41 @@ check	practice/usacoguide/silver/idk/maze/main.cpp	/^bool check(int x) {$/;"	f	t
 cmp	practice/cpbook/ch1/1.4/medium/poi.cpp	/^bool cmp(const int &a, const int &b) {$/;"	f	typeref:typename:bool
 cmp	practice/cpbook/ch2/2.2/1D/11222/main.cpp	/^bool cmp(const pair<vector<int>, int> &a, const pair<vector<int>, int> &b) {$/;"	f	typeref:typename:bool
 cmp	practice/usacoguide/silver/greedy/cielduel.cpp	/^bool cmp(const pair<string, int> &a, const pair<string, int> &b) {$/;"	f	typeref:typename:bool
+cnt	practice/cf/random/1700/test2.cpp	/^int grid[mxN][mxN], cnt[1005];$/;"	v	typeref:typename:int[1005]
 cnt	practice/cf/random/pink/main.cpp	/^vector<int> A, cnt;$/;"	v	typeref:typename:vector<int>
-cnt	practice/cf/random/test.cpp	/^int grid[mxN][mxN], cnt[1005];$/;"	v	typeref:typename:int[1005]
-cnt	practice/cf/random/test2.cpp	/^int grid[mxN][mxN], cnt[1005];$/;"	v	typeref:typename:int[1005]
 cnt	practice/cpbook/ch2/2.2/1D/11222/main.cpp	/^int cnt[mxN];$/;"	v	typeref:typename:int[]
+combi	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  combi(int _n): n(_n), facts(_n), finvs(_n), invs(_n){$/;"	f	struct:combi	file:
+combi	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^struct combi{$/;"	s	file:
+combi	practice/cf/random/i_hate_math_problems/testing.cpp	/^  combi(int _n): n(_n), facts(_n), finvs(_n), invs(_n){$/;"	f	struct:combi	file:
+combi	practice/cf/random/i_hate_math_problems/testing.cpp	/^struct combi{$/;"	s	file:
 compilationstuff	.compilingScripts/README.md	/^# compilationstuff$/;"	c
+compute_xor	practice/cf/random/1700/4.cpp	/^int compute_xor(int s, int prev = -1) {$/;"	f	typeref:typename:int
+constructBITree	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^int *constructBITree(vector<int> &arr, int n)$/;"	f	typeref:typename:int *
 cont	practice/cpbook/ch1/1.6/chess/00225/main.cpp	/^bool cont() {$/;"	f	typeref:typename:bool
 cost	practice/usacoguide/gold/SP/visitfj.cpp	/^int cost[105][105];$/;"	v	typeref:typename:int[105][105]
 cost	practice/usacoguide/gold/SP/visitfj/main.cpp	/^int cost[105][105];$/;"	v	typeref:typename:int[105][105]
 cost	practice/usacoguide/gold/introDP/711C.cpp	/^ll cost[N][N];$/;"	v	typeref:typename:ll[][]
 count	contests/AtCoder/ABC211/C.cpp	/^int count(string a, string b)$/;"	f	typeref:typename:int
+createSets	contests/USACO/dec_silver_2021/B/B.cpp	/^void createSets(int s, vector<vector<int>> &adj_list, vector<bool> &vis) {$/;"	f	typeref:typename:void
 ct	practice/usacoguide/gold/bfs/graphgirth2.cpp	/^int ct = 0;$/;"	v	typeref:typename:int
-dfs	practice/cf/random/test1.cpp	/^void dfs(int v) {$/;"	f	typeref:typename:void
+dbg	practice/cf/random/1700/testing.cpp	/^#define dbg(/;"	d	file:
+dbgm	practice/cf/random/1700/testing.cpp	/^#define dbgm(/;"	d	file:
+dbgm	practice/cf/random/1700/testing.cpp	/^template <typename T, size_t N> int SIZE(const T (&t)[N]){ return N; } template<typename T> int /;"	f	typeref:typename:void
+deepest	practice/cf/random/1700/4.cpp	/^int deepest = INT_MIN; pair<int, int> rem;$/;"	v	typeref:typename:int
+dfs	contests/AtCoder/231/D.cpp	/^void dfs(int s) {$/;"	f	typeref:typename:void
+dfs	practice/cf/random/1700/1476D.cpp	/^void dfs(int u, vector<vector<int>> &visited, vector<vector<int>> &adj_1, vector<vector<int>> &a/;"	f	typeref:typename:void
+dfs	practice/cf/random/1700/test1.cpp	/^void dfs(int s) {$/;"	f	typeref:typename:void
+dfs1	contests/USACO/dec_silver_2021/B/B_new.cpp	/^void dfs1(int s, vector<vector<int>> &adj_list, vector<bool> &vis, set<int> &cur) {$/;"	f	typeref:typename:void
+dfs2	contests/USACO/dec_silver_2021/B/B_new.cpp	/^void dfs2(int s, vector<vector<int>> &adj_list, vector<bool> &vis, set<int> &component_1, set<in/;"	f	typeref:typename:void
 dif	practice/usacoguide/silver/orderedsets/coveredpoints.cpp	/^int dif[mxN];$/;"	v	typeref:typename:int[]
+diff	contests/USACO/dec_silver_2021/C/C.cpp	/^int diff[mxN], elements[mxN];$/;"	v	typeref:typename:int[]
 dijkstra	practice/usacoguide/gold/SP/flightdiscount.cpp	/^void dijkstra(int src) { $/;"	f	typeref:typename:void
 dijkstra	practice/usacoguide/gold/SP/pump.cpp	/^void dijkstra(int src, int min_flow) { \/\/ Source and destination$/;"	f	typeref:typename:void
 dijkstra	practice/usacoguide/gold/SP/visitfj.cpp	/^void dijkstra(pair<int, int> src) { \/\/ Source and destination$/;"	f	typeref:typename:void
 dijkstra	practice/usacoguide/gold/SP/visitfj/main.cpp	/^void dijkstra(pair<int, int> src) { \/\/ Source and destination$/;"	f	typeref:typename:void
 direction	practice/usacoguide/gold/bfs/cownav.cpp	/^	int first, second, direction;$/;"	m	struct:Point	typeref:typename:int	file:
 dist	contests/AtCoder/ABC211/D.cpp	/^int dp[mxN], dist[mxN];$/;"	v	typeref:typename:int[]
+dist	practice/cf/random/1700/4.cpp	/^vector<int> A, subtree_xor, dist;$/;"	v	typeref:typename:vector<int>
 dist	practice/usacoguide/gold/SP/flightdiscount.cpp	/^int dist[mxN][2]; $/;"	v	typeref:typename:int[][2]
 dist	practice/usacoguide/gold/SP/pump.cpp	/^ll dist[100000];$/;"	v	typeref:typename:ll[100000]
 dist	practice/usacoguide/gold/SP/shortestroutesii.cpp	/^int dist[mxN][mxN], edges[mxN][mxN];$/;"	v	typeref:typename:int[][]
@@ -307,12 +361,15 @@ dist	practice/usacoguide/gold/bfs/mecho/main.cpp	/^int dist[mxN][mxN];$/;"	v	typ
 dist	practice/usacoguide/gold/bfs/mechonew/main.cpp	/^int dist[mxN][mxN];$/;"	v	typeref:typename:int[][]
 dist	practice/usacoguide/gold/bfs/milkpails.cpp	/^int dist[105][105];$/;"	v	typeref:typename:int[105][105]
 dist	practice/usacoguide/gold/bfs/monsters.cpp	/^int dist[mxN][mxN];$/;"	v	typeref:typename:int[][]
+dist1	contests/USACO/dec_silver_2021/B/B_new.cpp	/^int dist1 = 1e16, dist2 = 1e16;$/;"	v	typeref:typename:int
+dist2	contests/USACO/dec_silver_2021/B/B_new.cpp	/^int dist1 = 1e16, dist2 = 1e16;$/;"	v	typeref:typename:int
+distToNode1	contests/USACO/dec_silver_2021/B/B.cpp	/^int distToNode1 = LLONG_MAX, distToNodeN = LLONG_MAX;$/;"	v	typeref:typename:int
+distToNodeN	contests/USACO/dec_silver_2021/B/B.cpp	/^int distToNode1 = LLONG_MAX, distToNodeN = LLONG_MAX;$/;"	v	typeref:typename:int
 do_POST	.compilingScripts/download_prob.py	/^        def do_POST(self):$/;"	m	class:listen_once.CompetitiveCompanionHandler
 down	practice/cpbook/ch1/1.6/card/10388/main2.cpp	/^char up[2][100], down[2][100];$/;"	v	typeref:typename:char[2][100]
 dp	contests/AtCoder/ABC211/D.cpp	/^int dp[mxN], dist[mxN];$/;"	v	typeref:typename:int[]
 dp	practice/cf/DP/knap1.cpp	/^int64_t dp[mxN][mxW];$/;"	v	typeref:typename:int64_t[][]
 dp	practice/cf/DP/knap2.cpp	/^int dp[N][N];$/;"	v	typeref:typename:int[][]
-dp	practice/cf/random/test1.cpp	/^int dp[mxN];$/;"	v	typeref:typename:int[]
 dp	practice/club/prob3/solution_prob3.cpp	/^int dp[mxN][mxN];$/;"	v	typeref:typename:int[][]
 dp	practice/usacoguide/gold/introDP/711C.cpp	/^ll dp[N][N][N];$/;"	v	typeref:typename:ll[][][]
 dp	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi dp[mxN][105];$/;"	v	typeref:typename:mi[][105]
@@ -344,6 +401,7 @@ dy	practice/usacoguide/gold/bfs/swap.cpp	/^int dy[4] = {1, 0, -1, 0};$/;"	v	type
 dy	practice/usacoguide/gold/dsu/tractor/main.cpp	/^int dx[4] = {-1, 0, 1, 0}, dy[4] = {0, -1, 0, 1};$/;"	v	typeref:typename:int[4]
 dy	practice/usacoguide/silver/idk/maze/main.cpp	/^int dy[] = {1, 0, -1, 0};$/;"	v	typeref:typename:int[]
 e	code/dsu.hpp	/^	vector<int> e;$/;"	m	struct:DSU	typeref:typename:vector<int>
+e	contests/USACO/dec_silver_2021/B/brute.cpp	/^	vector<int> e;$/;"	m	struct:DSU	typeref:typename:vector<int>	file:
 e	practice/usacoguide/gold/dsu/closing/main.cpp	/^	vector<int> e;$/;"	m	struct:DSU	typeref:typename:vector<int>	file:
 e	practice/usacoguide/gold/dsu/moocast/main.cpp	/^	vector<int> e;$/;"	m	struct:DSU	typeref:typename:vector<int>	file:
 e	practice/usacoguide/gold/dsu/mootube/main.cpp	/^	vector<int> e;$/;"	m	struct:DSU	typeref:typename:vector<int>	file:
@@ -352,12 +410,19 @@ e	practice/usacoguide/gold/dsu/tractor/mountain.cpp	/^	vector<int> e;$/;"	m	stru
 e	practice/usacoguide/gold/dsu/wormhole/main.cpp	/^	vector<int> e;$/;"	m	struct:DSU	typeref:typename:vector<int>	file:
 e	practice/usacoguide/silver/idk/lirs/main.cpp	/^	vector<int> e;$/;"	m	struct:DSU	typeref:typename:vector<int>	file:
 edges	practice/usacoguide/gold/SP/shortestroutesii.cpp	/^int dist[mxN][mxN], edges[mxN][mxN];$/;"	v	typeref:typename:int[][]
+elements	contests/USACO/dec_silver_2021/C/C.cpp	/^int diff[mxN], elements[mxN];$/;"	v	typeref:typename:int[]
+endNode	contests/USACO/dec_silver_2021/B/B.cpp	/^set<int> endNode, beginNode;$/;"	v	typeref:typename:set<int>
 end_vis	practice/cpbook/ch1/1.6/chess/chess/realsol.cpp	/^bool start_vis[9][9], end_vis[9][9];$/;"	v	typeref:typename:bool[9][9]
 endl	contests/Codeforces/737/C.cpp	/^#define endl /;"	d	file:
 endl	practice/usacoguide/gold/bfs/graphgirth2.cpp	/^#define endl /;"	d	file:
+erase_edge	practice/cf/random/1700/4.cpp	/^void erase_edge() {$/;"	f	typeref:typename:void
 ex	practice/usacoguide/gold/bfs/monsters.cpp	/^pair<int, int> ex;$/;"	v	typeref:typename:pair<int,int>
 f	contests/Codeforces/1560/F1/main1.cpp	/^int f()$/;"	f	typeref:typename:int
+fact	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline mint fact(int n) { return facts[n]; }$/;"	f	struct:combi	typeref:typename:mint	file:
+fact	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline mint fact(int n) { return facts[n]; }$/;"	f	struct:combi	typeref:typename:mint	file:
 factor	code/factor.hpp	/^vector<int> factor(int n) {$/;"	f	typeref:typename:vector<int>
+facts	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  int n; vector<mint> facts, finvs, invs;$/;"	m	struct:combi	typeref:typename:vector<mint>	file:
+facts	practice/cf/random/i_hate_math_problems/testing.cpp	/^  int n; vector<mint> facts, finvs, invs;$/;"	m	struct:combi	typeref:typename:vector<mint>	file:
 fastio	contests/Codeforces/737/D.cpp	/^void fastio()$/;"	f	typeref:typename:void
 fastio	contests/Codeforces/737/E.cpp	/^void fastio()$/;"	f	typeref:typename:void
 fbo	practice/usacoguide/gold/introDP/711C.cpp	/^#define fbo /;"	d	file:
@@ -386,18 +451,26 @@ fileName	practice/usacoguide/gold/dsu/mootube/problem.json	/^{"name": "Problem 1
 fileName	practice/usacoguide/gold/dsu/mootube/problem.json	/^{"name": "Problem 1. MooTube", "group": "USACO - USACO 2018 January Contest, Gold", "url": "http/;"	s	object:output
 fileName	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	s	object:input
 fileName	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	s	object:output
+findGreater	contests/USACO/dec_silver_2021/C/C_new.cpp	/^int findGreater(vector<int> &nums, int K) {$/;"	f	typeref:typename:int
+findLess	contests/USACO/dec_silver_2021/C/C_new.cpp	/^int findLess(vector<int> &nums, int K) {$/;"	f	typeref:typename:int
+find_closest1	contests/USACO/dec_silver_2021/B/B_new.cpp	/^int find_closest1(int x, set<int> &cur) {$/;"	f	typeref:typename:int
+find_dist	practice/cf/random/1700/4.cpp	/^void find_dist() {$/;"	f	typeref:typename:void
+find_dists	contests/USACO/dec_silver_2021/B/B.cpp	/^void find_dists(int s, vector<vector<int>> &adj_list, vector<bool> &vis) {$/;"	f	typeref:typename:void
+find_edge	practice/cf/random/1700/4.cpp	/^void find_edge(int s, int prev = -1) {$/;"	f	typeref:typename:void
 find_slope	practice/usacoguide/gold/divisibility/dilucandkaeya.cpp	/^pair<int, int> find_slope(int a, int b) {$/;"	f	typeref:typename:pair<int,int>
 finish	practice/usacoguide/gold/bfs/mecho/main.cpp	/^pair<int, int> start, finish;$/;"	v	typeref:typename:pair<int,int>
 finish	practice/usacoguide/gold/bfs/mechonew/main.cpp	/^pair<int, int> start, finish;$/;"	v	typeref:typename:pair<int,int>
+finv	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline mint finv(int n) { return finvs[n]; }$/;"	f	struct:combi	typeref:typename:mint	file:
+finv	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline mint finv(int n) { return finvs[n]; }$/;"	f	struct:combi	typeref:typename:mint	file:
+finvs	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  int n; vector<mint> facts, finvs, invs;$/;"	m	struct:combi	typeref:typename:vector<mint>	file:
+finvs	practice/cf/random/i_hate_math_problems/testing.cpp	/^  int n; vector<mint> facts, finvs, invs;$/;"	m	struct:combi	typeref:typename:vector<mint>	file:
 first	practice/usacoguide/gold/bfs/cownav.cpp	/^	int first, second, direction;$/;"	m	struct:Point	typeref:typename:int	file:
+floodfill	practice/cf/random/1700/1618E/main.cpp	/^void floodfill(int r, int c) {$/;"	f	typeref:typename:void
 floodfill	practice/usacoguide/silver/idk/maze/main.cpp	/^void floodfill(int r, int c, int hash) {$/;"	f	typeref:typename:void
 from	practice/usacoguide/gold/bfs/monsters.cpp	/^pair<int, int> from[mxN][mxN];$/;"	v	typeref:typename:pair<int,int>[][]
-g	practice/cf/random/test1.cpp	/^vector<int> g[mxN];$/;"	v	typeref:typename:vector<int>[]
 g:airline#extensions#tabline#enabled	.compilingScripts/init.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
-g:airline#extensions#tabline#enabled	.config/nvim/init.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
 g:airline#extensions#tabline#enabled	dotfiles/macinit.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
 g:airline_powerline_fonts	.compilingScripts/init.vim	/^let g:airline_powerline_fonts = 1$/;"	v
-g:airline_powerline_fonts	.config/nvim/init.vim	/^let g:airline_powerline_fonts = 1$/;"	v
 g:airline_powerline_fonts	dotfiles/init.vim	/^let g:airline_powerline_fonts=1$/;"	v
 g:airline_powerline_fonts	dotfiles/macinit.vim	/^let g:airline_powerline_fonts = 1$/;"	v
 g:airline_theme	dotfiles/init.vim	/^let g:airline_theme = 'codedark'$/;"	v
@@ -425,6 +498,9 @@ g:compe	dotfiles/macinit.vim	/^let g:compe.source.vsnip = v:true$/;"	v
 g:compe	dotfiles/macinit.vim	/^let g:compe.source_timeout = 200$/;"	v
 g:compe	dotfiles/macinit.vim	/^let g:compe.throttle_time = 80$/;"	v
 g:vimtex_view_general_viewer	dotfiles/init.vim	/^let g:vimtex_view_general_viewer = 'evince'$/;"	v
+g:vsnip_filetypes	.config/nvim/init.vim	/^let g:vsnip_filetypes = {}$/;"	v
+g:vsnip_filetypes	.config/nvim/init.vim	/^let g:vsnip_filetypes.javascriptreact = ['javascript']$/;"	v
+g:vsnip_filetypes	.config/nvim/init.vim	/^let g:vsnip_filetypes.typescriptreact = ['typescript']$/;"	v
 g:vsnip_filetypes	dotfiles/init.vim	/^let g:vsnip_filetypes = {}$/;"	v
 g:vsnip_filetypes	dotfiles/init.vim	/^let g:vsnip_filetypes.javascriptreact = ['javascript']$/;"	v
 g:vsnip_filetypes	dotfiles/init.vim	/^let g:vsnip_filetypes.typescriptreact = ['typescript']$/;"	v
@@ -436,6 +512,7 @@ gcd	contests/Codeforces/737/C.cpp	/^ll int gcd(ll int a  , ll int b){$/;"	f	type
 gen	contests/Codeforces/1560/F1/main.cpp	/^void gen(int n, int i, int arr[]) {$/;"	f	typeref:typename:void
 gen	contests/Codeforces/1560/F1/test1.cpp	/^void gen(int n, int i, vector<int> arr) {$/;"	f	typeref:typename:void
 get	code/dsu.hpp	/^	int get(int x) { return e[x] < 0 ? x : e[x] = get(e[x]); }$/;"	f	struct:DSU	typeref:typename:int
+get	contests/USACO/dec_silver_2021/B/brute.cpp	/^	int get(int x) { return e[x] < 0 ? x : e[x] = get(e[x]); }$/;"	f	struct:DSU	typeref:typename:int	file:
 get	practice/usacoguide/gold/dsu/closing/main.cpp	/^	int get(int x) { return e[x] < 0 ? x : e[x] = get(e[x]); }$/;"	f	struct:DSU	typeref:typename:int	file:
 get	practice/usacoguide/gold/dsu/moocast/main.cpp	/^	int get(int x) { return e[x] < 0 ? x : e[x] = get(e[x]); }$/;"	f	struct:DSU	typeref:typename:int	file:
 get	practice/usacoguide/gold/dsu/mootube/main.cpp	/^	int get(int x) { return e[x] < 0 ? x : e[x] = get(e[x]); }$/;"	f	struct:DSU	typeref:typename:int	file:
@@ -443,12 +520,12 @@ get	practice/usacoguide/gold/dsu/tractor/main.cpp	/^	int get(int x) { return e[x
 get	practice/usacoguide/gold/dsu/tractor/mountain.cpp	/^	int get(int x) { return e[x] < 0 ? x : e[x] = get(e[x]); }$/;"	f	struct:DSU	typeref:typename:int	file:
 get	practice/usacoguide/gold/dsu/wormhole/main.cpp	/^	int get(int x) { return e[x] < 0 ? x : e[x] = get(e[x]); }$/;"	f	struct:DSU	typeref:typename:int	file:
 get	practice/usacoguide/silver/idk/lirs/main.cpp	/^	int get(int x) { return e[x] < 0 ? x : e[x] = get(e[x]); }$/;"	f	struct:DSU	typeref:typename:int	file:
+getSum	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^int getSum(int BITree[], int index)$/;"	f	typeref:typename:int
 get_prob_name	.compilingScripts/download_prob.py	/^def get_prob_name(data):$/;"	f
 graph	practice/usacoguide/gold/SP/pump.cpp	/^vector<pair<int, pair<int, int>>> graph[100000];$/;"	v	typeref:typename:vector<pair<int,pair<int,int>>>[100000]
 graph	practice/usacoguide/gold/SP/visitfj.cpp	/^vector<pair<pair<int, int>, int>> graph[105][105];$/;"	v	typeref:typename:vector<pair<pair<int,int>,int>>[105][105]
 graph	practice/usacoguide/gold/SP/visitfj/main.cpp	/^vector<pair<pair<int, int>, int>> graph[105][105];$/;"	v	typeref:typename:vector<pair<pair<int,int>,int>>[105][105]
-grid	practice/cf/random/test.cpp	/^int grid[mxN][mxN], cnt[1005];$/;"	v	typeref:typename:int[][]
-grid	practice/cf/random/test2.cpp	/^int grid[mxN][mxN], cnt[1005];$/;"	v	typeref:typename:int[][]
+grid	practice/cf/random/1700/test2.cpp	/^int grid[mxN][mxN], cnt[1005];$/;"	v	typeref:typename:int[][]
 grid	practice/cpbook/ch1/1.6/chess/10284/main.cpp	/^char grid[8][8];$/;"	v	typeref:typename:char[8][8]
 grid	practice/cpbook/ch1/1.6/game/easier/10189/main.cpp	/^char grid[mxN][mxN];$/;"	v	typeref:typename:char[][]
 grid	practice/cpbook/ch2/2.2/2D/11581/main.cpp	/^int grid[mxN][mxN], store_grid[mxN][mxN];$/;"	v	typeref:typename:int[][]
@@ -464,9 +541,12 @@ grid	practice/usacoguide/gold/introDP/slalom.cpp	/^int grid[mxN][mxN], dp[mxN][m
 grid	practice/usacoguide/silver/idk/maze/main.cpp	/^pair<char, pair<int, int>> grid[mxN][mxN];$/;"	v	typeref:typename:pair<char,pair<int,int>>[][]
 grid1	contests/LIT2021/C.cpp	/^char grid1[mxN][mxN], grid2[mxN][mxN];$/;"	v	typeref:typename:char[][]
 grid2	contests/LIT2021/C.cpp	/^char grid1[mxN][mxN], grid2[mxN][mxN];$/;"	v	typeref:typename:char[][]
+group	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s
+group	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	s
 group	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s
 group	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	s
 group	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	s
+group	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s
 group	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	s
 group	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	s
 group	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	s
@@ -478,12 +558,14 @@ group	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Problem 2. T
 group	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	s
 group	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	s
 group	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	s
-heads	practice/cf/random/main.cpp	/^vector<int> heads(vector<int> Q, vector<int> P) {$/;"	f	typeref:typename:vector<int>
 hexa	practice/cpbook/ch1/1.4/medium/11956.cpp	/^string hexa(int x) {$/;"	f	typeref:typename:string
 hi	contests/Codeforces/1552/1552A.cpp	/^int hi[5] = {1, 2, 3, 4, 5};$/;"	v	typeref:typename:int[5]
+id	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:batch
+id	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	s	object:batch
 id	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s	object:batch
 id	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	s	object:batch
 id	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	s	object:batch
+id	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:batch
 id	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	s	object:batch
 id	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	s	object:batch
 id	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	s	object:batch
@@ -497,6 +579,12 @@ id	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars
 id	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	s	object:batch
 ii	practice/usacoguide/gold/introDP/711C.cpp	/^typedef pair<int,int> ii;$/;"	t	typeref:typename:pair<int,int>	file:
 in_adj	practice/usacoguide/gold/introDP/time.cpp	/^vector<int> adj[mxN], in_adj[mxN];$/;"	v	typeref:typename:vector<int>[]
+indexed_multiset	contests/AtCoder/231/C.cpp	/^typedef tree<long long, null_type, less_equal<>, rb_tree_tag, tree_order_statistics_node_update>/;"	t	typeref:typename:tree<long long,null_type,less_equal<>,rb_tree_tag,tree_order_statistics_node_update>	file:
+indexed_multiset	practice/cf/random/1700/2.cpp	/^typedef tree<long long, null_type, less_equal<>, rb_tree_tag, tree_order_statistics_node_update>/;"	t	typeref:typename:tree<long long,null_type,less_equal<>,rb_tree_tag,tree_order_statistics_node_update>	file:
+input	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o
+input	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:tests.0
+input	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	o
+input	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	s	object:tests.0
 input	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	o
 input	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s	object:tests.0
 input	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s	object:tests.1
@@ -504,6 +592,8 @@ input	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Cod
 input	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	s	object:tests.0
 input	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	o
 input	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	s	object:tests.0
+input	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o
+input	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:tests.0
 input	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	o
 input	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	s	object:tests.0
 input	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	o
@@ -527,19 +617,44 @@ input	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Ma
 input	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	s	object:tests.0
 int	contests/AtCoder/215/B/main.cpp	/^#define int /;"	d	file:
 int	contests/AtCoder/225/C.cpp	/^#define int /;"	d	file:
+int	contests/AtCoder/231/C.cpp	/^#define int /;"	d	file:
 int	contests/AtCoder/ABC211/C.cpp	/^#define int /;"	d	file:
 int	contests/Codeforces/1560/B/main.cpp	/^#define int /;"	d	file:
 int	contests/Codeforces/1560/C/main.cpp	/^#define int /;"	d	file:
 int	contests/Codeforces/1560/D/main.cpp	/^#define int /;"	d	file:
 int	contests/Codeforces/1560/F1/main.cpp	/^#define int /;"	d	file:
+int	contests/Codeforces/1609/A.cpp	/^#define int /;"	d	file:
+int	contests/Codeforces/1609/C.cpp	/^#define int /;"	d	file:
+int	contests/Codeforces/1609/D.cpp	/^#define int /;"	d	file:
 int	contests/Codeforces/737/A.cpp	/^#define int /;"	d	file:
 int	contests/LIT2021/B.cpp	/^#define int /;"	d	file:
+int	contests/USACO/dec_silver_2021/A/A.cpp	/^#define int /;"	d	file:
+int	contests/USACO/dec_silver_2021/A/AA.cpp	/^#define int /;"	d	file:
+int	contests/USACO/dec_silver_2021/A/AAA.cpp	/^#define int /;"	d	file:
+int	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^#define int /;"	d	file:
+int	contests/USACO/dec_silver_2021/A/a_save.cpp	/^#define int /;"	d	file:
+int	contests/USACO/dec_silver_2021/A/a_testing.cpp	/^#define int /;"	d	file:
+int	contests/USACO/dec_silver_2021/A/restart_A.cpp	/^#define int /;"	d	file:
+int	contests/USACO/dec_silver_2021/B/B.cpp	/^#define int /;"	d	file:
+int	contests/USACO/dec_silver_2021/B/B_new.cpp	/^#define int /;"	d	file:
+int	contests/USACO/dec_silver_2021/B/brute.cpp	/^#define int /;"	d	file:
+int	contests/USACO/dec_silver_2021/C/C_full.cpp	/^#define int /;"	d	file:
 int	practice/cf/DP/knap1.cpp	/^#define int /;"	d	file:
 int	practice/cf/DP/knap2.cpp	/^#define int /;"	d	file:
-int	practice/cf/random/main.cpp	/^#define int /;"	d	file:
-int	practice/cf/random/new.cpp	/^#define int /;"	d	file:
-int	practice/cf/random/test.cpp	/^#define int /;"	d	file:
-int	practice/cf/random/test2.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/1700/1618E/main.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/1700/2.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/1700/4.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/1700/6.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/1700/8.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/1700/brute.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/1700/test.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/1700/test2.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/1700/test3.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/i_hate_math_problems/1336B.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/i_hate_math_problems/1368D.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/i_hate_math_problems/1400B.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/i_hate_math_problems/1422C.cpp	/^#define int /;"	d	file:
+int	practice/cf/random/i_hate_math_problems/1451D.cpp	/^#define int /;"	d	file:
 int	practice/cpbook/ch1/1.4/medium/basicprogramming1.cpp	/^#define int /;"	d	file:
 int	practice/cpbook/ch1/1.4/medium/garage.cpp	/^#define int /;"	d	file:
 int	practice/cpbook/ch2/2.2/1D/pivot/main.cpp	/^#define int /;"	d	file:
@@ -561,9 +676,12 @@ int	practice/usacoguide/gold/introDP/time.cpp	/^#define int /;"	d	file:
 int	practice/usacoguide/gold/modular/santasbot.cpp	/^#define int /;"	d	file:
 int	practice/usacoguide/gold/modular/test.cpp	/^#define int /;"	d	file:
 int	practice/usacoguide/silver/orderedsets/coveredpoints.cpp	/^#define int /;"	d	file:
+interactive	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	b
+interactive	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	b
 interactive	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	b
 interactive	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	b
 interactive	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	b
+interactive	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	b
 interactive	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	b
 interactive	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	b
 interactive	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	b
@@ -575,11 +693,22 @@ interactive	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Proble
 interactive	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	b
 interactive	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	b
 interactive	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	b
+inv	practice/cf/random/1700/6.cpp	/^mi inv(mi a) { assert(a.v != 0); return pow(a, MOD - 2); }$/;"	f	typeref:typename:mi
+inv	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi inv(mi a) { assert(a.v != 0); return pow(a,MOD-2); }$/;"	f	typeref:typename:mi
+inv	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline mint inv(int n) { return invs[n]; }$/;"	f	struct:combi	typeref:typename:mint	file:
+inv	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  modint<MOD> inv() const { return pow(MOD - 2); }  \/\/ MOD must be a prime$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+inv	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline mint inv(int n) { return invs[n]; }$/;"	f	struct:combi	typeref:typename:mint	file:
+inv	practice/cf/random/i_hate_math_problems/testing.cpp	/^  modint<MOD> inv() const { return pow(MOD - 2); }  \/\/ MOD must be a prime$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 inv	practice/usacoguide/gold/divisibility/powerproducts.cpp	/^vector<pair<int, int>> inv(vector<pair<int, int>> cur) {$/;"	f	typeref:typename:vector<pair<int,int>>
 inv	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi inv(mi a) { assert(a.v != 0); return pow(a,MOD-2); }$/;"	f	typeref:typename:mi
+invs	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  int n; vector<mint> facts, finvs, invs;$/;"	m	struct:combi	typeref:typename:vector<mint>	file:
+invs	practice/cf/random/i_hate_math_problems/testing.cpp	/^  int n; vector<mint> facts, finvs, invs;$/;"	m	struct:combi	typeref:typename:vector<mint>	file:
+java	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o	object:languages
+java	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	o	object:languages
 java	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	o	object:languages
 java	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	o	object:languages
 java	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	o	object:languages
+java	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o	object:languages
 java	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	o	object:languages
 java	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	o	object:languages
 java	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	o	object:languages
@@ -606,9 +735,14 @@ king_pos	practice/cpbook/ch1/1.6/chess/00225/main.cpp	/^pair<int, int> queen_pos
 king_vis	practice/cpbook/ch1/1.6/chess/00225/main.cpp	/^bool queen_vis[8][8], king_vis[8][8], queen_vis1[8][8];$/;"	v	typeref:typename:bool[8][8]
 knight	practice/cpbook/ch1/1.6/chess/10284/main.cpp	/^void knight(int row, int col, bool black) {$/;"	f	typeref:typename:void
 l	contests/Codeforces/737/C.cpp	/^#define l /;"	d	file:
+l	practice/cf/random/1700/test1.cpp	/^int l, r;$/;"	v	typeref:typename:int
+l_v_l_v_l	practice/cf/random/1700/testing.cpp	/^template <typename T, size_t N> int SIZE(const T (&t)[N]){ return N; } template<typename T> int /;"	v	typeref:typename:int
+languages	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o
+languages	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	o
 languages	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	o
 languages	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	o
 languages	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	o
+languages	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o
 languages	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	o
 languages	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	o
 languages	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	o
@@ -627,7 +761,6 @@ len	practice/cpbook/ch1/1.6/card/10388/main2.cpp	/^int pu[2], pd[2], len[2];$/;"
 listen_many	.compilingScripts/download_prob.py	/^def listen_many(*, num_items=None, timeout=None):$/;"	f
 listen_once	.compilingScripts/download_prob.py	/^def listen_once(*, timeout=None):$/;"	f
 ll	code/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
-ll	code/template.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/AtCoder/214/A/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/AtCoder/214/B/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/AtCoder/214/C/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
@@ -642,6 +775,11 @@ ll	contests/AtCoder/225/C.cpp	/^typedef long long ll;$/;"	t	typeref:typename:lon
 ll	contests/AtCoder/225/D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/AtCoder/225/E.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/AtCoder/225/F.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/AtCoder/231/A.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/AtCoder/231/B.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/AtCoder/231/C.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/AtCoder/231/D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/AtCoder/231/E.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/AtCoder/ABC211/A.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/AtCoder/ABC211/B.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/AtCoder/ABC211/C.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
@@ -665,11 +803,29 @@ ll	contests/Codeforces/1560/E/main.cpp	/^typedef long long ll;$/;"	t	typeref:typ
 ll	contests/Codeforces/1560/F1/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1560/F1/test1.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1560/F1/test2.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/Codeforces/1609/A.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/Codeforces/1609/B.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/Codeforces/1609/C.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/Codeforces/1609/D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/737/A.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/737/C.cpp	/^#define ll /;"	d	file:
 ll	contests/LIT2021/B.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/LIT2021/C.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/LIT2021/D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/A/A.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/A/AA.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/A/AAA.cpp	/^typedef long long ll; $/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/A/A_sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/A/a_save.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/A/a_testing.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/A/restart_A.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/B/B.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/B/B_new.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/B/brute.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/C/C.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/C/C_full.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/USACO/dec_silver_2021/C/C_new.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/cf/DP/1051E1.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/cf/DP/1061D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/cf/DP/1091D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
@@ -678,16 +834,37 @@ ll	practice/cf/DP/altaray.cpp	/^typedef long long ll;$/;"	t	typeref:typename:lon
 ll	practice/cf/DP/knap1.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/cf/DP/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/cf/greedy/1487C.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
-ll	practice/cf/random/C.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/1.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/1472E.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/1473D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/1476D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/1608C/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/1618E.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/1618E/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/2.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/3.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/4.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/5.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/6.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/7.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/8.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/brute.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/test.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/test1.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/test2.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/test3.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/1700/testing.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/cf/random/coloring/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/cf/random/diane/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
-ll	practice/cf/random/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
-ll	practice/cf/random/main1.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
-ll	practice/cf/random/new.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
-ll	practice/cf/random/new2.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/i_hate_math_problems/1336B.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/i_hate_math_problems/1368D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/i_hate_math_problems/1400B.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/i_hate_math_problems/1422C.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/i_hate_math_problems/1451D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/i_hate_math_problems/1469D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/cf/random/i_hate_math_problems/testing.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/cf/random/pink/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
-ll	practice/cf/random/test.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
-ll	practice/cf/random/test2.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/cf/upsolve/1557B.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/club/prob3/generator_prob3.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/club/prob3/test.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
@@ -796,6 +973,7 @@ ll	practice/usacoguide/gold/modular/exponentiation.cpp	/^typedef long long ll;$/
 ll	practice/usacoguide/gold/modular/exponentiation2.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/usacoguide/gold/modular/santasbot.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/usacoguide/gold/modular/test.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/usacoguide/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/usacoguide/silver/2P/everywhere.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/usacoguide/silver/binsearch/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/usacoguide/silver/binsearch/sabotage.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
@@ -810,6 +988,7 @@ lli	contests/Codeforces/737/D.cpp	/^typedef long long int lli;$/;"	t	typeref:typ
 lli	contests/Codeforces/737/E.cpp	/^typedef long long int lli;$/;"	t	typeref:typename:long long int	file:
 llv	contests/Codeforces/737/C.cpp	/^#define llv /;"	d	file:
 location	practice/cpbook/ch1/1.6/game/easier/11459/main.cpp	/^vector<int> location(1000000);$/;"	v	typeref:typename:vector<int>
+log_b	practice/cf/random/i_hate_math_problems/1469D.cpp	/^double log_b(int a, int b) {$/;"	f	typeref:typename:double
 m	practice/usacoguide/gold/dsu/wormhole/main.cpp	/^int n, m;$/;"	v	typeref:typename:int
 main	.compilingScripts/download_prob.py	/^def main():$/;"	f
 main	code/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
@@ -829,6 +1008,11 @@ main	contests/AtCoder/225/C.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_
 main	contests/AtCoder/225/D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/AtCoder/225/E.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/AtCoder/225/F.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/AtCoder/231/A.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/AtCoder/231/B.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/AtCoder/231/C.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/AtCoder/231/D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/AtCoder/231/E.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/AtCoder/ABC211/A.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/AtCoder/ABC211/B.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/AtCoder/ABC211/C.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
@@ -854,6 +1038,10 @@ main	contests/Codeforces/1560/F1/main1.cpp	/^signed main()$/;"	f	typeref:typenam
 main	contests/Codeforces/1560/F1/stress.cpp	/^int main(int argc, char* argv[]) {$/;"	f	typeref:typename:int
 main	contests/Codeforces/1560/F1/test1.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/1560/F1/test2.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/Codeforces/1609/A.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/Codeforces/1609/B.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/Codeforces/1609/C.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/Codeforces/1609/D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/737/A.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/737/B.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	contests/Codeforces/737/C.cpp	/^int main(){$/;"	f	typeref:typename:int
@@ -862,6 +1050,23 @@ main	contests/Codeforces/737/E.cpp	/^int main()$/;"	f	typeref:typename:int
 main	contests/LIT2021/B.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/LIT2021/C.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/LIT2021/D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/A/A.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/A/AA.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/A/AAA.cpp	/^signed main() {$/;"	f	typeref:typename:signed
+main	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/A/A_sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/A/a_save.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/A/a_testing.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/A/gen.cpp	/^int main(int argc, char* argv[]) {$/;"	f	typeref:typename:int
+main	contests/USACO/dec_silver_2021/A/restart_A.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/B/B.cpp	/^signed main() {$/;"	f	typeref:typename:signed
+main	contests/USACO/dec_silver_2021/B/B_new.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/B/brute.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/B/gen.cpp	/^int main(int argc, char* argv[]) {$/;"	f	typeref:typename:int
+main	contests/USACO/dec_silver_2021/C/C.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/C/C_full.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/C/C_new.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/USACO/dec_silver_2021/C/gen.cpp	/^int main(int argc, char* argv[]) {$/;"	f	typeref:typename:int
 main	practice/cf/DP/1051E1.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/cf/DP/1061D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/cf/DP/1091D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
@@ -871,17 +1076,39 @@ main	practice/cf/DP/knap1.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/cf/DP/knap2.cpp	/^int32_t main(){$/;"	f	typeref:typename:int32_t
 main	practice/cf/DP/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/cf/greedy/1487C.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
-main	practice/cf/random/C.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/1.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/1472E.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/1473D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/1476D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/1608C/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/1618E.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/1618E/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/2.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/3.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/4.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/5.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/6.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/7.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/8.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/brute.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/stress.cpp	/^int main(int argc, char* argv[]) {$/;"	f	typeref:typename:int
+main	practice/cf/random/1700/test.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/test1.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/test2.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/test3.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/1700/testing.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/cf/random/coloring/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/cf/random/diane/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
-main	practice/cf/random/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
-main	practice/cf/random/main1.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
-main	practice/cf/random/new.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
-main	practice/cf/random/new2.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/i_hate_math_problems/1336B.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/i_hate_math_problems/1368D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/i_hate_math_problems/1400B.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/i_hate_math_problems/1422C.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/i_hate_math_problems/1451D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/i_hate_math_problems/1469D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/random/i_hate_math_problems/testing.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/cf/random/pink/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
-main	practice/cf/random/test.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
-main	practice/cf/random/test1.cpp	/^int main() {$/;"	f	typeref:typename:int
-main	practice/cf/random/test2.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/cf/stuff/dec 20 2021/1608C/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/cf/upsolve/1557B.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/club/prob1/generator_prob1.cpp	/^int main(int argc, char* argv[]) {$/;"	f	typeref:typename:int
 main	practice/club/prob1/solution_prob1.cpp	/^int main() {$/;"	f	typeref:typename:int
@@ -1001,6 +1228,7 @@ main	practice/usacoguide/gold/modular/exponentiation.cpp	/^int32_t main() {$/;"	
 main	practice/usacoguide/gold/modular/exponentiation2.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/gold/modular/santasbot.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/gold/modular/test.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/usacoguide/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/silver/2P/everywhere.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/silver/binsearch/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/silver/binsearch/sabotage.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
@@ -1011,9 +1239,12 @@ main	practice/usacoguide/silver/idk/lirs/main.cpp	/^int32_t main() {$/;"	f	typer
 main	practice/usacoguide/silver/idk/maze/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/silver/orderedsets/arraydestruction.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/silver/orderedsets/coveredpoints.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+mainClass	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:languages.java
+mainClass	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	s	object:languages.java
 mainClass	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s	object:languages.java
 mainClass	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	s	object:languages.java
 mainClass	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	s	object:languages.java
+mainClass	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:languages.java
 mainClass	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	s	object:languages.java
 mainClass	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	s	object:languages.java
 mainClass	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	s	object:languages.java
@@ -1033,9 +1264,12 @@ mapleader	dotfiles/macinit.vim	/^let mapleader=" "$/;"	v
 maxSubarrayProduct	practice/cpbook/ch3/DP/00787.cpp	/^int maxSubarrayProduct(vector<int> arr, int n)$/;"	f	typeref:typename:int
 maxn	practice/cpbook/ch1/1.6/reallife/medium/01091/ac.cpp	/^#define maxn /;"	d	file:
 mecho_dist	practice/usacoguide/gold/bfs/mechonew/main.cpp	/^int mecho_dist[mxN][mxN];$/;"	v	typeref:typename:int[][]
+memoryLimit	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	n
+memoryLimit	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	n
 memoryLimit	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	n
 memoryLimit	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	n
 memoryLimit	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	n
+memoryLimit	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	n
 memoryLimit	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	n
 memoryLimit	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	n
 memoryLimit	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	n
@@ -1047,17 +1281,30 @@ memoryLimit	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Proble
 memoryLimit	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	n
 memoryLimit	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	n
 memoryLimit	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	n
+mi	practice/cf/random/1700/6.cpp	/^	mi() { v = 0; }$/;"	f	struct:mi	file:
+mi	practice/cf/random/1700/6.cpp	/^	mi(long long _v) : v(_v % MOD) { v += (v < 0) * MOD; }$/;"	f	struct:mi	file:
+mi	practice/cf/random/1700/6.cpp	/^struct mi {$/;"	s	file:
+mi	practice/cf/random/i_hate_math_problems/1422C.cpp	/^	mi():v(0) {}$/;"	f	struct:mi	file:
+mi	practice/cf/random/i_hate_math_problems/1422C.cpp	/^	mi(ll _v):v(int(_v%MOD)) { v += (v<0)*MOD; }$/;"	f	struct:mi	file:
+mi	practice/cf/random/i_hate_math_problems/1422C.cpp	/^struct mi { \/\/ WARNING: needs some adjustment to work with FFT$/;"	s	file:
 mi	practice/usacoguide/gold/introDP/arraydescription.cpp	/^	mi():v(0) {}$/;"	f	struct:mi	file:
 mi	practice/usacoguide/gold/introDP/arraydescription.cpp	/^	mi(ll _v):v(int(_v%MOD)) { v += (v<0)*MOD; }$/;"	f	struct:mi	file:
 mi	practice/usacoguide/gold/introDP/arraydescription.cpp	/^struct mi { \/\/ WARNING: needs some adjustment to work with FFT$/;"	s	file:
 mii	contests/Codeforces/737/D.cpp	/^#define mii /;"	d	file:
 mii	contests/Codeforces/737/E.cpp	/^#define mii /;"	d	file:
+mint	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^using mint = modint<mod>;$/;"	t	typeref:typename:modint<mod>	file:
+mint	practice/cf/random/i_hate_math_problems/testing.cpp	/^using mint = modint<mod>;$/;"	t	typeref:typename:modint<mod>	file:
 mit	practice/usacoguide/gold/introDP/711C.cpp	/^typedef map<int,int>::iterator mit;$/;"	t	typeref:typename:map<int,int>::iterator	file:
 mod	contests/Codeforces/737/D.cpp	/^lli mod=1e9+9;$/;"	v	typeref:typename:lli
 mod	contests/Codeforces/737/E.cpp	/^lli mod=1e9+9;$/;"	v	typeref:typename:lli
+mod	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^const int mxN = 5e5 + 9, mod = 1e9 + 7;$/;"	v	typeref:typename:const int
+mod	practice/cf/random/i_hate_math_problems/testing.cpp	/^const int mxN = 3e5 + 9, mod = 1e9 + 7;$/;"	v	typeref:typename:const int
 mod_pow	practice/usacoguide/gold/modular/exponentiation.cpp	/^int64_t mod_pow(int64_t a, int64_t b) {$/;"	f	typeref:typename:int64_t
-mods	practice/cf/random/test.cpp	/^vector<int> mods[5];$/;"	v	typeref:typename:vector<int>[5]
-mods	practice/cf/random/test2.cpp	/^vector<int> mods[5];$/;"	v	typeref:typename:vector<int>[5]
+modint	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  modint(int32_t value_) : value(value_) {}$/;"	f	struct:modint	file:
+modint	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^struct modint {$/;"	s	file:
+modint	practice/cf/random/i_hate_math_problems/testing.cpp	/^  modint(int32_t value_) : value(value_) {}$/;"	f	struct:modint	file:
+modint	practice/cf/random/i_hate_math_problems/testing.cpp	/^struct modint {$/;"	s	file:
+mods	practice/cf/random/1700/test2.cpp	/^vector<int> mods[5];$/;"	v	typeref:typename:vector<int>[5]
 mov	practice/cpbook/ch1/1.6/chess/00225/main.cpp	/^int king, queen, mov;$/;"	v	typeref:typename:int
 mov_pos	practice/cpbook/ch1/1.6/chess/00225/main.cpp	/^pair<int, int> queen_pos, king_pos, mov_pos;$/;"	v	typeref:typename:pair<int,int>
 move_forward	practice/usacoguide/gold/bfs/cownav.cpp	/^Point move_forward(Point cur) {$/;"	f	typeref:typename:Point
@@ -1066,12 +1313,17 @@ mp	practice/usacoguide/gold/divisibility/commondivisors.cpp	/^int mp[int(1e6 + 5
 mp	practice/usacoguide/gold/introDP/711C.cpp	/^#define mp /;"	d	file:
 mul	practice/usacoguide/gold/modular/santasbot.cpp	/^ll mul(int a, int b, int c, int d) {$/;"	f	typeref:typename:ll
 mul	practice/usacoguide/gold/modular/test.cpp	/^ll mul(int a, int b, int c, int d) {$/;"	f	typeref:typename:ll
+mxN	contests/AtCoder/231/D.cpp	/^const int mxN = 1e5 + 5;$/;"	v	typeref:typename:const int
 mxN	contests/AtCoder/ABC211/D.cpp	/^const int mxN = 2e5 + 5, MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
+mxN	contests/Codeforces/1609/C.cpp	/^const int mxN = 1e7, mxNN = 1e7 + 5;$/;"	v	typeref:typename:const int
+mxN	contests/Codeforces/1609/D.cpp	/^const int mxN = 1e7, mxNN = 1e7 + 5;$/;"	v	typeref:typename:const int
 mxN	contests/LIT2021/C.cpp	/^const int mxN = 55;$/;"	v	typeref:typename:const int
+mxN	contests/USACO/dec_silver_2021/C/C.cpp	/^const int mxN = 3e7 + 5;$/;"	v	typeref:typename:const int
 mxN	practice/cf/DP/knap1.cpp	/^const int mxN = 105, mxW = 1e5 + 5;$/;"	v	typeref:typename:const int
-mxN	practice/cf/random/test.cpp	/^const int mxN = 25;$/;"	v	typeref:typename:const int
-mxN	practice/cf/random/test1.cpp	/^const int mxN = 1e5 + 5;$/;"	v	typeref:typename:const int
-mxN	practice/cf/random/test2.cpp	/^const int mxN = 25;$/;"	v	typeref:typename:const int
+mxN	practice/cf/random/1700/test1.cpp	/^const int mxN = 2e5 + 5;$/;"	v	typeref:typename:const int
+mxN	practice/cf/random/1700/test2.cpp	/^const int mxN = 25;$/;"	v	typeref:typename:const int
+mxN	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^const int mxN = 5e5 + 9, mod = 1e9 + 7;$/;"	v	typeref:typename:const int
+mxN	practice/cf/random/i_hate_math_problems/testing.cpp	/^const int mxN = 3e5 + 9, mod = 1e9 + 7;$/;"	v	typeref:typename:const int
 mxN	practice/club/prob3/solution_prob3.cpp	/^const int mxN = 505;$/;"	v	typeref:typename:const int
 mxN	practice/cpbook/ch1/1.4/medium/11956.cpp	/^const int mxN = 105;$/;"	v	typeref:typename:const int
 mxN	practice/cpbook/ch1/1.4/medium/garage.cpp	/^const int mxN = 2005;$/;"	v	typeref:typename:const int
@@ -1108,15 +1360,23 @@ mxN	practice/usacoguide/gold/introDP/slalom.cpp	/^const int mxN = 105;$/;"	v	typ
 mxN	practice/usacoguide/gold/introDP/time.cpp	/^const int mxN = 1005;$/;"	v	typeref:typename:const int
 mxN	practice/usacoguide/silver/idk/maze/main.cpp	/^const int mxN = 50;$/;"	v	typeref:typename:const int
 mxN	practice/usacoguide/silver/orderedsets/coveredpoints.cpp	/^const int mxN = 4e5 + 5;$/;"	v	typeref:typename:const int
+mxNN	contests/Codeforces/1609/C.cpp	/^const int mxN = 1e7, mxNN = 1e7 + 5;$/;"	v	typeref:typename:const int
+mxNN	contests/Codeforces/1609/D.cpp	/^const int mxN = 1e7, mxNN = 1e7 + 5;$/;"	v	typeref:typename:const int
 mxW	practice/cf/DP/knap1.cpp	/^const int mxN = 105, mxW = 1e5 + 5;$/;"	v	typeref:typename:const int
 n	contests/Codeforces/1560/F1/main1.cpp	/^int t, n, k;$/;"	v	typeref:typename:int
 n	practice/cf/DP/knap2.cpp	/^int n;$/;"	v	typeref:typename:int
+n	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  int n; vector<mint> facts, finvs, invs;$/;"	m	struct:combi	typeref:typename:int	file:
+n	practice/cf/random/i_hate_math_problems/testing.cpp	/^  int n; vector<mint> facts, finvs, invs;$/;"	m	struct:combi	typeref:typename:int	file:
 n	practice/cpbook/ch1/1.6/reallife/medium/01091/ac.cpp	/^int n, a[maxn], b[maxn];$/;"	v	typeref:typename:int
 n	practice/usacoguide/gold/dsu/moocast/main.cpp	/^int n;$/;"	v	typeref:typename:int
 n	practice/usacoguide/gold/dsu/wormhole/main.cpp	/^int n, m;$/;"	v	typeref:typename:int
+n_l	practice/cf/random/1700/testing.cpp	/^#define n_l /;"	d	file:
+name	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s
+name	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	s
 name	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s
 name	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	s
 name	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	s
+name	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s
 name	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	s
 name	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	s
 name	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	s
@@ -1128,20 +1388,77 @@ name	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Problem 2. Tr
 name	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	s
 name	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	s
 name	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	s
+ncr	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline mint ncr(int n, int k) { return n < k or k < 0 ? 0 : facts[n] * finvs[k] * finvs[n-k]; /;"	f	struct:combi	typeref:typename:mint	file:
+ncr	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline mint ncr(int n, int k) { return n < k or k < 0 ? 0 : facts[n] * finvs[k] * finvs[n-k]; /;"	f	struct:combi	typeref:typename:mint	file:
 one_it	practice/usacoguide/gold/bfs/monsters.cpp	/^bool one_it = 0, possible = 0;$/;"	v	typeref:typename:bool
 ook	practice/usacoguide/gold/introDP/711C.cpp	/^#define ook /;"	d	file:
+operator !=	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline bool operator != (modint<MOD> other) const { return value != other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
+operator !=	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline bool operator != (modint<MOD> other) const { return value != other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
+operator *	practice/cf/random/1700/6.cpp	/^mi operator*(mi a, mi b) { return mi((long long) a.v * b.v); }$/;"	f	typeref:typename:mi
+operator *	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi operator*(mi a, mi b) { return mi((ll)a.v*b.v); }$/;"	f	typeref:typename:mi
+operator *	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator * (modint<MOD> other) const { int32_t c = (int64_t)this->value * o/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator *	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^template <int32_t MOD> modint<MOD> operator * (int32_t value, modint<MOD> n) { return modint<MOD/;"	f	typeref:typename:modint<MOD>
+operator *	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^template <int32_t MOD> modint<MOD> operator * (int64_t value, modint<MOD> n) { return modint<MOD/;"	f	typeref:typename:modint<MOD>
+operator *	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator * (modint<MOD> other) const { int32_t c = (int64_t)this->value * o/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator *	practice/cf/random/i_hate_math_problems/testing.cpp	/^template <int32_t MOD> modint<MOD> operator * (int32_t value, modint<MOD> n) { return modint<MOD/;"	f	typeref:typename:modint<MOD>
+operator *	practice/cf/random/i_hate_math_problems/testing.cpp	/^template <int32_t MOD> modint<MOD> operator * (int64_t value, modint<MOD> n) { return modint<MOD/;"	f	typeref:typename:modint<MOD>
 operator *	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi operator*(mi a, mi b) { return mi((ll)a.v*b.v); }$/;"	f	typeref:typename:mi
+operator *=	practice/cf/random/1700/6.cpp	/^mi& operator*=(mi& a, mi b) { return a = a * b; }$/;"	f	typeref:typename:mi &
+operator *=	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi& operator*=(mi& a, mi b) { return a = a*b; }$/;"	f	typeref:typename:mi &
+operator *=	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> & operator *= (modint<MOD> other) { this->value = (int64_t)this->value * ot/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
+operator *=	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> & operator *= (modint<MOD> other) { this->value = (int64_t)this->value * ot/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator *=	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi& operator*=(mi& a, mi b) { return a = a*b; }$/;"	f	typeref:typename:mi &
+operator +	practice/cf/random/1700/6.cpp	/^mi operator+(mi a, mi b) { return a += b; }$/;"	f	typeref:typename:mi
+operator +	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi operator+(mi a, mi b) { return a += b; }$/;"	f	typeref:typename:mi
+operator +	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator + (modint<MOD> other) const { int32_t c = this->value + other.valu/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator +	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator + (modint<MOD> other) const { int32_t c = this->value + other.valu/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator +	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi operator+(mi a, mi b) { return a += b; }$/;"	f	typeref:typename:mi
+operator +=	practice/cf/random/1700/6.cpp	/^mi& operator+=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
+operator +=	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi& operator+=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
+operator +=	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> & operator += (modint<MOD> other) { this->value += other.value; if (this->v/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
+operator +=	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> & operator += (modint<MOD> other) { this->value += other.value; if (this->v/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator +=	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi& operator+=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
+operator -	practice/cf/random/1700/6.cpp	/^mi operator-(mi a, mi b) { return a -= b; }$/;"	f	typeref:typename:mi
+operator -	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi operator-(mi a, mi b) { return a -= b; }$/;"	f	typeref:typename:mi
+operator -	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator - () const { return modint<MOD>(this->value ? MOD - this->value : /;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator -	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator - (modint<MOD> other) const { int32_t c = this->value - other.valu/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator -	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator - () const { return modint<MOD>(this->value ? MOD - this->value : /;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator -	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator - (modint<MOD> other) const { int32_t c = this->value - other.valu/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator -	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi operator-(mi a, mi b) { return a -= b; }$/;"	f	typeref:typename:mi
+operator -=	practice/cf/random/1700/6.cpp	/^mi& operator-=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
+operator -=	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi& operator-=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
+operator -=	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> & operator -= (modint<MOD> other) { this->value -= other.value; if (this->v/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
+operator -=	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> & operator -= (modint<MOD> other) { this->value -= other.value; if (this->v/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator -=	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi& operator-=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
+operator /	practice/cf/random/1700/6.cpp	/^mi operator\/(mi a, mi b) { return a * inv(b); }$/;"	f	typeref:typename:mi
+operator /	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi operator\/(mi a, mi b) { return a*inv(b); }$/;"	f	typeref:typename:mi
+operator /	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator \/  (modint<MOD> other) const { return *this *  other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator /	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator \/  (modint<MOD> other) const { return *this *  other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator /	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi operator\/(mi a, mi b) { return a*inv(b); }$/;"	f	typeref:typename:mi
+operator /=	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator \/= (modint<MOD> other)       { return *this *= other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator /=	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator \/= (modint<MOD> other)       { return *this *= other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator <	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline bool operator < (modint<MOD> other) const { return value < other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
+operator <	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline bool operator < (modint<MOD> other) const { return value < other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
+operator <<	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^template <int32_t MOD> ostream & operator << (ostream & out, modint<MOD> n) { return out << n.va/;"	f	typeref:typename:ostream &
+operator <<	practice/cf/random/i_hate_math_problems/testing.cpp	/^template <int32_t MOD> ostream & operator << (ostream & out, modint<MOD> n) { return out << n.va/;"	f	typeref:typename:ostream &
+operator ==	practice/cf/random/i_hate_math_problems/1422C.cpp	/^bool operator==(mi a, mi b) { return a.v == b.v; }$/;"	f	typeref:typename:bool
+operator ==	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline bool operator == (modint<MOD> other) const { return value == other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
+operator ==	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline bool operator == (modint<MOD> other) const { return value == other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
 operator ==	practice/usacoguide/gold/introDP/arraydescription.cpp	/^bool operator==(mi a, mi b) { return a.v == b.v; }$/;"	f	typeref:typename:bool
+operator >	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline bool operator > (modint<MOD> other) const { return value > other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
+operator >	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline bool operator > (modint<MOD> other) const { return value > other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
+operator >>	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^template <int32_t MOD> istream & operator >> (istream & in, modint<MOD> &n) { return in >> n.val/;"	f	typeref:typename:istream &
+operator >>	practice/cf/random/i_hate_math_problems/testing.cpp	/^template <int32_t MOD> istream & operator >> (istream & in, modint<MOD> &n) { return in >> n.val/;"	f	typeref:typename:istream &
+operator int	practice/cf/random/1700/6.cpp	/^ 	int v; explicit operator int() const { return v; }$/;"	f	struct:mi	file:
+operator int	practice/cf/random/i_hate_math_problems/1422C.cpp	/^ 	int v; explicit operator int() const { return v; } $/;"	f	struct:mi	file:
 operator int	practice/usacoguide/gold/introDP/arraydescription.cpp	/^ 	int v; explicit operator int() const { return v; } $/;"	f	struct:mi	file:
 ordering	practice/usacoguide/gold/dsu/wormhole/main.cpp	/^vector<int> ordering;$/;"	v	typeref:typename:vector<int>
 out_of_order	practice/usacoguide/gold/dsu/wormhole/main.cpp	/^vector<int> out_of_order;$/;"	v	typeref:typename:vector<int>
 output	contests/LIT2021/C.cpp	/^void output() {$/;"	f	typeref:typename:void
+output	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o
+output	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:tests.0
+output	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	o
+output	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	s	object:tests.0
 output	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	o
 output	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s	object:tests.0
 output	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s	object:tests.1
@@ -1149,6 +1466,8 @@ output	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Co
 output	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	s	object:tests.0
 output	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	o
 output	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	s	object:tests.0
+output	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	o
+output	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:tests.0
 output	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	o
 output	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	s	object:tests.0
 output	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	o
@@ -1177,38 +1496,66 @@ pbds	practice/usacoguide/gold/introDP/711C.cpp	/^typedef tree<int, null_type, le
 pd	practice/cpbook/ch1/1.6/card/10388/main2.cpp	/^int pu[2], pd[2], len[2];$/;"	v	typeref:typename:int[2]
 pedler	practice/cpbook/ch1/1.6/card/11225/main.cpp	/^bool pedler(string s) {$/;"	f	typeref:typename:bool
 pedler	practice/cpbook/ch1/1.6/card/11225/test.cpp	/^bool pedler(string s) {$/;"	f	typeref:typename:bool
+pi	contests/USACO/dec_silver_2021/A/A.cpp	/^struct pi {$/;"	s	file:
+pi	contests/USACO/dec_silver_2021/A/AA.cpp	/^struct pi {$/;"	s	file:
+pi	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^struct pi {$/;"	s	file:
+pi	contests/USACO/dec_silver_2021/A/a_save.cpp	/^struct pi {$/;"	s	file:
+pi	contests/USACO/dec_silver_2021/A/a_testing.cpp	/^struct pi {$/;"	s	file:
+pi	contests/USACO/dec_silver_2021/A/restart_A.cpp	/^struct pi {$/;"	s	file:
 pos	contests/Codeforces/1560/F1/main.cpp	/^vector<vector<bool>> pos;$/;"	v	typeref:typename:vector<vector<bool>>
 possible	practice/usacoguide/gold/bfs/monsters.cpp	/^bool one_it = 0, possible = 0;$/;"	v	typeref:typename:bool
+pow	practice/cf/random/1700/6.cpp	/^mi pow(mi a, long long p) {$/;"	f	typeref:typename:mi
+pow	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi pow(mi a, ll p) { assert(p >= 0); \/\/ won't work for negative p$/;"	f	typeref:typename:mi
+pow	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  modint<MOD> pow(uint64_t k) const { modint<MOD> x = *this, y = 1; for (; k; k >>= 1) { if (k &/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+pow	practice/cf/random/i_hate_math_problems/testing.cpp	/^  modint<MOD> pow(uint64_t k) const { modint<MOD> x = *this, y = 1; for (; k; k >>= 1) { if (k &/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 pow	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi pow(mi a, ll p) { assert(p >= 0); \/\/ won't work for negative p$/;"	f	typeref:typename:mi
 pow3	practice/usacoguide/silver/idk/maze/main.cpp	/^vector<int> pow3(10);$/;"	v	typeref:typename:vector<int>
 preprocess	practice/usacoguide/gold/bfs/mechonew/main.cpp	/^void preprocess() {$/;"	f	typeref:typename:void
 prime_factor	code/prime_factor.hpp	/^map<ll, int> prime_factor(ll n) {$/;"	f	typeref:typename:map<ll,int>
 prime_factor	practice/usacoguide/gold/divisibility/powerproducts.cpp	/^vector<pair<int, int>> prime_factor(int a) {$/;"	f	typeref:typename:vector<pair<int,int>>
+print_adj	practice/cf/random/1700/4.cpp	/^void print_adj() {$/;"	f	typeref:typename:void
 pu	practice/cpbook/ch1/1.6/card/10388/main2.cpp	/^int pu[2], pd[2], len[2];$/;"	v	typeref:typename:int[2]
 q	contests/LIT2021/C.cpp	/^queue<pair<P, P>> q; $/;"	v	typeref:typename:queue<pair<P,P>>
+q	practice/cf/random/1700/1476D.cpp	/^queue<pair<int, int>> q;$/;"	v	typeref:typename:queue<pair<int,int>>
 q	practice/usacoguide/gold/bfs/monsters.cpp	/^queue<pair<int, int>> q;$/;"	v	typeref:typename:queue<pair<int,int>>
 queen	practice/cpbook/ch1/1.6/chess/00225/main.cpp	/^int king, queen, mov;$/;"	v	typeref:typename:int
 queen	practice/cpbook/ch1/1.6/chess/10284/main.cpp	/^void queen(int row, int col, bool black) {$/;"	f	typeref:typename:void
 queen_pos	practice/cpbook/ch1/1.6/chess/00225/main.cpp	/^pair<int, int> queen_pos, king_pos, mov_pos;$/;"	v	typeref:typename:pair<int,int>
 queen_vis	practice/cpbook/ch1/1.6/chess/00225/main.cpp	/^bool queen_vis[8][8], king_vis[8][8], queen_vis1[8][8];$/;"	v	typeref:typename:bool[8][8]
 queen_vis1	practice/cpbook/ch1/1.6/chess/00225/main.cpp	/^bool queen_vis[8][8], king_vis[8][8], queen_vis1[8][8];$/;"	v	typeref:typename:bool[8][8]
+r	practice/cf/random/1700/test1.cpp	/^int l, r;$/;"	v	typeref:typename:int
 rand	code/stress.cpp	/^int rand(int a, int b) {$/;"	f	typeref:typename:int
 rand	contests/Codeforces/1560/F1/stress.cpp	/^int rand(int a, int b) {$/;"	f	typeref:typename:int
+rand	contests/USACO/dec_silver_2021/A/gen.cpp	/^int rand(int a, int b) {$/;"	f	typeref:typename:int
+rand	contests/USACO/dec_silver_2021/B/gen.cpp	/^int rand(int a, int b) {$/;"	f	typeref:typename:int
+rand	contests/USACO/dec_silver_2021/C/gen.cpp	/^int rand(int a, int b) {$/;"	f	typeref:typename:int
+rand	practice/cf/random/1700/stress.cpp	/^int rand(int a, int b) {$/;"	f	typeref:typename:int
 rand	practice/club/prob1/generator_prob1.cpp	/^int rand(int a, int b) {$/;"	f	typeref:typename:int
 rand	practice/club/prob2/generator_prob2.cpp	/^int rand(int a, int b) {$/;"	f	typeref:typename:int
 rand	practice/club/prob3/generator_prob3.cpp	/^ll rand(ll a, ll b) {$/;"	f	typeref:typename:ll
 rand	practice/cpbook/ch1/1.6/reallife/medium/01091/stress.cpp	/^int rand(int a, int b) {$/;"	f	typeref:typename:int
+range	contests/USACO/dec_silver_2021/A/A.cpp	/^	pair<int, int> range;$/;"	m	struct:pi	typeref:typename:pair<int,int>	file:
+range	contests/USACO/dec_silver_2021/A/AA.cpp	/^	pair<int, int> range;$/;"	m	struct:pi	typeref:typename:pair<int,int>	file:
+range	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^	pair<int, int> range;$/;"	m	struct:pi	typeref:typename:pair<int,int>	file:
+range	contests/USACO/dec_silver_2021/A/a_save.cpp	/^	pair<int, int> range;$/;"	m	struct:pi	typeref:typename:pair<int,int>	file:
+range	contests/USACO/dec_silver_2021/A/a_testing.cpp	/^	pair<int, int> range;$/;"	m	struct:pi	typeref:typename:pair<int,int>	file:
+range	contests/USACO/dec_silver_2021/A/restart_A.cpp	/^	pair<int, int> range;$/;"	m	struct:pi	typeref:typename:pair<int,int>	file:
 recurse	practice/club/prob3/solution_prob3.cpp	/^int recurse(int l, int r){	$/;"	f	typeref:typename:int
+rem	practice/cf/random/1700/4.cpp	/^int deepest = INT_MIN; pair<int, int> rem;$/;"	v	typeref:typename:pair<int,int>
 rep	contests/Codeforces/737/D.cpp	/^#define rep(/;"	d	file:
 rep	contests/Codeforces/737/E.cpp	/^#define rep(/;"	d	file:
+rn	.config/nvim/init.vim	/^nnoremap <silent>rn :Lspsaga rename<CR>$/;"	m
 rn	dotfiles/init.vim	/^nnoremap <silent>rn :Lspsaga rename<CR>$/;"	m
 rn	dotfiles/macinit.vim	/^nnoremap <silent>rn :Lspsaga rename<CR>$/;"	m
 rook	practice/cpbook/ch1/1.6/chess/10284/main.cpp	/^void rook(int row, int col, bool black) {$/;"	f	typeref:typename:void
 rrep	contests/Codeforces/737/D.cpp	/^#define rrep(/;"	d	file:
 rrep	contests/Codeforces/737/E.cpp	/^#define rrep(/;"	d	file:
+s	.config/nvim/init.vim	/^nmap        s   <Plug>(vsnip-select-text)$/;"	m
+s	.config/nvim/init.vim	/^xmap        s   <Plug>(vsnip-select-text)$/;"	m
 s	dotfiles/init.vim	/^nmap        s   <Plug>(vsnip-select-text)$/;"	m
 s	dotfiles/init.vim	/^xmap        s   <Plug>(vsnip-select-text)$/;"	m
 same_set	code/dsu.hpp	/^	bool same_set(int a, int b) { return get(a) == get(b); }$/;"	f	struct:DSU	typeref:typename:bool
+same_set	contests/USACO/dec_silver_2021/B/brute.cpp	/^	bool same_set(int a, int b) { return get(a) == get(b); }$/;"	f	struct:DSU	typeref:typename:bool	file:
 same_set	practice/usacoguide/gold/dsu/closing/main.cpp	/^	bool same_set(int a, int b) { return get(a) == get(b); }$/;"	f	struct:DSU	typeref:typename:bool	file:
 same_set	practice/usacoguide/gold/dsu/moocast/main.cpp	/^	bool same_set(int a, int b) { return get(a) == get(b); }$/;"	f	struct:DSU	typeref:typename:bool	file:
 same_set	practice/usacoguide/gold/dsu/mootube/main.cpp	/^	bool same_set(int a, int b) { return get(a) == get(b); }$/;"	f	struct:DSU	typeref:typename:bool	file:
@@ -1220,12 +1567,18 @@ save_samples	.compilingScripts/download_prob.py	/^def save_samples(data, probDir
 se	practice/usacoguide/gold/introDP/711C.cpp	/^#define se /;"	d	file:
 search_up	.compilingScripts/make_prob.sh	/^search_up ()$/;"	f
 second	practice/usacoguide/gold/bfs/cownav.cpp	/^	int first, second, direction;$/;"	m	struct:Point	typeref:typename:int	file:
+sieve	contests/Codeforces/1609/C.cpp	/^void sieve() {$/;"	f	typeref:typename:void
+sieve	contests/Codeforces/1609/D.cpp	/^void sieve() {$/;"	f	typeref:typename:void
 sim	practice/cpbook/ch1/1.6/card/10388/main2.cpp	/^int sim()$/;"	f	typeref:typename:int
 sit	practice/usacoguide/gold/introDP/711C.cpp	/^typedef set<int>::iterator sit;$/;"	t	typeref:typename:set<int>::iterator	file:
 size	code/dsu.hpp	/^	int size(int x) { return -e[get(x)]; }$/;"	f	struct:DSU	typeref:typename:int
+size	contests/USACO/dec_silver_2021/B/brute.cpp	/^	int size(int x) { return -e[get(x)]; }$/;"	f	struct:DSU	typeref:typename:int	file:
+size	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	n	object:batch
+size	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	n	object:batch
 size	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	n	object:batch
 size	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	n	object:batch
 size	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	n	object:batch
+size	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	n	object:batch
 size	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	n	object:batch
 size	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	n	object:batch
 size	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	n	object:batch
@@ -1252,8 +1605,31 @@ solve	contests/AtCoder/225/C.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/AtCoder/225/D.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/AtCoder/225/E.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/AtCoder/225/F.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/AtCoder/231/A.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/AtCoder/231/B.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/AtCoder/231/C.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/AtCoder/231/D.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/AtCoder/231/E.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/Codeforces/1609/A.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/Codeforces/1609/B.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/Codeforces/1609/C.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/Codeforces/1609/D.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/Codeforces/737/D.cpp	/^string solve(vlli a,lli n,lli k)$/;"	f	typeref:typename:string
 solve	contests/Codeforces/737/E.cpp	/^string solve(vlli a,lli n,lli k)$/;"	f	typeref:typename:string
+solve	contests/USACO/dec_silver_2021/A/A.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/A/AA.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/A/AAA.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/A/A_sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/A/a_save.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/A/a_testing.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/A/restart_A.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/B/B.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/B/B_new.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/B/brute.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/C/C.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/C/C_full.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/USACO/dec_silver_2021/C/C_new.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/cf/DP/1051E1.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/cf/DP/1061D.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/cf/DP/1091D.cpp	/^void solve() {$/;"	f	typeref:typename:void
@@ -1261,16 +1637,37 @@ solve	practice/cf/DP/1461C.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/cf/DP/altaray.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/cf/DP/knap1.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/cf/DP/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
-solve	practice/cf/random/C.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/1.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/1472E.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/1473D.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/1476D.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/1608C/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/1618E.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/1618E/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/2.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/3.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/4.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/5.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/6.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/7.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/8.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/brute.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/test.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/test1.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/test2.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/test3.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/1700/testing.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/cf/random/coloring/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/cf/random/diane/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
-solve	practice/cf/random/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
-solve	practice/cf/random/main1.cpp	/^void solve() {$/;"	f	typeref:typename:void
-solve	practice/cf/random/new.cpp	/^void solve() {$/;"	f	typeref:typename:void
-solve	practice/cf/random/new2.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/i_hate_math_problems/1336B.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/i_hate_math_problems/1368D.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/i_hate_math_problems/1400B.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/i_hate_math_problems/1422C.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/i_hate_math_problems/1451D.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/random/i_hate_math_problems/1469D.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/cf/random/pink/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
-solve	practice/cf/random/test.cpp	/^void solve() {$/;"	f	typeref:typename:void
-solve	practice/cf/random/test2.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/cf/stuff/dec 20 2021/1608C/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/club/prob3/test.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/cpbook/ch1/1.6/reallife/medium/00161/main.cpp	/^void solve(vector<int> times) {$/;"	f	typeref:typename:void
 solve	practice/cpbook/ch1/1.6/reallife/medium/01091/restartmain.cpp	/^string solve(int N) {$/;"	f	typeref:typename:string
@@ -1305,21 +1702,34 @@ solve	practice/usacoguide/gold/introDP/learningdp.cpp	/^void solve() {$/;"	f	typ
 solve	practice/usacoguide/gold/introDP/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/usacoguide/gold/introDP/rectanglecutting.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/usacoguide/gold/introDP/time.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/usacoguide/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/usacoguide/silver/idk/lirs/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/usacoguide/silver/idk/maze/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
+square	practice/cf/random/i_hate_math_problems/1336B.cpp	/^int square(int x) {$/;"	f	typeref:typename:int
+st	contests/USACO/dec_silver_2021/B/B.cpp	/^set<int> st;$/;"	v	typeref:typename:set<int>
 start	practice/usacoguide/gold/bfs/mecho/main.cpp	/^pair<int, int> start, finish;$/;"	v	typeref:typename:pair<int,int>
 start	practice/usacoguide/gold/bfs/mechonew/main.cpp	/^pair<int, int> start, finish;$/;"	v	typeref:typename:pair<int,int>
 start_pos	practice/usacoguide/gold/bfs/monsters.cpp	/^pair<int, int> start_pos;$/;"	v	typeref:typename:pair<int,int>
 start_vis	practice/cpbook/ch1/1.6/chess/chess/realsol.cpp	/^bool start_vis[9][9], end_vis[9][9];$/;"	v	typeref:typename:bool[9][9]
 store_grid	practice/cpbook/ch2/2.2/2D/11581/main.cpp	/^int grid[mxN][mxN], store_grid[mxN][mxN];$/;"	v	typeref:typename:int[][]
 store_grid	practice/usacoguide/gold/bfs/mecho/main.cpp	/^char grid[mxN][mxN], store_grid[mxN][mxN];$/;"	v	typeref:typename:char[][]
+subtree_xor	practice/cf/random/1700/4.cpp	/^vector<int> A, subtree_xor, dist;$/;"	v	typeref:typename:vector<int>
+sum	contests/USACO/dec_silver_2021/A/A.cpp	/^	int sum = 0;$/;"	m	struct:pi	typeref:typename:int	file:
+sum	contests/USACO/dec_silver_2021/A/AA.cpp	/^	int sum = 0;$/;"	m	struct:pi	typeref:typename:int	file:
+sum	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^	int sum = 0;$/;"	m	struct:pi	typeref:typename:int	file:
+sum	contests/USACO/dec_silver_2021/A/a_save.cpp	/^	int sum = 0;$/;"	m	struct:pi	typeref:typename:int	file:
+sum	contests/USACO/dec_silver_2021/A/a_testing.cpp	/^	int sum = 0;$/;"	m	struct:pi	typeref:typename:int	file:
+sum	contests/USACO/dec_silver_2021/A/restart_A.cpp	/^	int sum = 0;$/;"	m	struct:pi	typeref:typename:int	file:
 sum	practice/usacoguide/silver/binsearch/sabotage.cpp	/^int N, sum = 0;$/;"	v	typeref:typename:int
 t	contests/Codeforces/1560/F1/main1.cpp	/^int t, n, k;$/;"	v	typeref:typename:int
-tails	practice/cf/random/main.cpp	/^vector<int> tails(vector<int> Q, vector<int> P) {$/;"	f	typeref:typename:vector<int>
+t_a_b_s	practice/cf/random/1700/testing.cpp	/^template <typename T, size_t N> int SIZE(const T (&t)[N]){ return N; } template<typename T> int /;"	v	typeref:typename:int
 task	practice/cpbook/ch1/1.4/medium/poi.cpp	/^int task[mxN][mxN];$/;"	v	typeref:typename:int[][]
+taskClass	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:languages.java
+taskClass	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	s	object:languages.java
 taskClass	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s	object:languages.java
 taskClass	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	s	object:languages.java
 taskClass	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	s	object:languages.java
+taskClass	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:languages.java
 taskClass	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	s	object:languages.java
 taskClass	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	s	object:languages.java
 taskClass	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	s	object:languages.java
@@ -1331,9 +1741,12 @@ taskClass	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Problem 
 taskClass	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	s	object:languages.java
 taskClass	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	s	object:languages.java
 taskClass	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	s	object:languages.java
+testType	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s
+testType	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	s
 testType	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s
 testType	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	s
 testType	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	s
+testType	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s
 testType	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	s
 testType	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	s
 testType	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	s
@@ -1345,9 +1758,12 @@ testType	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Problem 2
 testType	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	s
 testType	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	s
 testType	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	s
+tests	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	a
+tests	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	a
 tests	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	a
 tests	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	a
 tests	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	a
+tests	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	a
 tests	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	a
 tests	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	a
 tests	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	a
@@ -1359,9 +1775,12 @@ tests	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Problem 2. T
 tests	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	a
 tests	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	a
 tests	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	a
+timeLimit	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	n
+timeLimit	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	n
 timeLimit	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	n
 timeLimit	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	n
 timeLimit	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	n
+timeLimit	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	n
 timeLimit	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	n
 timeLimit	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	n
 timeLimit	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	n
@@ -1373,13 +1792,20 @@ timeLimit	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Problem 
 timeLimit	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	n
 timeLimit	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	n
 timeLimit	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	n
+to_string	practice/cf/random/1700/testing.cpp	/^template <typename T, size_t N> int SIZE(const T (&t)[N]){ return N; } template<typename T> int /;"	f	typeref:typename:string
 todoist	dotfiles/macinit.vim	/^let todoist = {$/;"	v
+type	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:input
+type	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:output
+type	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	s	object:input
+type	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	s	object:output
 type	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s	object:input
 type	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s	object:output
 type	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	s	object:input
 type	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	s	object:output
 type	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	s	object:input
 type	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	s	object:output
+type	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:input
+type	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s	object:output
 type	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	s	object:input
 type	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	s	object:output
 type	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	s	object:input
@@ -1405,6 +1831,7 @@ type	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maz
 umii	contests/Codeforces/737/D.cpp	/^#define umii /;"	d	file:
 umii	contests/Codeforces/737/E.cpp	/^#define umii /;"	d	file:
 unite	code/dsu.hpp	/^	bool unite(int x, int y) {  \/\/ union by size$/;"	f	struct:DSU	typeref:typename:bool
+unite	contests/USACO/dec_silver_2021/B/brute.cpp	/^	bool unite(int x, int y) {  \/\/ union by size$/;"	f	struct:DSU	typeref:typename:bool	file:
 unite	practice/usacoguide/gold/dsu/closing/main.cpp	/^	bool unite(int x, int y) {  \/\/ union by size$/;"	f	struct:DSU	typeref:typename:bool	file:
 unite	practice/usacoguide/gold/dsu/moocast/main.cpp	/^	bool unite(int x, int y) {  \/\/ union by size$/;"	f	struct:DSU	typeref:typename:bool	file:
 unite	practice/usacoguide/gold/dsu/mootube/main.cpp	/^	bool unite(int x, int y) {  \/\/ union by size$/;"	f	struct:DSU	typeref:typename:bool	file:
@@ -1413,9 +1840,14 @@ unite	practice/usacoguide/gold/dsu/tractor/mountain.cpp	/^	bool unite(int x, int
 unite	practice/usacoguide/gold/dsu/wormhole/main.cpp	/^	bool unite(int x, int y) {  \/\/ union by size$/;"	f	struct:DSU	typeref:typename:bool	file:
 unite	practice/usacoguide/silver/idk/lirs/main.cpp	/^	bool unite(int x, int y) {  \/\/ union by size$/;"	f	struct:DSU	typeref:typename:bool	file:
 up	practice/cpbook/ch1/1.6/card/10388/main2.cpp	/^char up[2][100], down[2][100];$/;"	v	typeref:typename:char[2][100]
+update	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^void update(int BITree[], int l, int r, int n, int val)$/;"	f	typeref:typename:void
+updateBIT	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^void updateBIT(int BITree[], int n, int index, int val)$/;"	f	typeref:typename:void
+url	practice/cf/random/1700/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s
+url	practice/cf/random/1700/1618E/problem.json	/^{"name": "E. Singers' Tour", "group": "Codeforces - Codeforces Round #760 (Div. 3)", "url": "htt/;"	s
 url	practice/cf/random/coloring/problem.json	/^{"name": "A. Dreamoon Likes Coloring", "group": "Codeforces - Codeforces Round #631 (Div. 1) - T/;"	s
 url	practice/cf/random/diane/problem.json	/^{"name": "D. Diane", "group": "Codeforces - Codeforces Round #735 (Div. 2)", "url": "https:\/\/c/;"	s
 url	practice/cf/random/pink/problem.json	/^{"name": "C. Pinkie Pie Eats Patty-cakes", "group": "Codeforces - Codeforces Round #662 (Div. 2)/;"	s
+url	practice/cf/stuff/dec 20 2021/1608C/problem.json	/^{"name": "C. Game Master", "group": "Codeforces - Codeforces Round #758 (Div.1 + Div. 2)", "url"/;"	s
 url	practice/usacoguide/gold/SP/dining/problem.json	/^{"name": "Problem 1. Fine Dining", "group": "USACO - USACO 2018 December Contest, Gold", "url": /;"	s
 url	practice/usacoguide/gold/SP/visitfj/problem.json	/^{"name": "Problem 1. Why Did the Cow Cross the Road", "group": "USACO - USACO 2017 February Cont/;"	s
 url	practice/usacoguide/gold/bfs/cownav/problem.json	/^{"name": "Problem 3. Cow Navigation", "group": "USACO - USACO 2017 January Contest, Gold", "url"/;"	s
@@ -1427,15 +1859,21 @@ url	practice/usacoguide/gold/dsu/tractor/problem.json	/^{"name": "Problem 2. Tra
 url	practice/usacoguide/gold/dsu/wormhole/problem.json	/^{"name": "Problem 3. Wormhole Sort", "group": "USACO - USACO 2020 January Contest, Silver", "url/;"	s
 url	practice/usacoguide/silver/idk/lirs/problem.json	/^{"name": "Problem 3. Liars and Truth Tellers", "group": "USACO - USACO 2013 January Contest, Bro/;"	s
 url	practice/usacoguide/silver/idk/maze/problem.json	/^{"name": "Problem 1. Maze Tac Toe", "group": "USACO - USACO 2021 US Open, Silver", "url": "http:/;"	s
-used	practice/cf/random/test1.cpp	/^bool used[mxN];$/;"	v	typeref:typename:bool[]
+v	practice/cf/random/1700/6.cpp	/^ 	int v; explicit operator int() const { return v; }$/;"	m	struct:mi	typeref:typename:int	file:
+v	practice/cf/random/i_hate_math_problems/1422C.cpp	/^ 	int v; explicit operator int() const { return v; } $/;"	m	struct:mi	typeref:typename:int	file:
 v	practice/usacoguide/gold/introDP/arraydescription.cpp	/^ 	int v; explicit operator int() const { return v; } $/;"	m	struct:mi	typeref:typename:int	file:
 valid	practice/usacoguide/gold/dsu/tractor/main.cpp	/^bool valid(int x) {$/;"	f	typeref:typename:bool
 vals	practice/cpbook/ch1/1.6/reallife/medium/01091/restartmain.cpp	/^map<string, int> vals;$/;"	v	typeref:typename:map<string,int>
+value	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  int32_t value;$/;"	m	struct:modint	typeref:typename:int32_t	file:
+value	practice/cf/random/i_hate_math_problems/testing.cpp	/^  int32_t value;$/;"	m	struct:modint	typeref:typename:int32_t	file:
 vi	practice/usacoguide/gold/introDP/711C.cpp	/^typedef vector<int> vi;$/;"	t	typeref:typename:vector<int>	file:
+vis	practice/cf/random/1700/1476D.cpp	/^int vis = 0;$/;"	v	typeref:typename:int
 vis	practice/usacoguide/gold/bfs/graphgirth2.cpp	/^int vis[2505];$/;"	v	typeref:typename:int[2505]
 vis	practice/usacoguide/gold/dsu/tractor/main.cpp	/^bool vis[mxN][mxN];$/;"	v	typeref:typename:bool[][]
 visit	practice/cpbook/ch1/1.6/chess/chess/realsol.cpp	/^void visit(pair<int, int> start, int xdir, int ydir, bool x) {$/;"	f	typeref:typename:void
+visited	contests/AtCoder/231/D.cpp	/^bool visited[mxN];$/;"	v	typeref:typename:bool[]
 visited	contests/LIT2021/C.cpp	/^int visited[mxN][mxN][mxN][mxN];$/;"	v	typeref:typename:int[][][][]
+visited	practice/cf/random/1700/test1.cpp	/^bool visited[mxN];$/;"	v	typeref:typename:bool[]
 visited	practice/usacoguide/gold/bfs/mecho/main.cpp	/^bool visited[mxN][mxN];$/;"	v	typeref:typename:bool[][]
 visited	practice/usacoguide/gold/dsu/closing/main.cpp	/^bool visited[mxN];$/;"	v	typeref:typename:bool[]
 visited	practice/usacoguide/silver/idk/maze/main.cpp	/^bool visited[mxN][mxN][100000];$/;"	v	typeref:typename:bool[][][100000]
