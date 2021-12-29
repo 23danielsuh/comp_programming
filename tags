@@ -2144,6 +2144,7 @@ __anon16b6aba80102	code-library/Number Theory/Sieve upto 1e9.cpp	/^  auto approx
 __anon19349fa40102	code-library/Geometry/Half Plane Intersection Dynamic.cpp	/^        auto eval = [&](iter it) {$/;"	f	function:HalfPlaneSet::cut	file:
 __anon19349fa40202	code-library/Geometry/Half Plane Intersection Dynamic.cpp	/^        auto intersect = [&](iter it)  {$/;"	f	function:HalfPlaneSet::cut	file:
 __anon19e624350102	code/Data Structures/Wavelet Tree.cpp	/^    auto f = [mid](int x) {$/;"	f	function:wavelet_tree::init	file:
+__anon19ee87490102	practice/december2021/1560E/sol.cpp	/^	sort(last.begin(), last.end(), [](const pair<char, int> &a, const pair<char, int> &b) { return /;"	f	function:solve	file:
 __anon21e14c250102	code/Strings/De Bruijn Sequence.cpp	/^  function<void(int, int)> db = [&](int t, int p) {$/;"	f	function:de_bruijn	file:
 __anon2d41255c0102	code-library/Math/Polynomial Factorization.cpp	/^    sort(inds.begin(), inds.end(), [&](int a, int b) -> bool {$/;"	f	function:main	typeref:typename:bool	file:
 __anon31b62f6e0102	code-library/Dynamic Programming Optimizations/Hirschbergs Algorithm.cpp	/^        function<long long (int, int)> get_val = [&](int i, int j) {$/;"	f	function:main	file:
@@ -2165,6 +2166,7 @@ __anon583d7bbf0202	code-library/Geometry/Geometry 2D.cpp	/^	auto tot_dist = [&](
 __anon583d7bbf0302	code-library/Geometry/Geometry 2D.cpp	/^	auto findY = [&](double x) {$/;"	f	function:geometric_median	file:
 __anon5abf6e2d0102	code-library/Graph Theory/Gomory Hu Tree of Planar Graph.cpp	/^    sort(G[i].begin(), G[i].end(), [&](int e1, int e2) {$/;"	f	function:main	file:
 __anon5cb8a05f0102	code-library/Dynamic Programming Optimizations/Subset Sum in SQRT.cpp	/^      sort(id[i].begin(), id[i].end(), [&](int u, int v) {$/;"	f	function:main	file:
+__anon5ff5038d0102	practice/december2021/1619D/sol.cpp	/^	auto ok = [&](int alpha) -> bool {$/;"	f	function:solve	typeref:typename:bool	file:
 __anon613e252a0102	code/Strings/Suffix Array Isomorphic.cpp	/^    [&](const int &i, const int &j) { \/\/ O(alpha)$/;"	f	function:IsomorphicSuffixArray::IsomorphicSuffixArray	file:
 __anon63aeb5280102	code-library/Graph Theory/Gomory Hu Tree.cpp	/^  sort(t.begin(), t.end(), [](const edge & l, const edge & r) {$/;"	f	function:main	file:
 __anon651a8d740102	code/Math/Linear Recurrence With Polynomial Coefficients.cpp	/^  auto mul = [mod] (int a, int b) {$/;"	f	function:find_recurrence_relation	file:
@@ -2211,6 +2213,7 @@ __anonce9dd5d50202	code/Math/Reeds Sloane Algorithm.cpp	/^    auto inverse = [] 
 __anonce9dd5d50302	code/Math/Reeds Sloane Algorithm.cpp	/^    auto L = [] (const vec &a, const vec &b) {$/;"	f	function:LinearRecurrence::ReedsSloane	file:
 __anonce9dd5d50402	code/Math/Reeds Sloane Algorithm.cpp	/^    auto prime_power = [&] (const vec &s, ll mod, ll p, ll e) {$/;"	f	function:LinearRecurrence::ReedsSloane	file:
 __anoncf61aade0102	code/Geometry/Point Location.cpp	/^    const pair<pt_type, int>& r) {$/;"	f	function:sweepline	file:
+__anond56e9ac80102	practice/december2021/1572A/sol.cpp	/^	auto BFS = [&]() -> int {$/;"	f	function:solve	typeref:typename:int	file:
 __anond81222d60102	code-library/Math/Linear Recurrence With Polynomial Coefficients.cpp	/^  auto mul = [mod] (int a, int b) {$/;"	f	function:find_recurrence_relation	file:
 __anond81222d60202	code-library/Math/Linear Recurrence With Polynomial Coefficients.cpp	/^  auto fixed = [mod] (int a) {$/;"	f	function:find_recurrence_relation	file:
 __anond81222d60302	code-library/Math/Linear Recurrence With Polynomial Coefficients.cpp	/^  auto error = [] (int order, int deg) {$/;"	f	function:find_recurrence_relation	file:
@@ -3713,6 +3716,7 @@ cost	code/Graph Theory/L R Flow with MCMF.cpp	/^  T flow, cost;$/;"	m	struct:MCM
 cost	code/Graph Theory/Min Cost Max Flow.cpp	/^    T cap, cost;$/;"	m	struct:MCMF::edge	typeref:typename:T	file:
 cost	code/Graph Theory/Min Cost Max Flow.cpp	/^  T flow, cost;$/;"	m	struct:MCMF	typeref:typename:T	file:
 cost	code/Math/Simplex Algorithm.cpp	/^vector <ll> g[N],cost[N];$/;"	v	typeref:typename:vector<ll>[]
+cost	contests/Codeforces/1616/C/sol.cpp	/^int cost(vector<int> &A) {$/;"	f	typeref:typename:int
 cost	practice/usacoguide/gold/SP/visitfj.cpp	/^int cost[105][105];$/;"	v	typeref:typename:int[105][105]
 cost	practice/usacoguide/gold/SP/visitfj/main.cpp	/^int cost[105][105];$/;"	v	typeref:typename:int[105][105]
 cost	practice/usacoguide/gold/introDP/711C.cpp	/^ll cost[N][N];$/;"	v	typeref:typename:ll[][]
@@ -6265,6 +6269,9 @@ int	practice/cpbook/ch1/1.4/medium/basicprogramming1.cpp	/^#define int /;"	d	fil
 int	practice/cpbook/ch1/1.4/medium/garage.cpp	/^#define int /;"	d	file:
 int	practice/cpbook/ch2/2.2/1D/pivot/main.cpp	/^#define int /;"	d	file:
 int	practice/cpbook/ch3/DP/00787.cpp	/^#define int /;"	d	file:
+int	practice/december2021/1572A/new_sol.cpp	/^#define int /;"	d	file:
+int	practice/december2021/1572A/sol.cpp	/^#define int /;"	d	file:
+int	practice/december2021/1619D/sol.cpp	/^#define int /;"	d	file:
 int	practice/december2021/1619E/sol.cpp	/^#define int /;"	d	file:
 int	practice/usacoguide/gold/SP/dining/main.cpp	/^#define int /;"	d	file:
 int	practice/usacoguide/gold/SP/flightdiscount.cpp	/^#define int /;"	d	file:
@@ -7257,6 +7264,12 @@ ll	contests/Codeforces/1609/A.cpp	/^typedef long long ll;$/;"	t	typeref:typename
 ll	contests/Codeforces/1609/B.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1609/C.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1609/D.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/Codeforces/1616/A/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/Codeforces/1616/B/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/Codeforces/1616/C/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/Codeforces/1616/D/new_sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/Codeforces/1616/D/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	contests/Codeforces/1616/hacks/A.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1622/upsolve/C/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1623/A/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1623/B/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
@@ -7369,6 +7382,9 @@ ll	practice/cpbook/ch2/2.2/1D/pivot/main.cpp	/^typedef long long ll;$/;"	t	typer
 ll	practice/cpbook/ch2/2.2/2D/11581/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/cpbook/ch3/DP/00787.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/cpbook/ch3/DP/10684.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/december2021/1560E/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/december2021/1572A/new_sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/december2021/1572A/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/december2021/1619D/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/december2021/1619E/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/december2021/1620C/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
@@ -8244,6 +8260,13 @@ main	contests/Codeforces/1609/A.cpp	/^int32_t main() {$/;"	f	typeref:typename:in
 main	contests/Codeforces/1609/B.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/1609/C.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/1609/D.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/Codeforces/1616/A/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/Codeforces/1616/B/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/Codeforces/1616/C/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/Codeforces/1616/C/soll.cpp	/^int main()$/;"	f	typeref:typename:int
+main	contests/Codeforces/1616/D/new_sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/Codeforces/1616/D/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	contests/Codeforces/1616/hacks/A.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/1622/A/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/1622/B/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/1622/C/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
@@ -8379,6 +8402,9 @@ main	practice/cpbook/ch2/2.2/1D/pivot/main.cpp	/^int32_t main() {$/;"	f	typeref:
 main	practice/cpbook/ch2/2.2/2D/11581/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/cpbook/ch3/DP/00787.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/cpbook/ch3/DP/10684.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/december2021/1560E/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/december2021/1572A/new_sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/december2021/1572A/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/december2021/1619D/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/december2021/1619E/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/december2021/1620C/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
@@ -8696,6 +8722,7 @@ min_flow	code-library/Graph Theory/L R Flow with Dinic.cpp	/^  int min_flow(int 
 min_flow	code/Graph Theory/L R Flow with Dinic.cpp	/^  int min_flow(int _s, int _t) { \/\/-1 means flow is not feasible$/;"	f	struct:LR_Flow	typeref:typename:int	file:
 min_v	code-library/Data Structures/Segment Tree Beats.cpp	/^  ll min_v[4 * N], smin_v[4 * N], min_c[4 * N];$/;"	m	struct:SGTBeats	typeref:typename:ll[]	file:
 min_v	code/Data Structures/Segment Tree Beats.cpp	/^  ll min_v[4 * N], smin_v[4 * N], min_c[4 * N];$/;"	m	struct:SGTBeats	typeref:typename:ll[]	file:
+minimumChanges	contests/Codeforces/1616/C/soll.cpp	/^int minimumChanges(vector<int> arr, int n, int d)$/;"	f	typeref:typename:int
 minimum_enclosing_circle	code-library/Geometry/Geometry 2D.cpp	/^circle minimum_enclosing_circle(vector<PT> &p) {$/;"	f	typeref:typename:circle
 minimum_enclosing_circle	code/Geometry/Geometry 2D.cpp	/^circle minimum_enclosing_circle(vector<PT> &p) {$/;"	f	typeref:typename:circle
 minimum_enclosing_rectangle	code-library/Geometry/Geometry 2D.cpp	/^double minimum_enclosing_rectangle(vector<PT> &p) {$/;"	f	typeref:typename:double
@@ -14099,6 +14126,12 @@ solve	contests/Codeforces/1609/A.cpp	/^void solve() {$/;"	f	typeref:typename:voi
 solve	contests/Codeforces/1609/B.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/Codeforces/1609/C.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/Codeforces/1609/D.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/Codeforces/1616/A/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/Codeforces/1616/B/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/Codeforces/1616/C/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/Codeforces/1616/D/new_sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/Codeforces/1616/D/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	contests/Codeforces/1616/hacks/A.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/Codeforces/1622/A/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/Codeforces/1622/B/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/Codeforces/1622/C/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
@@ -14168,6 +14201,9 @@ solve	practice/cpbook/ch1/1.6/reallife/medium/00161/main.cpp	/^void solve(vector
 solve	practice/cpbook/ch1/1.6/reallife/medium/01091/restartmain.cpp	/^string solve(int N) {$/;"	f	typeref:typename:string
 solve	practice/cpbook/ch3/DP/00787.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/cpbook/ch3/DP/10684.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/december2021/1560E/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/december2021/1572A/new_sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/december2021/1572A/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/december2021/1619D/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/december2021/1619E/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/december2021/1620C/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
