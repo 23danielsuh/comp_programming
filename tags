@@ -101,6 +101,7 @@ A	contests/Codeforces/1622/C_new/sol.cpp	/^vector<int> A;$/;"	v	typeref:typename
 A	contests/Codeforces/1623/new_C/sol.cpp	/^vector<int> A;$/;"	v	typeref:typename:vector<int>
 A	practice/cf/random/1700/4.cpp	/^vector<int> A, subtree_xor, dist;$/;"	v	typeref:typename:vector<int>
 A	practice/cf/random/pink/main.cpp	/^vector<int> A, cnt;$/;"	v	typeref:typename:vector<int>
+A	practice/december2021/DP/removal_game/sol.cpp	/^vector<ll> A;$/;"	v	typeref:typename:vector<ll>
 A	practice/usacoguide/gold/dsu/moocast/main.cpp	/^vector<pair<int, int>> A;$/;"	v	typeref:typename:vector<pair<int,int>>
 A	practice/usacoguide/silver/binsearch/sabotage.cpp	/^vector<int> A;$/;"	v	typeref:typename:vector<int>
 AC	code-library/Strings/Aho Corasick.cpp	/^  AC(): N(0), P(0) {node();}$/;"	f	struct:AC	file:
@@ -882,6 +883,7 @@ MOD	practice/cf/DP/1091D.cpp	/^const int MOD = 998244353;$/;"	v	typeref:typename
 MOD	practice/cf/random/1700/6.cpp	/^int MOD = 5;$/;"	v	typeref:typename:int
 MOD	practice/cf/random/i_hate_math_problems/1422C.cpp	/^const int MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
 MOD	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^const int MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
+MOD	practice/december2021/DP/counting_towers/sol.cpp	/^const int MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
 MOD	practice/usacoguide/gold/introDP/711C.cpp	/^const int MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
 MOD	practice/usacoguide/gold/introDP/arraydescription.cpp	/^const int MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
 MOD	practice/usacoguide/gold/introDP/gridpaths.cpp	/^const int mxN = 1005, MOD = 1e9 + 7;$/;"	v	typeref:typename:const int
@@ -892,6 +894,8 @@ MOD1	code-library/Strings/String Hashing.cpp	/^const int MOD1 = 127657753, MOD2 
 MOD1	code/Strings/String Hashing.cpp	/^const int MOD1 = 127657753, MOD2 = 987654319;$/;"	v	typeref:typename:const int
 MOD2	code-library/Strings/String Hashing.cpp	/^const int MOD1 = 127657753, MOD2 = 987654319;$/;"	v	typeref:typename:const int
 MOD2	code/Strings/String Hashing.cpp	/^const int MOD1 = 127657753, MOD2 = 987654319;$/;"	v	typeref:typename:const int
+MOD_value	code/modint.hpp	/^    static const int MOD_value = MOD;$/;"	m	struct:Mint	typeref:typename:const int
+MOD_value	practice/december2021/DP/counting_towers/sol.cpp	/^    static const int MOD_value = MOD;$/;"	m	struct:Modular	typeref:typename:const int	file:
 MST	code-library/Graph Theory/Steiner Tree Problem.cpp	/^long long MST() {$/;"	f	typeref:typename:long long
 MST	code/Graph Theory/Steiner Tree Problem.cpp	/^long long MST() {$/;"	f	typeref:typename:long long
 MXK	code-library/Math/FWHT in Any Base.cpp	/^  const int MXK = 10; \/\/(mod - 1) should be divisible by each base$/;"	v	namespace:FWHT	typeref:typename:const int
@@ -940,12 +944,18 @@ Mint	code-library/Number Theory/Prime Factorization Fastest.cpp	/^struct Mint {$
 Mint	code/Number Theory/Prime Factorization Fastest.cpp	/^  Mint() : n(0) { }$/;"	f	struct:Mint	file:
 Mint	code/Number Theory/Prime Factorization Fastest.cpp	/^  Mint(const uint64_t &x) : n(init(x)) { }$/;"	f	struct:Mint	file:
 Mint	code/Number Theory/Prime Factorization Fastest.cpp	/^struct Mint {$/;"	s	file:
+Mint	code/modint.hpp	/^    Mint(long long a, long long b) : value(0){ *this += a; *this \/= b;}$/;"	f	struct:Mint
+Mint	code/modint.hpp	/^    Mint(long long v = 0) { value = v % MOD; if (value < 0) value += MOD;}$/;"	f	struct:Mint
+Mint	code/modint.hpp	/^struct Mint {$/;"	s
 Mod	code-library/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod() {}$/;"	f	class:ntt::Mod	file:
 Mod	code-library/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod(word_t n) : x(init(n)) {};$/;"	f	class:ntt::Mod	file:
 Mod	code-library/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^class Mod {$/;"	c	namespace:ntt	file:
 Mod	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod() {}$/;"	f	class:ntt::Mod	file:
 Mod	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod(word_t n) : x(init(n)) {};$/;"	f	class:ntt::Mod	file:
 Mod	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^class Mod {$/;"	c	namespace:ntt	file:
+Modular	practice/december2021/DP/counting_towers/sol.cpp	/^    Modular(long long a, long long b) : value(0){ *this += a; *this \/= b;}$/;"	f	struct:Modular	file:
+Modular	practice/december2021/DP/counting_towers/sol.cpp	/^    Modular(long long v = 0) { value = v % MOD; if (value < 0) value += MOD;}$/;"	f	struct:Modular	file:
+Modular	practice/december2021/DP/counting_towers/sol.cpp	/^struct Modular {$/;"	s	file:
 N	code-library/Data Structures/Augmented DSU.cpp	/^const int N = 10000;$/;"	v	typeref:typename:const int
 N	code-library/Data Structures/BIT 2D with Range Update and Range Query.cpp	/^const int N = 1010;$/;"	v	typeref:typename:const int
 N	code-library/Data Structures/BIT with Range Update and Range Query.cpp	/^const int N = 3e5 + 9;$/;"	v	typeref:typename:const int
@@ -1460,6 +1470,7 @@ N	practice/cf/random/pink/main.cpp	/^int N;$/;"	v	typeref:typename:int
 N	practice/club/prob3/solution_prob3.cpp	/^int N;$/;"	v	typeref:typename:int
 N	practice/cpbook/ch1/1.6/game/easier/10189/main.cpp	/^int N, M;$/;"	v	typeref:typename:int
 N	practice/cpbook/ch3/DP/10684.cpp	/^int N;$/;"	v	typeref:typename:int
+N	practice/december2021/DP/removal_game/sol.cpp	/^int N;$/;"	v	typeref:typename:int
 N	practice/usacoguide/gold/SP/flightdiscount.cpp	/^int N;$/;"	v	typeref:typename:int
 N	practice/usacoguide/gold/SP/pump.cpp	/^int N;$/;"	v	typeref:typename:int
 N	practice/usacoguide/gold/SP/visitfj.cpp	/^int N, TT;$/;"	v	typeref:typename:int
@@ -4538,6 +4549,9 @@ dp	contests/AtCoder/ABC211/D.cpp	/^int dp[mxN], dist[mxN];$/;"	v	typeref:typenam
 dp	practice/cf/DP/knap1.cpp	/^int64_t dp[mxN][mxW];$/;"	v	typeref:typename:int64_t[][]
 dp	practice/cf/DP/knap2.cpp	/^int dp[N][N];$/;"	v	typeref:typename:int[][]
 dp	practice/club/prob3/solution_prob3.cpp	/^int dp[mxN][mxN];$/;"	v	typeref:typename:int[][]
+dp	practice/december2021/DP/counting_towers/sol.cpp	/^Modular<MOD> dp[mxN][2];$/;"	v	typeref:typename:Modular<MOD>[][2]
+dp	practice/december2021/DP/rectangle_cutting/sol.cpp	/^int dp[mxN][mxN];$/;"	v	typeref:typename:int[][]
+dp	practice/december2021/DP/removal_game/sol.cpp	/^vector<vector<pi>> dp(mxN, vector<pi>(mxN, {0, 0}));$/;"	v	typeref:typename:vector<vector<pi>>
 dp	practice/usacoguide/gold/introDP/711C.cpp	/^ll dp[N][N][N];$/;"	v	typeref:typename:ll[][][]
 dp	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi dp[mxN][105];$/;"	v	typeref:typename:mi[][105]
 dp	practice/usacoguide/gold/introDP/cannonballs.cpp	/^int dp[mxN];$/;"	v	typeref:typename:int[]
@@ -6273,6 +6287,7 @@ int	practice/december2021/1572A/new_sol.cpp	/^#define int /;"	d	file:
 int	practice/december2021/1572A/sol.cpp	/^#define int /;"	d	file:
 int	practice/december2021/1619D/sol.cpp	/^#define int /;"	d	file:
 int	practice/december2021/1619E/sol.cpp	/^#define int /;"	d	file:
+int	practice/december2021/DP/counting_towers/sol.cpp	/^#define int /;"	d	file:
 int	practice/usacoguide/gold/SP/dining/main.cpp	/^#define int /;"	d	file:
 int	practice/usacoguide/gold/SP/flightdiscount.cpp	/^#define int /;"	d	file:
 int	practice/usacoguide/gold/SP/pump.cpp	/^#define int /;"	d	file:
@@ -6463,7 +6478,6 @@ inv	code/Number Theory/Stirling Number of the Second Kind for Fixed k.cpp	/^  in
 inv	code/Number Theory/Stirling Number of the Second Kind for Fixed n.cpp	/^  modint<MOD> inv() const { return pow(MOD - 2); }  \/\/ MOD must be a prime$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 inv	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^    modint<MOD> inv() const { return pow(MOD - 2); }  \/\/ MOD must be a prime$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 inv	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  static constexpr word_t inv = mul_inv(mod);$/;"	m	class:ntt::Mod	typeref:typename:word_t	file:
-inv	code/modint.hpp	/^mi inv(mi a) { assert(a.v != 0); return pow(a,MOD-2); }$/;"	f	typeref:typename:mi
 inv	practice/cf/random/1700/6.cpp	/^mi inv(mi a) { assert(a.v != 0); return pow(a, MOD - 2); }$/;"	f	typeref:typename:mi
 inv	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi inv(mi a) { assert(a.v != 0); return pow(a,MOD-2); }$/;"	f	typeref:typename:mi
 inv	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline mint inv(int n) { return invs[n]; }$/;"	f	struct:combi	typeref:typename:mint	file:
@@ -6512,6 +6526,8 @@ inverse	code/Number Theory/Linear Diophantine Equation Three Variables with Nonn
 inverse	code/Number Theory/Stirling Number of the Second Kind for Fixed k.cpp	/^    poly inverse(int n) const {  \/\/ 1 \/ p(x) % x^n, O(nlogn)$/;"	f	struct:poly	typeref:typename:poly	file:
 inverse	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod inverse() const { return pow(mod - 2); }$/;"	f	class:ntt::Mod	typeref:typename:Mod	file:
 inverse	code/Number Theory/nCr Modulo Any Mod.cpp	/^ll inverse(ll a, ll m) {$/;"	f	typeref:typename:ll
+inverse	code/modint.hpp	/^    friend Mint inverse(Mint a) { return mexp(a, MOD - 2); }$/;"	f	typeref:typename:Mint
+inverse	practice/december2021/DP/counting_towers/sol.cpp	/^    friend Modular inverse(Modular a) { return mexp(a, MOD - 2); }$/;"	f	typeref:typename:Modular	file:
 inverse_mobius_transform	code-library/Dynamic Programming Optimizations/SOS convolutions.cpp	/^vector<int> inverse_mobius_transform(vector<int> f) {$/;"	f	namespace:SOS	typeref:typename:vector<int>
 inverse_mobius_transform	code/Dynamic Programming Optimizations/SOS convolutions.cpp	/^vector<int> inverse_mobius_transform(vector<int> f) {$/;"	f	namespace:SOS	typeref:typename:vector<int>
 inverse_zeta_transform	code-library/Dynamic Programming Optimizations/SOS convolutions.cpp	/^vector<int> inverse_zeta_transform(vector<int> f) {$/;"	f	namespace:SOS	typeref:typename:vector<int>
@@ -7269,7 +7285,6 @@ ll	contests/Codeforces/1616/B/sol.cpp	/^typedef long long ll;$/;"	t	typeref:type
 ll	contests/Codeforces/1616/C/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1616/D/new_sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1616/D/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
-ll	contests/Codeforces/1616/hacks/A.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1622/upsolve/C/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1623/A/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	contests/Codeforces/1623/B/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
@@ -7388,6 +7403,14 @@ ll	practice/december2021/1572A/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typ
 ll	practice/december2021/1619D/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/december2021/1619E/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/december2021/1620C/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/december2021/DP/LIS/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/december2021/DP/counting_towers/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/december2021/DP/rectangle_cutting/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/december2021/DP/removal_game/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/december2021/DP/teamwork/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/december2021/stacks/advertisement/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/december2021/stacks/balloons/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/december2021/stacks/nsv/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/usacoguide/gold/SP/dining/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/usacoguide/gold/SP/flightdiscount.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/usacoguide/gold/SP/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
@@ -8266,7 +8289,6 @@ main	contests/Codeforces/1616/C/sol.cpp	/^int32_t main() {$/;"	f	typeref:typenam
 main	contests/Codeforces/1616/C/soll.cpp	/^int main()$/;"	f	typeref:typename:int
 main	contests/Codeforces/1616/D/new_sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/1616/D/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
-main	contests/Codeforces/1616/hacks/A.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/1622/A/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/1622/B/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	contests/Codeforces/1622/C/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
@@ -8408,6 +8430,14 @@ main	practice/december2021/1572A/sol.cpp	/^int32_t main() {$/;"	f	typeref:typena
 main	practice/december2021/1619D/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/december2021/1619E/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/december2021/1620C/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/december2021/DP/LIS/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/december2021/DP/counting_towers/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/december2021/DP/rectangle_cutting/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/december2021/DP/removal_game/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/december2021/DP/teamwork/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/december2021/stacks/advertisement/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/december2021/stacks/balloons/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/december2021/stacks/nsv/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/gold/SP/dining/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/gold/SP/flightdiscount.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/gold/SP/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
@@ -8688,9 +8718,8 @@ merge_path	code-library/Graph Theory/Online Articulation Bridges.cpp	/^void merg
 merge_path	code/Graph Theory/Online Articulation Bridges.cpp	/^void merge_path (int a, int b) {$/;"	f	typeref:typename:void
 merge_treap	code-library/Data Structures/Treap.cpp	/^  node* merge_treap(node *l, node *r) {$/;"	f	struct:treap	typeref:typename:node *	file:
 merge_treap	code/Data Structures/Treap.cpp	/^  node* merge_treap(node *l, node *r) {$/;"	f	struct:treap	typeref:typename:node *	file:
-mi	code/modint.hpp	/^	mi():v(0) {}$/;"	f	struct:mi
-mi	code/modint.hpp	/^	mi(ll _v):v(int(_v%MOD)) { v += (v<0)*MOD; }$/;"	f	struct:mi
-mi	code/modint.hpp	/^struct mi { $/;"	s
+mexp	code/modint.hpp	/^    friend Mint mexp(Mint a, long long e) {$/;"	f	typeref:typename:Mint
+mexp	practice/december2021/DP/counting_towers/sol.cpp	/^    friend Modular mexp(Modular a, long long e) {$/;"	f	typeref:typename:Modular	file:
 mi	practice/cf/random/1700/6.cpp	/^	mi() { v = 0; }$/;"	f	struct:mi	file:
 mi	practice/cf/random/1700/6.cpp	/^	mi(long long _v) : v(_v % MOD) { v += (v < 0) * MOD; }$/;"	f	struct:mi	file:
 mi	practice/cf/random/1700/6.cpp	/^struct mi {$/;"	s	file:
@@ -9389,6 +9418,9 @@ mxN	practice/cpbook/ch1/1.6/game/easier/10189/main.cpp	/^const int mxN = 105;$/;
 mxN	practice/cpbook/ch1/1.6/game/harder/rockpaperscissors/main.cpp	/^const int mxN = 101;$/;"	v	typeref:typename:const int
 mxN	practice/cpbook/ch2/2.2/1D/11222/main.cpp	/^const int mxN = 1e4 + 5;$/;"	v	typeref:typename:const int
 mxN	practice/cpbook/ch2/2.2/2D/11581/main.cpp	/^const int mxN = 3;$/;"	v	typeref:typename:const int
+mxN	practice/december2021/DP/counting_towers/sol.cpp	/^const int mxN = 1e6 + 5;$/;"	v	typeref:typename:const int
+mxN	practice/december2021/DP/rectangle_cutting/sol.cpp	/^const int mxN = 505;$/;"	v	typeref:typename:const int
+mxN	practice/december2021/DP/removal_game/sol.cpp	/^const int mxN = 5005;$/;"	v	typeref:typename:const int
 mxN	practice/usacoguide/gold/SP/flightdiscount.cpp	/^const int mxN = 1e5 + 5;$/;"	v	typeref:typename:const int
 mxN	practice/usacoguide/gold/SP/shortestroutesii.cpp	/^const int mxN = 505;$/;"	v	typeref:typename:const int
 mxN	practice/usacoguide/gold/bfs/cownav.cpp	/^const int mxN = 25;$/;"	v	typeref:typename:const int
@@ -10054,8 +10086,10 @@ operator !=	code/Number Theory/Prefix Sum Queries of nCi.cpp	/^  inline bool ope
 operator !=	code/Number Theory/Stirling Number of the Second Kind for Fixed k.cpp	/^    inline bool operator != (modint<MOD> other) const { return value != other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
 operator !=	code/Number Theory/Stirling Number of the Second Kind for Fixed n.cpp	/^  inline bool operator != (modint<MOD> other) const { return value != other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
 operator !=	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^    inline bool operator != (modint<MOD> other) const { return value != other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
+operator !=	code/modint.hpp	/^    friend bool operator!=(Mint const& a, Mint const& b) {return a.value != b.value;}$/;"	f	typeref:typename:bool
 operator !=	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline bool operator != (modint<MOD> other) const { return value != other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
 operator !=	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline bool operator != (modint<MOD> other) const { return value != other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
+operator !=	practice/december2021/DP/counting_towers/sol.cpp	/^    friend bool operator!=(Modular const& a, Modular const& b) {return a.value != b.value;}$/;"	f	typeref:typename:bool	file:
 operator %	code-library/Math/Determinant of Cyclic Matrix.cpp	/^Poly operator%(Poly a, const Poly &b) {$/;"	f	typeref:typename:Poly
 operator %	code-library/Math/Determinant of Permutant Matrix.cpp	/^Poly operator%(Poly a, const Poly &b) {$/;"	f	typeref:typename:Poly
 operator %	code-library/Math/Faulhaber Formula Fastest.cpp	/^  poly operator % (const poly &t) const {return divmod(t).second;}$/;"	f	struct:poly	typeref:typename:poly	file:
@@ -10458,7 +10492,7 @@ operator *	code/Number Theory/Sum of C(a(i), k) for each k from 1 to n.cpp	/^inl
 operator *	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod operator * (Mod rhs) const { return Mod(*this) *= rhs; }$/;"	f	class:ntt::Mod	typeref:typename:Mod	file:
 operator *	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  poly operator * (const poly& rhs) const { return this->mul(rhs); }$/;"	f	class:poly	typeref:typename:poly	file:
 operator *	code/Strings/String Matching With FFT.cpp	/^  const base operator * (const base &c) const {$/;"	f	struct:base	typeref:typename:const base	file:
-operator *	code/modint.hpp	/^mi operator*(mi a, mi b) { return mi((ll)a.v*b.v); }$/;"	f	typeref:typename:mi
+operator *	code/modint.hpp	/^    friend Mint operator*(Mint a, Mint const b) { return a *= b; }$/;"	f	typeref:typename:Mint
 operator *	practice/cf/random/1700/6.cpp	/^mi operator*(mi a, mi b) { return mi((long long) a.v * b.v); }$/;"	f	typeref:typename:mi
 operator *	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi operator*(mi a, mi b) { return mi((ll)a.v*b.v); }$/;"	f	typeref:typename:mi
 operator *	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator * (modint<MOD> other) const { int32_t c = (int64_t)this->value * o/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
@@ -10467,6 +10501,7 @@ operator *	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^template <int32_
 operator *	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator * (modint<MOD> other) const { int32_t c = (int64_t)this->value * o/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator *	practice/cf/random/i_hate_math_problems/testing.cpp	/^template <int32_t MOD> modint<MOD> operator * (int32_t value, modint<MOD> n) { return modint<MOD/;"	f	typeref:typename:modint<MOD>
 operator *	practice/cf/random/i_hate_math_problems/testing.cpp	/^template <int32_t MOD> modint<MOD> operator * (int64_t value, modint<MOD> n) { return modint<MOD/;"	f	typeref:typename:modint<MOD>
+operator *	practice/december2021/DP/counting_towers/sol.cpp	/^    friend Modular operator*(Modular a, Modular const b) { return a *= b; }$/;"	f	typeref:typename:Modular	file:
 operator *	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi operator*(mi a, mi b) { return mi((ll)a.v*b.v); }$/;"	f	typeref:typename:mi
 operator *=	code-library/Data Structures/HLD with Persistent Lazy Propagation.cpp	/^    inline modint<MOD> & operator *= (modint<MOD> other) { this->value = (int64_t)this->value * /;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator *=	code-library/Data Structures/Segment Tree Persistent Lazy.cpp	/^  inline modint<MOD> & operator *= (modint<MOD> other) { this->value = (int64_t)this->value * ot/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
@@ -10592,11 +10627,12 @@ operator *=	code/Number Theory/Stirling Number of the Second Kind for Fixed n.cp
 operator *=	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^    inline modint<MOD> & operator *= (modint<MOD> other) { this->value = (int64_t)this->value * /;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator *=	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod& operator *= (Mod rhs) { this->x = reduce(dword_t(this->x) * rhs.x); return *this; }$/;"	f	class:ntt::Mod	typeref:typename:Mod &	file:
 operator *=	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  poly& operator *= (const poly& rhs) { return *this = *this * rhs; }$/;"	f	class:poly	typeref:typename:poly &	file:
-operator *=	code/modint.hpp	/^mi& operator*=(mi& a, mi b) { return a = a*b; }$/;"	f	typeref:typename:mi &
+operator *=	code/modint.hpp	/^    Mint& operator*=(Mint const& b) {value = (long long)value * b.value % MOD;return *this;}$/;"	f	struct:Mint	typeref:typename:Mint &
 operator *=	practice/cf/random/1700/6.cpp	/^mi& operator*=(mi& a, mi b) { return a = a * b; }$/;"	f	typeref:typename:mi &
 operator *=	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi& operator*=(mi& a, mi b) { return a = a*b; }$/;"	f	typeref:typename:mi &
 operator *=	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> & operator *= (modint<MOD> other) { this->value = (int64_t)this->value * ot/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator *=	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> & operator *= (modint<MOD> other) { this->value = (int64_t)this->value * ot/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
+operator *=	practice/december2021/DP/counting_towers/sol.cpp	/^    Modular& operator*=(Modular const& b) {value = (long long)value * b.value % MOD;return *this/;"	f	struct:Modular	typeref:typename:Modular &	file:
 operator *=	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi& operator*=(mi& a, mi b) { return a = a*b; }$/;"	f	typeref:typename:mi &
 operator +	code-library/Data Structures/Centroid Decomposition.cpp	/^  const base operator + (const base &c) const {$/;"	f	struct:base	typeref:typename:const base	file:
 operator +	code-library/Data Structures/Dynamic Diameter Online.cpp	/^    node operator + (const node &oth) const {$/;"	f	struct:node	typeref:typename:node	file:
@@ -10770,11 +10806,12 @@ operator +	code/Number Theory/Sum of C(a(i), k) for each k from 1 to n.cpp	/^inl
 operator +	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod operator + (Mod rhs) const { return Mod(*this) += rhs; }$/;"	f	class:ntt::Mod	typeref:typename:Mod	file:
 operator +	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  poly operator + (const poly& rhs) const { return poly(*this) += rhs; }$/;"	f	class:poly	typeref:typename:poly	file:
 operator +	code/Strings/String Matching With FFT.cpp	/^  const base operator + (const base &c) const {$/;"	f	struct:base	typeref:typename:const base	file:
-operator +	code/modint.hpp	/^mi operator+(mi a, mi b) { return a += b; }$/;"	f	typeref:typename:mi
+operator +	code/modint.hpp	/^    friend Mint operator+(Mint a, Mint const b) { return a += b; }$/;"	f	typeref:typename:Mint
 operator +	practice/cf/random/1700/6.cpp	/^mi operator+(mi a, mi b) { return a += b; }$/;"	f	typeref:typename:mi
 operator +	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi operator+(mi a, mi b) { return a += b; }$/;"	f	typeref:typename:mi
 operator +	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator + (modint<MOD> other) const { int32_t c = this->value + other.valu/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator +	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator + (modint<MOD> other) const { int32_t c = this->value + other.valu/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator +	practice/december2021/DP/counting_towers/sol.cpp	/^    friend Modular operator+(Modular a, Modular const b) { return a += b; }$/;"	f	typeref:typename:Modular	file:
 operator +	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi operator+(mi a, mi b) { return a += b; }$/;"	f	typeref:typename:mi
 operator +=	code-library/Data Structures/HLD with Persistent Lazy Propagation.cpp	/^    inline modint<MOD> & operator += (modint<MOD> other) { this->value += other.value; if (this-/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator +=	code-library/Data Structures/Segment Tree Persistent Lazy.cpp	/^  inline modint<MOD> & operator += (modint<MOD> other) { this->value += other.value; if (this->v/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
@@ -10886,11 +10923,12 @@ operator +=	code/Number Theory/Stirling Number of the Second Kind for Fixed n.cp
 operator +=	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^    inline modint<MOD> & operator += (modint<MOD> other) { this->value += other.value; if (this-/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator +=	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod& operator += (Mod rhs) { this->x += rhs.x; return *this; }$/;"	f	class:ntt::Mod	typeref:typename:Mod &	file:
 operator +=	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  poly& operator += (const poly& rhs) {$/;"	f	class:poly	typeref:typename:poly &	file:
-operator +=	code/modint.hpp	/^mi& operator+=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
+operator +=	code/modint.hpp	/^    Mint& operator+=(Mint const& b) {value += b.value; if (value >= MOD) value -= MOD; return *t/;"	f	struct:Mint	typeref:typename:Mint &
 operator +=	practice/cf/random/1700/6.cpp	/^mi& operator+=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
 operator +=	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi& operator+=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
 operator +=	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> & operator += (modint<MOD> other) { this->value += other.value; if (this->v/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator +=	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> & operator += (modint<MOD> other) { this->value += other.value; if (this->v/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
+operator +=	practice/december2021/DP/counting_towers/sol.cpp	/^    Modular& operator+=(Modular const& b) {value += b.value; if (value >= MOD) value -= MOD; ret/;"	f	struct:Modular	typeref:typename:Modular &	file:
 operator +=	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi& operator+=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
 operator -	code-library/Data Structures/Centroid Decomposition.cpp	/^  const base operator - (const base &c) const {$/;"	f	struct:base	typeref:typename:const base	file:
 operator -	code-library/Data Structures/HLD with Persistent Lazy Propagation.cpp	/^    inline modint<MOD> operator - () const { return modint<MOD>(this->value ? MOD - this->value /;"	f	struct:modint	typeref:typename:modint<MOD>	file:
@@ -11154,13 +11192,16 @@ operator -	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod operato
 operator -	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  poly operator - () {$/;"	f	class:poly	typeref:typename:poly	file:
 operator -	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  poly operator - (const poly& rhs) const { return poly(*this) -= rhs; }$/;"	f	class:poly	typeref:typename:poly	file:
 operator -	code/Strings/String Matching With FFT.cpp	/^  const base operator - (const base &c) const {$/;"	f	struct:base	typeref:typename:const base	file:
-operator -	code/modint.hpp	/^mi operator-(mi a, mi b) { return a -= b; }$/;"	f	typeref:typename:mi
+operator -	code/modint.hpp	/^    friend Mint operator-(Mint a, Mint const b) { return a -= b; }$/;"	f	typeref:typename:Mint
+operator -	code/modint.hpp	/^    friend Mint operator-(Mint const a) { return 0 - a; }$/;"	f	typeref:typename:Mint
 operator -	practice/cf/random/1700/6.cpp	/^mi operator-(mi a, mi b) { return a -= b; }$/;"	f	typeref:typename:mi
 operator -	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi operator-(mi a, mi b) { return a -= b; }$/;"	f	typeref:typename:mi
 operator -	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator - () const { return modint<MOD>(this->value ? MOD - this->value : /;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator -	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator - (modint<MOD> other) const { int32_t c = this->value - other.valu/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator -	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator - () const { return modint<MOD>(this->value ? MOD - this->value : /;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator -	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator - (modint<MOD> other) const { int32_t c = this->value - other.valu/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator -	practice/december2021/DP/counting_towers/sol.cpp	/^    friend Modular operator-(Modular a, Modular const b) { return a -= b; }$/;"	f	typeref:typename:Modular	file:
+operator -	practice/december2021/DP/counting_towers/sol.cpp	/^    friend Modular operator-(Modular const a) { return 0 - a; }$/;"	f	typeref:typename:Modular	file:
 operator -	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi operator-(mi a, mi b) { return a -= b; }$/;"	f	typeref:typename:mi
 operator -=	code-library/Data Structures/HLD with Persistent Lazy Propagation.cpp	/^    inline modint<MOD> & operator -= (modint<MOD> other) { this->value -= other.value; if (this-/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator -=	code-library/Data Structures/Segment Tree Persistent Lazy.cpp	/^  inline modint<MOD> & operator -= (modint<MOD> other) { this->value -= other.value; if (this->v/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
@@ -11268,11 +11309,12 @@ operator -=	code/Number Theory/Stirling Number of the Second Kind for Fixed n.cp
 operator -=	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^    inline modint<MOD> & operator -= (modint<MOD> other) { this->value -= other.value; if (this-/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator -=	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod& operator -= (Mod rhs) { this->x += 3 * mod - rhs.x; return *this; }$/;"	f	class:ntt::Mod	typeref:typename:Mod &	file:
 operator -=	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  poly& operator -= (const poly& rhs) {$/;"	f	class:poly	typeref:typename:poly &	file:
-operator -=	code/modint.hpp	/^mi& operator-=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
+operator -=	code/modint.hpp	/^    Mint& operator-=(Mint const& b) {value -= b.value; if (value < 0) value += MOD;return *this;/;"	f	struct:Mint	typeref:typename:Mint &
 operator -=	practice/cf/random/1700/6.cpp	/^mi& operator-=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
 operator -=	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi& operator-=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
 operator -=	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> & operator -= (modint<MOD> other) { this->value -= other.value; if (this->v/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
 operator -=	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> & operator -= (modint<MOD> other) { this->value -= other.value; if (this->v/;"	f	struct:modint	typeref:typename:modint<MOD> &	file:
+operator -=	practice/december2021/DP/counting_towers/sol.cpp	/^    Modular& operator-=(Modular const& b) {value -= b.value; if (value < 0) value += MOD;return /;"	f	struct:Modular	typeref:typename:Modular &	file:
 operator -=	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi& operator-=(mi& a, mi b) { $/;"	f	typeref:typename:mi &
 operator /	code-library/Data Structures/HLD with Persistent Lazy Propagation.cpp	/^    inline modint<MOD> operator \/  (modint<MOD> other) const { return *this *  other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator /	code-library/Data Structures/Segment Tree Persistent Lazy.cpp	/^  inline modint<MOD> operator \/  (modint<MOD> other) const { return *this *  other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
@@ -11400,11 +11442,12 @@ operator /	code/Number Theory/Stirling Number of the Second Kind for Fixed k.cpp
 operator /	code/Number Theory/Stirling Number of the Second Kind for Fixed n.cpp	/^  inline modint<MOD> operator \/  (modint<MOD> other) const { return *this *  other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator /	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^    inline modint<MOD> operator \/  (modint<MOD> other) const { return *this *  other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator /	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^    friend u64 operator \/ (u64 n, fast_div d) { return u128(n) * d.x >> d.s; }$/;"	f	class:poly	typeref:typename:u64	file:
-operator /	code/modint.hpp	/^mi operator\/(mi a, mi b) { return a*inv(b); }$/;"	f	typeref:typename:mi
+operator /	code/modint.hpp	/^    friend Mint operator\/(Mint a, Mint const b) { return a \/= b; }$/;"	f	typeref:typename:Mint
 operator /	practice/cf/random/1700/6.cpp	/^mi operator\/(mi a, mi b) { return a * inv(b); }$/;"	f	typeref:typename:mi
 operator /	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi operator\/(mi a, mi b) { return a*inv(b); }$/;"	f	typeref:typename:mi
 operator /	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator \/  (modint<MOD> other) const { return *this *  other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator /	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator \/  (modint<MOD> other) const { return *this *  other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator /	practice/december2021/DP/counting_towers/sol.cpp	/^    friend Modular operator\/(Modular a, Modular const b) { return a \/= b; }$/;"	f	typeref:typename:Modular	file:
 operator /	practice/usacoguide/gold/introDP/arraydescription.cpp	/^mi operator\/(mi a, mi b) { return a*inv(b); }$/;"	f	typeref:typename:mi
 operator /=	code-library/Data Structures/HLD with Persistent Lazy Propagation.cpp	/^    inline modint<MOD> operator \/= (modint<MOD> other)       { return *this *= other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator /=	code-library/Data Structures/Segment Tree Persistent Lazy.cpp	/^  inline modint<MOD> operator \/= (modint<MOD> other)       { return *this *= other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
@@ -11512,8 +11555,10 @@ operator /=	code/Number Theory/Stirling Number of the Second Kind for Fixed k.cp
 operator /=	code/Number Theory/Stirling Number of the Second Kind for Fixed k.cpp	/^    poly& operator \/= (const mint &x) { return *this = (*this) \/ x; }$/;"	f	struct:poly	typeref:typename:poly &	file:
 operator /=	code/Number Theory/Stirling Number of the Second Kind for Fixed n.cpp	/^  inline modint<MOD> operator \/= (modint<MOD> other)       { return *this *= other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator /=	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^    inline modint<MOD> operator \/= (modint<MOD> other)       { return *this *= other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator /=	code/modint.hpp	/^    Mint& operator\/=(Mint const& b) { return *this *= inverse(b); }$/;"	f	struct:Mint	typeref:typename:Mint &
 operator /=	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline modint<MOD> operator \/= (modint<MOD> other)       { return *this *= other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator /=	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline modint<MOD> operator \/= (modint<MOD> other)       { return *this *= other.inv(); }$/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
+operator /=	practice/december2021/DP/counting_towers/sol.cpp	/^    Modular& operator\/=(Modular const& b) { return *this *= inverse(b); }$/;"	f	struct:Modular	typeref:typename:Modular &	file:
 operator <	code-library/Data Structures/HLD with Persistent Lazy Propagation.cpp	/^    inline bool operator < (modint<MOD> other) const { return value < other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
 operator <	code-library/Data Structures/MOs Algorithm.cpp	/^  bool operator < (const query &x) const {$/;"	f	struct:query	typeref:typename:bool	file:
 operator <	code-library/Data Structures/MOs on tree.cpp	/^  bool operator < (const query &x) const {$/;"	f	struct:query	typeref:typename:bool	file:
@@ -11734,8 +11779,10 @@ operator <<	code/Number Theory/Stirling Number of the Second Kind for Fixed k.cp
 operator <<	code/Number Theory/Stirling Number of the Second Kind for Fixed n.cpp	/^template <int32_t MOD> ostream & operator << (ostream & out, modint<MOD> n) { return out << n.va/;"	f	typeref:typename:ostream &
 operator <<	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^template <int32_t MOD> ostream & operator << (ostream & out, modint<MOD> n) { return out << n.va/;"	f	typeref:typename:ostream &
 operator <<	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  friend ostream& operator << (ostream& os, const Mod& m) { return os << m.get(); }$/;"	f	namespace:ntt	typeref:typename:ostream &	file:
+operator <<	code/modint.hpp	/^    friend std::ostream& operator<<(std::ostream& os, Mint const& a) {return os << a.value;}$/;"	f	typeref:typename:std::ostream &
 operator <<	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^template <int32_t MOD> ostream & operator << (ostream & out, modint<MOD> n) { return out << n.va/;"	f	typeref:typename:ostream &
 operator <<	practice/cf/random/i_hate_math_problems/testing.cpp	/^template <int32_t MOD> ostream & operator << (ostream & out, modint<MOD> n) { return out << n.va/;"	f	typeref:typename:ostream &
+operator <<	practice/december2021/DP/counting_towers/sol.cpp	/^    friend std::ostream& operator<<(std::ostream& os, Modular const& a) {return os << a.value;}$/;"	f	typeref:typename:std::ostream &	file:
 operator <=	code-library/Miscellaneous/BigInt.cpp	/^  bool operator<=(const BigInt &v) const {$/;"	f	struct:BigInt	typeref:typename:bool	file:
 operator <=	code/Miscellaneous/BigInt.cpp	/^  bool operator<=(const BigInt &v) const {$/;"	f	struct:BigInt	typeref:typename:bool	file:
 operator =	code-library/Miscellaneous/BigInt.cpp	/^  BigInt& operator = (BigInt other) {$/;"	f	struct:BigInt	typeref:typename:BigInt &	file:
@@ -11862,10 +11909,11 @@ operator ==	code/Number Theory/Prefix Sum Queries of nCi.cpp	/^  inline bool ope
 operator ==	code/Number Theory/Stirling Number of the Second Kind for Fixed k.cpp	/^    inline bool operator == (modint<MOD> other) const { return value == other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
 operator ==	code/Number Theory/Stirling Number of the Second Kind for Fixed n.cpp	/^  inline bool operator == (modint<MOD> other) const { return value == other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
 operator ==	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^    inline bool operator == (modint<MOD> other) const { return value == other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
-operator ==	code/modint.hpp	/^bool operator==(mi a, mi b) { return a.v == b.v; }$/;"	f	typeref:typename:bool
+operator ==	code/modint.hpp	/^    friend bool operator==(Mint const& a, Mint const& b) {return a.value == b.value;}$/;"	f	typeref:typename:bool
 operator ==	practice/cf/random/i_hate_math_problems/1422C.cpp	/^bool operator==(mi a, mi b) { return a.v == b.v; }$/;"	f	typeref:typename:bool
 operator ==	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  inline bool operator == (modint<MOD> other) const { return value == other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
 operator ==	practice/cf/random/i_hate_math_problems/testing.cpp	/^  inline bool operator == (modint<MOD> other) const { return value == other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
+operator ==	practice/december2021/DP/counting_towers/sol.cpp	/^    friend bool operator==(Modular const& a, Modular const& b) {return a.value == b.value;}$/;"	f	typeref:typename:bool	file:
 operator ==	practice/usacoguide/gold/introDP/arraydescription.cpp	/^bool operator==(mi a, mi b) { return a.v == b.v; }$/;"	f	typeref:typename:bool
 operator >	code-library/Data Structures/HLD with Persistent Lazy Propagation.cpp	/^    inline bool operator > (modint<MOD> other) const { return value > other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
 operator >	code-library/Data Structures/Segment Tree Persistent Lazy.cpp	/^  inline bool operator > (modint<MOD> other) const { return value > other.value; }$/;"	f	struct:modint	typeref:typename:bool	file:
@@ -12045,7 +12093,6 @@ operator [] 	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  R& operat
 operator [] 	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  const R& operator [] (int i) const { return coefs[i]; }$/;"	f	class:poly	typeref:typename:const R &	file:
 operator ^	code-library/Miscellaneous/Bitset Custom.cpp	/^    inline Bitset operator ^ (const Bitset &x) const {$/;"	f	struct:Bitset	typeref:typename:Bitset	file:
 operator ^	code/Miscellaneous/Bitset Custom.cpp	/^    inline Bitset operator ^ (const Bitset &x) const {$/;"	f	struct:Bitset	typeref:typename:Bitset	file:
-operator int	code/modint.hpp	/^ 	int v; explicit operator int() const { return v; } $/;"	f	struct:mi
 operator int	practice/cf/random/1700/6.cpp	/^ 	int v; explicit operator int() const { return v; }$/;"	f	struct:mi	file:
 operator int	practice/cf/random/i_hate_math_problems/1422C.cpp	/^ 	int v; explicit operator int() const { return v; } $/;"	f	struct:mi	file:
 operator int	practice/usacoguide/gold/introDP/arraydescription.cpp	/^ 	int v; explicit operator int() const { return v; } $/;"	f	struct:mi	file:
@@ -12375,6 +12422,7 @@ pi	contests/USACO/dec_silver_2021/A/A_safe.cpp	/^struct pi {$/;"	s	file:
 pi	contests/USACO/dec_silver_2021/A/a_save.cpp	/^struct pi {$/;"	s	file:
 pi	contests/USACO/dec_silver_2021/A/a_testing.cpp	/^struct pi {$/;"	s	file:
 pi	contests/USACO/dec_silver_2021/A/restart_A.cpp	/^struct pi {$/;"	s	file:
+pi	practice/december2021/DP/removal_game/sol.cpp	/^using pi = pair<ll, ll>;$/;"	t	typeref:typename:pair<ll,ll>	file:
 pii	code-library/Data Structures/Disjoint Sparse Table.cpp	/^#define pii /;"	d	file:
 pii	code-library/Dynamic Programming Optimizations/DP Over Divisors.cpp	/^#define pii /;"	d	file:
 pii	code-library/Strings/Prefix Automaton.cpp	/^#define pii /;"	d	file:
@@ -12659,7 +12707,6 @@ pow	code/Number Theory/Stirling Number of the Second Kind for Fixed k.cpp	/^    
 pow	code/Number Theory/Stirling Number of the Second Kind for Fixed n.cpp	/^  modint<MOD> pow(uint64_t k) const { modint<MOD> x = *this, y = 1; for (; k; k >>= 1) { if (k &/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 pow	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^    modint<MOD> pow(uint64_t k) const { modint<MOD> x = *this, y = 1; for (; k; k >>= 1) { if (k/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 pow	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  Mod pow(word_t exp) const {$/;"	f	class:ntt::Mod	typeref:typename:Mod	file:
-pow	code/modint.hpp	/^mi pow(mi a, ll p) { assert(p >= 0); $/;"	f	typeref:typename:mi
 pow	practice/cf/random/1700/6.cpp	/^mi pow(mi a, long long p) {$/;"	f	typeref:typename:mi
 pow	practice/cf/random/i_hate_math_problems/1422C.cpp	/^mi pow(mi a, ll p) { assert(p >= 0); \/\/ won't work for negative p$/;"	f	typeref:typename:mi
 pow	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  modint<MOD> pow(uint64_t k) const { modint<MOD> x = *this, y = 1; for (; k; k >>= 1) { if (k &/;"	f	struct:modint	typeref:typename:modint<MOD>	file:
@@ -12742,6 +12789,7 @@ power_sum	code/Number Theory/Generalized Floor Sum of Arithmetic Progressions.cp
 power_sum	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^long long power_sum(long long n, int k) {$/;"	f	typeref:typename:long long
 pp	code-library/Data Structures/Link Cut Tree.cpp	/^  int p = 0, c[2] = {0, 0}, pp = 0;$/;"	m	struct:node	typeref:typename:int	file:
 pp	code/Data Structures/Link Cut Tree.cpp	/^  int p = 0, c[2] = {0, 0}, pp = 0;$/;"	m	struct:node	typeref:typename:int	file:
+pp	practice/december2021/DP/counting_towers/sol.cpp	/^void pp() {$/;"	f	typeref:typename:void
 pre	code-library/Graph Theory/Counting Labeled Graphs.cpp	/^void pre() {$/;"	f	typeref:typename:void
 pre	code-library/Math/NTT Online.cpp	/^void pre() {$/;"	f	typeref:typename:void
 pre	code-library/Math/Polynomial with Binomial Coefficients.cpp	/^void pre()$/;"	f	typeref:typename:void
@@ -14131,7 +14179,6 @@ solve	contests/Codeforces/1616/B/sol.cpp	/^void solve() {$/;"	f	typeref:typename
 solve	contests/Codeforces/1616/C/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/Codeforces/1616/D/new_sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/Codeforces/1616/D/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
-solve	contests/Codeforces/1616/hacks/A.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/Codeforces/1622/A/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/Codeforces/1622/B/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	contests/Codeforces/1622/C/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
@@ -14207,6 +14254,14 @@ solve	practice/december2021/1572A/sol.cpp	/^void solve() {$/;"	f	typeref:typenam
 solve	practice/december2021/1619D/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/december2021/1619E/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/december2021/1620C/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/december2021/DP/LIS/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/december2021/DP/counting_towers/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/december2021/DP/rectangle_cutting/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/december2021/DP/removal_game/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/december2021/DP/teamwork/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/december2021/stacks/advertisement/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/december2021/stacks/balloons/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/december2021/stacks/nsv/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/usacoguide/gold/SP/dining/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/usacoguide/gold/SP/flightdiscount.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/usacoguide/gold/SP/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
@@ -15348,7 +15403,6 @@ v	code/Graph Theory/Min Cost Max Flow.cpp	/^    int u, v;$/;"	m	struct:MCMF::edg
 v	code/Math/Determinant of Sparse Matrix.cpp	/^struct Elem { int x, y; mint v; };$/;"	m	struct:Elem	typeref:typename:mint	file:
 v	code/Number Theory/Smallest Number Having Exactly K Divisors.cpp	/^vector<long long> v;$/;"	v	typeref:typename:vector<long long>
 v	code/Strings/String Matching using Bitsets.cpp	/^vector<int> v;$/;"	v	typeref:typename:vector<int>
-v	code/modint.hpp	/^ 	int v; explicit operator int() const { return v; } $/;"	m	struct:mi	typeref:typename:int
 v	practice/cf/random/1700/6.cpp	/^ 	int v; explicit operator int() const { return v; }$/;"	m	struct:mi	typeref:typename:int	file:
 v	practice/cf/random/i_hate_math_problems/1422C.cpp	/^ 	int v; explicit operator int() const { return v; } $/;"	m	struct:mi	typeref:typename:int	file:
 v	practice/usacoguide/gold/introDP/arraydescription.cpp	/^ 	int v; explicit operator int() const { return v; } $/;"	m	struct:mi	typeref:typename:int	file:
@@ -15480,8 +15534,10 @@ value	code/Number Theory/Prefix Sum Queries of nCi.cpp	/^  int32_t value;$/;"	m	
 value	code/Number Theory/Stirling Number of the Second Kind for Fixed k.cpp	/^    int32_t value;$/;"	m	struct:modint	typeref:typename:int32_t	file:
 value	code/Number Theory/Stirling Number of the Second Kind for Fixed n.cpp	/^  int32_t value;$/;"	m	struct:modint	typeref:typename:int32_t	file:
 value	code/Number Theory/Sum of Arithmetic Progression Powers Divided.cpp	/^    int32_t value;$/;"	m	struct:modint	typeref:typename:int32_t	file:
+value	code/modint.hpp	/^    int value;$/;"	m	struct:Mint	typeref:typename:int
 value	practice/cf/random/i_hate_math_problems/1462E2.cpp	/^  int32_t value;$/;"	m	struct:modint	typeref:typename:int32_t	file:
 value	practice/cf/random/i_hate_math_problems/testing.cpp	/^  int32_t value;$/;"	m	struct:modint	typeref:typename:int32_t	file:
+value	practice/december2021/DP/counting_towers/sol.cpp	/^    int value;$/;"	m	struct:Modular	typeref:typename:int	file:
 vc	code-library/Strings/Aho Corasick All Pair Occurrence Relation.cpp	/^bool vc[N];$/;"	v	typeref:typename:bool[]
 vc	code/Strings/Aho Corasick All Pair Occurrence Relation.cpp	/^bool vc[N];$/;"	v	typeref:typename:bool[]
 vec	code-library/Data Structures/Centroid Decomposition.cpp	/^vector<int> vec;$/;"	v	typeref:typename:vector<int>

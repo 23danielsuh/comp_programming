@@ -1,20 +1,28 @@
-struct mi { 
- 	int v; explicit operator int() const { return v; } 
-	mi():v(0) {}
-	mi(ll _v):v(int(_v%MOD)) { v += (v<0)*MOD; }
+template <int MOD=998244353>
+struct Mint {
+    int value;
+    static const int MOD_value = MOD;
+
+    Mint(long long v = 0) { value = v % MOD; if (value < 0) value += MOD;}
+    Mint(long long a, long long b) : value(0){ *this += a; *this /= b;}
+
+    Mint& operator+=(Mint const& b) {value += b.value; if (value >= MOD) value -= MOD; return *this;}
+    Mint& operator-=(Mint const& b) {value -= b.value; if (value < 0) value += MOD;return *this;}
+    Mint& operator*=(Mint const& b) {value = (long long)value * b.value % MOD;return *this;}
+
+    friend Mint mexp(Mint a, long long e) {
+		Mint res = 1; while (e) { if (e&1) res *= a; a *= a; e >>= 1; }
+		return res;
+    }
+    friend Mint inverse(Mint a) { return mexp(a, MOD - 2); }
+
+    Mint& operator/=(Mint const& b) { return *this *= inverse(b); }
+    friend Mint operator+(Mint a, Mint const b) { return a += b; }
+    friend Mint operator-(Mint a, Mint const b) { return a -= b; }
+    friend Mint operator-(Mint const a) { return 0 - a; }
+    friend Mint operator*(Mint a, Mint const b) { return a *= b; }
+    friend Mint operator/(Mint a, Mint const b) { return a /= b; }
+    friend std::ostream& operator<<(std::ostream& os, Mint const& a) {return os << a.value;}
+    friend bool operator==(Mint const& a, Mint const& b) {return a.value == b.value;}
+    friend bool operator!=(Mint const& a, Mint const& b) {return a.value != b.value;}
 };
-mi& operator+=(mi& a, mi b) { 
-	if ((a.v += b.v) >= MOD) a.v -= MOD; 
-	return a; }
-mi& operator-=(mi& a, mi b) { 
-	if ((a.v -= b.v) < 0) a.v += MOD; 
-	return a; }
-mi operator+(mi a, mi b) { return a += b; }
-mi operator-(mi a, mi b) { return a -= b; }
-mi operator*(mi a, mi b) { return mi((ll)a.v*b.v); }
-mi& operator*=(mi& a, mi b) { return a = a*b; }
-mi pow(mi a, ll p) { assert(p >= 0); 
-	return p==0?1:pow(a*a,p/2)*(p&1?a:1); }
-mi inv(mi a) { assert(a.v != 0); return pow(a,MOD-2); }
-mi operator/(mi a, mi b) { return a*inv(b); }
-bool operator==(mi a, mi b) { return a.v == b.v; }
