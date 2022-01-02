@@ -1872,7 +1872,9 @@ SGTBeats	code/Data Structures/Segment Tree Beats.cpp	/^  SGTBeats(int n, ll *a) 
 SGTBeats	code/Data Structures/Segment Tree Beats.cpp	/^struct SGTBeats {$/;"	s	file:
 SIGMA	code-library/Strings/Bit LCS.cpp	/^const int N = 5e4 + 9, SIGMA = 26;$/;"	v	typeref:typename:const int
 SIGMA	code/Strings/Bit LCS.cpp	/^const int N = 5e4 + 9, SIGMA = 26;$/;"	v	typeref:typename:const int
+SIZE	code/dbg.hpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	f	typeref:typename:int
 SIZE	practice/cf/random/1700/testing.cpp	/^template <typename T, size_t N> int SIZE(const T (&t)[N]){ return N; } template<typename T> int /;"	f	typeref:typename:int
+SIZE	practice/january2021/stacks/ma2/sol1.cpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	f	typeref:typename:int
 SM	code-library/Graph Theory/Stable Marriage Problem.cpp	/^void SM(int n) {$/;"	f	typeref:typename:void
 SM	code/Graph Theory/Stable Marriage Problem.cpp	/^void SM(int n) {$/;"	f	typeref:typename:void
 SOS	code-library/Dynamic Programming Optimizations/SOS convolutions.cpp	/^namespace SOS {$/;"	n	file:
@@ -3964,9 +3966,21 @@ data	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  R* data() { retur
 data	code/Number Theory/Sum of nCi for a Fixed Large n.cpp	/^  const R* data() const { return coefs.data(); }$/;"	f	class:poly	typeref:typename:const R *	file:
 dateToInt	code-library/Miscellaneous/Dates.cpp	/^int dateToInt(int y, int m, int d) {$/;"	f	typeref:typename:int
 dateToInt	code/Miscellaneous/Dates.cpp	/^int dateToInt(int y, int m, int d) {$/;"	f	typeref:typename:int
+dbg	code/dbg.hpp	/^#define dbg(/;"	d
 dbg	practice/cf/random/1700/testing.cpp	/^#define dbg(/;"	d	file:
+dbg	practice/january2021/stacks/ma2/sol1.cpp	/^#define dbg(/;"	d	file:
+dbgm	code/dbg.hpp	/^#define dbgm(/;"	d
 dbgm	practice/cf/random/1700/testing.cpp	/^#define dbgm(/;"	d	file:
 dbgm	practice/cf/random/1700/testing.cpp	/^template <typename T, size_t N> int SIZE(const T (&t)[N]){ return N; } template<typename T> int /;"	f	typeref:typename:void
+dbgm	practice/january2021/stacks/ma2/sol1.cpp	/^#define dbgm(/;"	d	file:
+dbgr	code/dbg.hpp	/^#define dbgr(/;"	d
+dbgr	code/dbg.hpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	f	typeref:typename:void
+dbgr	practice/january2021/stacks/ma2/sol1.cpp	/^#define dbgr(/;"	d	file:
+dbgr	practice/january2021/stacks/ma2/sol1.cpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	f	typeref:typename:void
+dbgs	code/dbg.hpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	f	typeref:typename:void
+dbgs	practice/january2021/stacks/ma2/sol1.cpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	f	typeref:typename:void
+dbgv	code/dbg.hpp	/^#define dbgv(/;"	d
+dbgv	practice/january2021/stacks/ma2/sol1.cpp	/^#define dbgv(/;"	d	file:
 dblcmp	code-library/Geometry/Geometry 3D.cpp	/^    double dblcmp(p3 &p, face &f) {$/;"	f	struct:CH3D	typeref:typename:double	file:
 dblcmp	code/Geometry/Geometry 3D.cpp	/^    double dblcmp(p3 &p, face &f) {$/;"	f	struct:CH3D	typeref:typename:double	file:
 de_bruijn	code-library/Strings/De Bruijn Sequence.cpp	/^int de_bruijn(int k, int n) { \/\/ returns size (k^n)$/;"	f	typeref:typename:int
@@ -5737,6 +5751,7 @@ get_pr	code/Graph Theory/Blossom Algorithm Weighted.cpp	/^  inline int get_pr(in
 get_prev	code-library/Geometry/Half Plane Intersection Dynamic.cpp	/^    iter get_prev(iter it) { return (it == begin() ? prev(end()) : prev(it)); }$/;"	f	struct:HalfPlaneSet	typeref:typename:iter	file:
 get_prev	code/Geometry/Half Plane Intersection Dynamic.cpp	/^    iter get_prev(iter it) { return (it == begin() ? prev(end()) : prev(it)); }$/;"	f	struct:HalfPlaneSet	typeref:typename:iter	file:
 get_prob_name	.compilingScripts/download_prob.py	/^def get_prob_name(data):$/;"	f
+get_radius	practice/january2021/stacks/balloons/sol.cpp	/^long double get_radius(int r_1, int x_1, int y_1, int x_2) {$/;"	f	typeref:typename:long double
 get_range	code-library/Data Structures/Permutation Tree.cpp	/^pair<int, int> get_range(pair<int, int> x, pair<int, int> y) {$/;"	f	typeref:typename:pair<int,int>
 get_range	code/Data Structures/Permutation Tree.cpp	/^pair<int, int> get_range(pair<int, int> x, pair<int, int> y) {$/;"	f	typeref:typename:pair<int,int>
 get_size	code-library/Data Structures/DSU.cpp	/^  int get_size(int i) {$/;"	f	struct:DSU	typeref:typename:int	file:
@@ -6288,6 +6303,7 @@ int	practice/december2021/1572A/sol.cpp	/^#define int /;"	d	file:
 int	practice/december2021/1619D/sol.cpp	/^#define int /;"	d	file:
 int	practice/december2021/1619E/sol.cpp	/^#define int /;"	d	file:
 int	practice/december2021/DP/counting_towers/sol.cpp	/^#define int /;"	d	file:
+int	practice/january2021/stacks/balloons/sol.cpp	/^#define int /;"	d	file:
 int	practice/usacoguide/gold/SP/dining/main.cpp	/^#define int /;"	d	file:
 int	practice/usacoguide/gold/SP/flightdiscount.cpp	/^#define int /;"	d	file:
 int	practice/usacoguide/gold/SP/pump.cpp	/^#define int /;"	d	file:
@@ -7411,6 +7427,10 @@ ll	practice/december2021/DP/teamwork/sol.cpp	/^typedef long long ll;$/;"	t	typer
 ll	practice/december2021/stacks/advertisement/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/december2021/stacks/balloons/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/december2021/stacks/nsv/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/january2021/stacks/balloons/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/january2021/stacks/ma2/sol.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/january2021/stacks/ma2/sol1.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
+ll	practice/january2021/stacks/ma2/sol_new.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/usacoguide/gold/SP/dining/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/usacoguide/gold/SP/flightdiscount.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
 ll	practice/usacoguide/gold/SP/main.cpp	/^typedef long long ll;$/;"	t	typeref:typename:long long	file:
@@ -8438,6 +8458,10 @@ main	practice/december2021/DP/teamwork/sol.cpp	/^int32_t main() {$/;"	f	typeref:
 main	practice/december2021/stacks/advertisement/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/december2021/stacks/balloons/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/december2021/stacks/nsv/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/january2021/stacks/balloons/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/january2021/stacks/ma2/sol.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/january2021/stacks/ma2/sol1.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
+main	practice/january2021/stacks/ma2/sol_new.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/gold/SP/dining/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/gold/SP/flightdiscount.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	practice/usacoguide/gold/SP/main.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
@@ -10116,6 +10140,8 @@ operator ()	code-library/Data Structures/Dynamic Connectivity Problem.cpp	/^  si
 operator ()	code/Data Structures/Dynamic Connectivity Problem.cpp	/^  size_t operator()(const pair<int, int>&x)const {$/;"	f	struct:HASH	typeref:typename:size_t	file:
 operator () 	code-library/Data Structures/KD Tree.cpp	/^  bool operator () (const point &a, const point &b) const {$/;"	f	struct:cmp_points	typeref:typename:bool	file:
 operator () 	code/Data Structures/KD Tree.cpp	/^  bool operator () (const point &a, const point &b) const {$/;"	f	struct:cmp_points	typeref:typename:bool	file:
+operator () 	code/dbg.hpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	f	struct:print_tuple	typeref:typename:string
+operator () 	practice/january2021/stacks/ma2/sol1.cpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	f	struct:print_tuple	typeref:typename:string	file:
 operator *	code-library/Data Structures/Centroid Decomposition.cpp	/^  const base operator * (const base &c) const {$/;"	f	struct:base	typeref:typename:const base	file:
 operator *	code-library/Data Structures/HLD with Persistent Lazy Propagation.cpp	/^    inline modint<MOD> operator * (modint<MOD> other) const { int32_t c = (int64_t)this->value */;"	f	struct:modint	typeref:typename:modint<MOD>	file:
 operator *	code-library/Data Structures/HLD with Persistent Lazy Propagation.cpp	/^template <int32_t MOD> modint<MOD> operator * (int32_t value, modint<MOD> n) { return modint<MOD/;"	f	typeref:typename:modint<MOD>
@@ -12895,6 +12921,8 @@ print_array	code-library/Data Structures/Implicit Treap.cpp	/^  void print_array
 print_array	code/Data Structures/Implicit Treap.cpp	/^  void print_array() {$/;"	f	struct:treap	typeref:typename:void	file:
 print_nodes	code-library/Data Structures/Treap persistent.cpp	/^void print_nodes(node* t) {$/;"	f	namespace:PersistentTreap	typeref:typename:void
 print_nodes	code/Data Structures/Treap persistent.cpp	/^void print_nodes(node* t) {$/;"	f	namespace:PersistentTreap	typeref:typename:void
+print_tuple	code/dbg.hpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	s
+print_tuple	practice/january2021/stacks/ma2/sol1.cpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	s	file:
 prior	code-library/Data Structures/Implicit Treap.cpp	/^    int val, sz, prior, lazy, sum, mx, mn, repl;$/;"	m	struct:treap::node	typeref:typename:int	file:
 prior	code-library/Data Structures/Treap persistent.cpp	/^  int val, prior, sz;$/;"	m	struct:node	typeref:typename:int	file:
 prior	code-library/Data Structures/Treap.cpp	/^  int key, prior;$/;"	m	struct:node	typeref:typename:int	file:
@@ -14262,6 +14290,10 @@ solve	practice/december2021/DP/teamwork/sol.cpp	/^void solve() {$/;"	f	typeref:t
 solve	practice/december2021/stacks/advertisement/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/december2021/stacks/balloons/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/december2021/stacks/nsv/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/january2021/stacks/balloons/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/january2021/stacks/ma2/sol.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/january2021/stacks/ma2/sol1.cpp	/^void solve() {$/;"	f	typeref:typename:void
+solve	practice/january2021/stacks/ma2/sol_new.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/usacoguide/gold/SP/dining/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/usacoguide/gold/SP/flightdiscount.cpp	/^void solve() {$/;"	f	typeref:typename:void
 solve	practice/usacoguide/gold/SP/main.cpp	/^void solve() {$/;"	f	typeref:typename:void
@@ -14961,7 +14993,9 @@ to	code/Graph Theory/Prim's MST.cpp	/^int g[N][N], w[N], to[N], selected[N];$/;"
 to	code/Graph Theory/Unique Min Cut.cpp	/^    int to, rev;$/;"	m	struct:Dinic::edge	typeref:typename:int	file:
 to	code/Strings/Aho Corasick All Pair Occurrence Relation.cpp	/^  int link[L], sz, to[L][2], dp[L][2], term[L], last[L]; \/\/ each string contains 'a' and 'b'$/;"	m	struct:AhoCorasick	typeref:typename:int[][2]	file:
 to	code/Strings/Aho Corasick Dynamic.cpp	/^  map<char, int> to[N];$/;"	m	struct:aho_corasick_static	typeref:typename:map<char,int>[]	file:
+to_string	code/dbg.hpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	f	typeref:typename:string
 to_string	practice/cf/random/1700/testing.cpp	/^template <typename T, size_t N> int SIZE(const T (&t)[N]){ return N; } template<typename T> int /;"	f	typeref:typename:string
+to_string	practice/january2021/stacks/ma2/sol1.cpp	/^template<typename T> int SIZE(T (&t)){ return t.size(); } template<typename T, size_t N> int SIZ/;"	f	typeref:typename:string
 tobase3	code-library/Math/FWHT in Ternary Base.cpp	/^  int tobase3(int x) {$/;"	f	struct:FWHT	typeref:typename:int	file:
 tobase3	code/Math/FWHT in Ternary Base.cpp	/^  int tobase3(int x) {$/;"	f	struct:FWHT	typeref:typename:int	file:
 todoist	dotfiles/macinit.vim	/^let todoist = {$/;"	v
