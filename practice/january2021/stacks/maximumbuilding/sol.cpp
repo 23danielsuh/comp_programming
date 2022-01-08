@@ -4,18 +4,11 @@ using namespace std;
 typedef long long ll;
 
 void solve() {
-	int N; cin >> N;
-	vector<int> A(N); for(auto &x : A) cin >> x;
-	map<int, int> S, E;
-	for(int i = 0; i < N; i++) {
-		S[A[i]] = INT_MAX;
-		E[A[i]] = INT_MIN;
+	int N, M; cin >> N >> M;
+	vector<string> grid(N); for(auto &x : grid) cin >> x;
+	for(int i = 0; i < N; i++) { //bottom bar
+		//f this problem
 	}
-	for(int i = 0; i < N; i++) {
-		S[A[i]] = min(i, S[A[i]]);
-		E[A[i]] = max(i, E[A[i]]);
-	}
-	
 }
 
 int32_t main() {

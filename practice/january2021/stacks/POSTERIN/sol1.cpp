@@ -5,17 +5,19 @@ typedef long long ll;
 
 void solve() {
 	int N; cin >> N;
-	vector<int> A(N); for(auto &x : A) cin >> x;
-	map<int, int> S, E;
+	vector<pair<int, int>> A(N); for(auto &x : A) cin >> x.first >> x.second;
+	int ans = 0;
+	stack<int> st;
 	for(int i = 0; i < N; i++) {
-		S[A[i]] = INT_MAX;
-		E[A[i]] = INT_MIN;
+		while(!st.empty() && st.top() > A[i].second) {
+			st.pop();
+		}
+		if(st.empty() || st.top() < A[i].second) {
+			ans++;
+			st.push(A[i].second);
+		}
 	}
-	for(int i = 0; i < N; i++) {
-		S[A[i]] = min(i, S[A[i]]);
-		E[A[i]] = max(i, E[A[i]]);
-	}
-	
+	cout << ans << "\n";
 }
 
 int32_t main() {
