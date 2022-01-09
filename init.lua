@@ -68,12 +68,9 @@ vim.wo.signcolumn = 'yes'
 
 --Set colorscheme (order is important here)
 vim.o.termguicolors = true
-vim.g.onedark_terminal_italics = 2
-vim.cmd [[let g:gruvbox_bold=0]]
 --vim.cmd [[set tw=79]]
-vim.cmd [[let g:gruvbox_invert_selection=0]]
-vim.cmd [[set background=dark]]
-vim.cmd [[colorscheme gruvbox]]
+vim.cmd [[set background=light]]
+vim.cmd [[colorscheme solarized8]]
 
 
 --Remap space as leader key
