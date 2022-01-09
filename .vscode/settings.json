@@ -1,3 +1,17 @@
 {
-    "C_Cpp.errorSquiggles": "Enabled"
+    "python.defaultInterpreterPath": "C:\\Users\\23den\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "GitHub Dark Default",
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "k"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-c>": false,
+      "<C-v>": false,
+      "<C-w>": false,
+    }
 }
